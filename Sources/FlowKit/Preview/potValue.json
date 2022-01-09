@@ -1,0 +1,5928 @@
+{
+  "period": "ALL",
+  "currency": "GBP",
+  "points": [
+    {
+      "overallValue": 542.0,
+      "returnValue": 1.0,
+      "simpleReturnPercent": 0.18,
+      "date": "2019-08-29",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 542.0,
+      "returnValue": 1.0,
+      "simpleReturnPercent": 0.18,
+      "date": "2019-08-30",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 542.0,
+      "returnValue": 1.0,
+      "simpleReturnPercent": 0.18,
+      "date": "2019-08-31",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 542.0,
+      "returnValue": 1.0,
+      "simpleReturnPercent": 0.18,
+      "date": "2019-09-01",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 545.0,
+      "returnValue": 4.0,
+      "simpleReturnPercent": 0.74,
+      "date": "2019-09-02",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 542.0,
+      "returnValue": 1.0,
+      "simpleReturnPercent": 0.18,
+      "date": "2019-09-03",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 546.0,
+      "returnValue": 5.0,
+      "simpleReturnPercent": 0.92,
+      "date": "2019-09-04",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 550.0,
+      "returnValue": 9.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-09-05",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 551.0,
+      "returnValue": 10.0,
+      "simpleReturnPercent": 1.85,
+      "date": "2019-09-06",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 551.0,
+      "returnValue": 10.0,
+      "simpleReturnPercent": 1.85,
+      "date": "2019-09-07",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 551.0,
+      "returnValue": 10.0,
+      "simpleReturnPercent": 1.85,
+      "date": "2019-09-08",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 550.0,
+      "returnValue": 9.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-09-09",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 548.0,
+      "returnValue": 7.0,
+      "simpleReturnPercent": 1.29,
+      "date": "2019-09-10",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 554.0,
+      "returnValue": 13.0,
+      "simpleReturnPercent": 2.4,
+      "date": "2019-09-11",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 557.0,
+      "returnValue": 16.0,
+      "simpleReturnPercent": 2.96,
+      "date": "2019-09-12",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 556.0,
+      "returnValue": 15.0,
+      "simpleReturnPercent": 2.77,
+      "date": "2019-09-13",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 556.0,
+      "returnValue": 15.0,
+      "simpleReturnPercent": 2.77,
+      "date": "2019-09-14",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 556.0,
+      "returnValue": 15.0,
+      "simpleReturnPercent": 2.77,
+      "date": "2019-09-15",
+      "totalContribution": 541.0
+    },
+    {
+      "overallValue": 2381.0,
+      "returnValue": 18.0,
+      "simpleReturnPercent": 0.76,
+      "date": "2019-09-16",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2375.0,
+      "returnValue": 12.0,
+      "simpleReturnPercent": 0.51,
+      "date": "2019-09-17",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2373.0,
+      "returnValue": 10.0,
+      "simpleReturnPercent": 0.42,
+      "date": "2019-09-18",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2389.0,
+      "returnValue": 26.0,
+      "simpleReturnPercent": 1.1,
+      "date": "2019-09-19",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2380.0,
+      "returnValue": 17.0,
+      "simpleReturnPercent": 0.72,
+      "date": "2019-09-20",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2380.0,
+      "returnValue": 17.0,
+      "simpleReturnPercent": 0.72,
+      "date": "2019-09-21",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2380.0,
+      "returnValue": 17.0,
+      "simpleReturnPercent": 0.72,
+      "date": "2019-09-22",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2373.0,
+      "returnValue": 10.0,
+      "simpleReturnPercent": 0.42,
+      "date": "2019-09-23",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2368.0,
+      "returnValue": 5.0,
+      "simpleReturnPercent": 0.21,
+      "date": "2019-09-24",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2363.0,
+      "returnValue": 0.0,
+      "simpleReturnPercent": 0.0,
+      "date": "2019-09-25",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2364.0,
+      "returnValue": 1.0,
+      "simpleReturnPercent": 0.04,
+      "date": "2019-09-26",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2379.0,
+      "returnValue": 16.0,
+      "simpleReturnPercent": 0.68,
+      "date": "2019-09-27",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2379.0,
+      "returnValue": 16.0,
+      "simpleReturnPercent": 0.68,
+      "date": "2019-09-28",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2379.0,
+      "returnValue": 16.0,
+      "simpleReturnPercent": 0.68,
+      "date": "2019-09-29",
+      "totalContribution": 2363.0
+    },
+    {
+      "overallValue": 2917.0,
+      "returnValue": 12.0,
+      "simpleReturnPercent": 0.41,
+      "date": "2019-09-30",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2906.0,
+      "returnValue": 1.0,
+      "simpleReturnPercent": 0.03,
+      "date": "2019-10-01",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2835.0,
+      "returnValue": -70.0,
+      "simpleReturnPercent": -2.41,
+      "date": "2019-10-02",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2827.0,
+      "returnValue": -78.0,
+      "simpleReturnPercent": -2.69,
+      "date": "2019-10-03",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2866.0,
+      "returnValue": -39.0,
+      "simpleReturnPercent": -1.34,
+      "date": "2019-10-04",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2866.0,
+      "returnValue": -39.0,
+      "simpleReturnPercent": -1.34,
+      "date": "2019-10-05",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2866.0,
+      "returnValue": -39.0,
+      "simpleReturnPercent": -1.34,
+      "date": "2019-10-06",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2881.0,
+      "returnValue": -24.0,
+      "simpleReturnPercent": -0.83,
+      "date": "2019-10-07",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2854.0,
+      "returnValue": -51.0,
+      "simpleReturnPercent": -1.76,
+      "date": "2019-10-08",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2863.0,
+      "returnValue": -42.0,
+      "simpleReturnPercent": -1.45,
+      "date": "2019-10-09",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2879.0,
+      "returnValue": -26.0,
+      "simpleReturnPercent": -0.9,
+      "date": "2019-10-10",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2887.0,
+      "returnValue": -18.0,
+      "simpleReturnPercent": -0.62,
+      "date": "2019-10-11",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2887.0,
+      "returnValue": -18.0,
+      "simpleReturnPercent": -0.62,
+      "date": "2019-10-12",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2887.0,
+      "returnValue": -18.0,
+      "simpleReturnPercent": -0.62,
+      "date": "2019-10-13",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2876.0,
+      "returnValue": -29.0,
+      "simpleReturnPercent": -1.0,
+      "date": "2019-10-14",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2885.0,
+      "returnValue": -20.0,
+      "simpleReturnPercent": -0.69,
+      "date": "2019-10-15",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2873.0,
+      "returnValue": -32.0,
+      "simpleReturnPercent": -1.1,
+      "date": "2019-10-16",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2878.0,
+      "returnValue": -27.0,
+      "simpleReturnPercent": -0.93,
+      "date": "2019-10-17",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2871.0,
+      "returnValue": -34.0,
+      "simpleReturnPercent": -1.17,
+      "date": "2019-10-18",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2871.0,
+      "returnValue": -34.0,
+      "simpleReturnPercent": -1.17,
+      "date": "2019-10-19",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2871.0,
+      "returnValue": -34.0,
+      "simpleReturnPercent": -1.17,
+      "date": "2019-10-20",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2872.0,
+      "returnValue": -33.0,
+      "simpleReturnPercent": -1.14,
+      "date": "2019-10-21",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2882.0,
+      "returnValue": -23.0,
+      "simpleReturnPercent": -0.79,
+      "date": "2019-10-22",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2885.0,
+      "returnValue": -20.0,
+      "simpleReturnPercent": -0.69,
+      "date": "2019-10-23",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2899.0,
+      "returnValue": -6.0,
+      "simpleReturnPercent": -0.21,
+      "date": "2019-10-24",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2909.0,
+      "returnValue": 4.0,
+      "simpleReturnPercent": 0.14,
+      "date": "2019-10-25",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2909.0,
+      "returnValue": 4.0,
+      "simpleReturnPercent": 0.14,
+      "date": "2019-10-26",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2909.0,
+      "returnValue": 4.0,
+      "simpleReturnPercent": 0.14,
+      "date": "2019-10-27",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2920.0,
+      "returnValue": 15.0,
+      "simpleReturnPercent": 0.52,
+      "date": "2019-10-28",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2918.0,
+      "returnValue": 13.0,
+      "simpleReturnPercent": 0.45,
+      "date": "2019-10-29",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 2913.0,
+      "returnValue": 8.0,
+      "simpleReturnPercent": 0.28,
+      "date": "2019-10-30",
+      "totalContribution": 2905.0
+    },
+    {
+      "overallValue": 3437.0,
+      "returnValue": -9.0,
+      "simpleReturnPercent": -0.26,
+      "date": "2019-10-31",
+      "totalContribution": 3446.0
+    },
+    {
+      "overallValue": 3469.0,
+      "returnValue": 23.0,
+      "simpleReturnPercent": 0.67,
+      "date": "2019-11-01",
+      "totalContribution": 3446.0
+    },
+    {
+      "overallValue": 3469.0,
+      "returnValue": 23.0,
+      "simpleReturnPercent": 0.67,
+      "date": "2019-11-02",
+      "totalContribution": 3446.0
+    },
+    {
+      "overallValue": 3469.0,
+      "returnValue": 23.0,
+      "simpleReturnPercent": 0.67,
+      "date": "2019-11-03",
+      "totalContribution": 3446.0
+    },
+    {
+      "overallValue": 3498.0,
+      "returnValue": 52.0,
+      "simpleReturnPercent": 1.51,
+      "date": "2019-11-04",
+      "totalContribution": 3446.0
+    },
+    {
+      "overallValue": 3502.0,
+      "returnValue": 56.0,
+      "simpleReturnPercent": 1.63,
+      "date": "2019-11-05",
+      "totalContribution": 3446.0
+    },
+    {
+      "overallValue": 3499.0,
+      "returnValue": 53.0,
+      "simpleReturnPercent": 1.54,
+      "date": "2019-11-06",
+      "totalContribution": 3446.0
+    },
+    {
+      "overallValue": 3812.0,
+      "returnValue": 79.0,
+      "simpleReturnPercent": 2.12,
+      "date": "2019-11-07",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3800.0,
+      "returnValue": 67.0,
+      "simpleReturnPercent": 1.79,
+      "date": "2019-11-08",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3800.0,
+      "returnValue": 67.0,
+      "simpleReturnPercent": 1.79,
+      "date": "2019-11-09",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3800.0,
+      "returnValue": 67.0,
+      "simpleReturnPercent": 1.79,
+      "date": "2019-11-10",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3785.0,
+      "returnValue": 52.0,
+      "simpleReturnPercent": 1.39,
+      "date": "2019-11-11",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3803.0,
+      "returnValue": 70.0,
+      "simpleReturnPercent": 1.88,
+      "date": "2019-11-12",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3787.0,
+      "returnValue": 54.0,
+      "simpleReturnPercent": 1.45,
+      "date": "2019-11-13",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3781.0,
+      "returnValue": 48.0,
+      "simpleReturnPercent": 1.29,
+      "date": "2019-11-14",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3802.0,
+      "returnValue": 69.0,
+      "simpleReturnPercent": 1.85,
+      "date": "2019-11-15",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3802.0,
+      "returnValue": 69.0,
+      "simpleReturnPercent": 1.85,
+      "date": "2019-11-16",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3802.0,
+      "returnValue": 69.0,
+      "simpleReturnPercent": 1.85,
+      "date": "2019-11-17",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3796.0,
+      "returnValue": 63.0,
+      "simpleReturnPercent": 1.69,
+      "date": "2019-11-18",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3800.0,
+      "returnValue": 67.0,
+      "simpleReturnPercent": 1.79,
+      "date": "2019-11-19",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3795.0,
+      "returnValue": 62.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-11-20",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3775.0,
+      "returnValue": 42.0,
+      "simpleReturnPercent": 1.13,
+      "date": "2019-11-21",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3793.0,
+      "returnValue": 60.0,
+      "simpleReturnPercent": 1.61,
+      "date": "2019-11-22",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3793.0,
+      "returnValue": 60.0,
+      "simpleReturnPercent": 1.61,
+      "date": "2019-11-23",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3793.0,
+      "returnValue": 60.0,
+      "simpleReturnPercent": 1.61,
+      "date": "2019-11-24",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3820.0,
+      "returnValue": 87.0,
+      "simpleReturnPercent": 2.33,
+      "date": "2019-11-25",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3836.0,
+      "returnValue": 103.0,
+      "simpleReturnPercent": 2.76,
+      "date": "2019-11-26",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 3841.0,
+      "returnValue": 108.0,
+      "simpleReturnPercent": 2.89,
+      "date": "2019-11-27",
+      "totalContribution": 3733.0
+    },
+    {
+      "overallValue": 4384.0,
+      "returnValue": 109.0,
+      "simpleReturnPercent": 2.55,
+      "date": "2019-11-28",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4365.0,
+      "returnValue": 90.0,
+      "simpleReturnPercent": 2.11,
+      "date": "2019-11-29",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4365.0,
+      "returnValue": 90.0,
+      "simpleReturnPercent": 2.11,
+      "date": "2019-11-30",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4365.0,
+      "returnValue": 90.0,
+      "simpleReturnPercent": 2.11,
+      "date": "2019-12-01",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4328.0,
+      "returnValue": 53.0,
+      "simpleReturnPercent": 1.24,
+      "date": "2019-12-02",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4271.0,
+      "returnValue": -4.0,
+      "simpleReturnPercent": -0.09,
+      "date": "2019-12-03",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4304.0,
+      "returnValue": 29.0,
+      "simpleReturnPercent": 0.68,
+      "date": "2019-12-04",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4294.0,
+      "returnValue": 19.0,
+      "simpleReturnPercent": 0.44,
+      "date": "2019-12-05",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4346.0,
+      "returnValue": 71.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-12-06",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4346.0,
+      "returnValue": 71.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-12-07",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4346.0,
+      "returnValue": 71.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-12-08",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4334.0,
+      "returnValue": 59.0,
+      "simpleReturnPercent": 1.38,
+      "date": "2019-12-09",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4325.0,
+      "returnValue": 50.0,
+      "simpleReturnPercent": 1.17,
+      "date": "2019-12-10",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4325.0,
+      "returnValue": 50.0,
+      "simpleReturnPercent": 1.17,
+      "date": "2019-12-11",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4365.0,
+      "returnValue": 90.0,
+      "simpleReturnPercent": 2.11,
+      "date": "2019-12-12",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4346.0,
+      "returnValue": 71.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-12-13",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4346.0,
+      "returnValue": 71.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-12-14",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4346.0,
+      "returnValue": 71.0,
+      "simpleReturnPercent": 1.66,
+      "date": "2019-12-15",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4406.0,
+      "returnValue": 131.0,
+      "simpleReturnPercent": 3.06,
+      "date": "2019-12-16",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4427.0,
+      "returnValue": 152.0,
+      "simpleReturnPercent": 3.56,
+      "date": "2019-12-17",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4441.0,
+      "returnValue": 166.0,
+      "simpleReturnPercent": 3.88,
+      "date": "2019-12-18",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4455.0,
+      "returnValue": 180.0,
+      "simpleReturnPercent": 4.21,
+      "date": "2019-12-19",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4472.0,
+      "returnValue": 197.0,
+      "simpleReturnPercent": 4.61,
+      "date": "2019-12-20",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4472.0,
+      "returnValue": 197.0,
+      "simpleReturnPercent": 4.61,
+      "date": "2019-12-21",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4472.0,
+      "returnValue": 197.0,
+      "simpleReturnPercent": 4.61,
+      "date": "2019-12-22",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4497.0,
+      "returnValue": 222.0,
+      "simpleReturnPercent": 5.19,
+      "date": "2019-12-23",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4495.0,
+      "returnValue": 220.0,
+      "simpleReturnPercent": 5.15,
+      "date": "2019-12-24",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4495.0,
+      "returnValue": 220.0,
+      "simpleReturnPercent": 5.15,
+      "date": "2019-12-25",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4495.0,
+      "returnValue": 220.0,
+      "simpleReturnPercent": 5.15,
+      "date": "2019-12-26",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4498.0,
+      "returnValue": 223.0,
+      "simpleReturnPercent": 5.22,
+      "date": "2019-12-27",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4498.0,
+      "returnValue": 223.0,
+      "simpleReturnPercent": 5.22,
+      "date": "2019-12-28",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 4498.0,
+      "returnValue": 223.0,
+      "simpleReturnPercent": 5.22,
+      "date": "2019-12-29",
+      "totalContribution": 4275.0
+    },
+    {
+      "overallValue": 5004.0,
+      "returnValue": 187.0,
+      "simpleReturnPercent": 3.88,
+      "date": "2019-12-30",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 4986.0,
+      "returnValue": 169.0,
+      "simpleReturnPercent": 3.51,
+      "date": "2019-12-31",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 4986.0,
+      "returnValue": 169.0,
+      "simpleReturnPercent": 3.51,
+      "date": "2020-01-01",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5024.0,
+      "returnValue": 207.0,
+      "simpleReturnPercent": 4.3,
+      "date": "2020-01-02",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5022.0,
+      "returnValue": 205.0,
+      "simpleReturnPercent": 4.26,
+      "date": "2020-01-03",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5022.0,
+      "returnValue": 205.0,
+      "simpleReturnPercent": 4.26,
+      "date": "2020-01-04",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5022.0,
+      "returnValue": 205.0,
+      "simpleReturnPercent": 4.26,
+      "date": "2020-01-05",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 4998.0,
+      "returnValue": 181.0,
+      "simpleReturnPercent": 3.76,
+      "date": "2020-01-06",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5018.0,
+      "returnValue": 201.0,
+      "simpleReturnPercent": 4.17,
+      "date": "2020-01-07",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5025.0,
+      "returnValue": 208.0,
+      "simpleReturnPercent": 4.32,
+      "date": "2020-01-08",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5057.0,
+      "returnValue": 240.0,
+      "simpleReturnPercent": 4.98,
+      "date": "2020-01-09",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5060.0,
+      "returnValue": 243.0,
+      "simpleReturnPercent": 5.04,
+      "date": "2020-01-10",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5060.0,
+      "returnValue": 243.0,
+      "simpleReturnPercent": 5.04,
+      "date": "2020-01-11",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5060.0,
+      "returnValue": 243.0,
+      "simpleReturnPercent": 5.04,
+      "date": "2020-01-12",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5084.0,
+      "returnValue": 267.0,
+      "simpleReturnPercent": 5.54,
+      "date": "2020-01-13",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5092.0,
+      "returnValue": 275.0,
+      "simpleReturnPercent": 5.71,
+      "date": "2020-01-14",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5097.0,
+      "returnValue": 280.0,
+      "simpleReturnPercent": 5.81,
+      "date": "2020-01-15",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5104.0,
+      "returnValue": 287.0,
+      "simpleReturnPercent": 5.96,
+      "date": "2020-01-16",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5135.0,
+      "returnValue": 318.0,
+      "simpleReturnPercent": 6.6,
+      "date": "2020-01-17",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5135.0,
+      "returnValue": 318.0,
+      "simpleReturnPercent": 6.6,
+      "date": "2020-01-18",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5135.0,
+      "returnValue": 318.0,
+      "simpleReturnPercent": 6.6,
+      "date": "2020-01-19",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5140.0,
+      "returnValue": 323.0,
+      "simpleReturnPercent": 6.71,
+      "date": "2020-01-20",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5118.0,
+      "returnValue": 301.0,
+      "simpleReturnPercent": 6.25,
+      "date": "2020-01-21",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5104.0,
+      "returnValue": 287.0,
+      "simpleReturnPercent": 5.96,
+      "date": "2020-01-22",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5065.0,
+      "returnValue": 248.0,
+      "simpleReturnPercent": 5.15,
+      "date": "2020-01-23",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5096.0,
+      "returnValue": 279.0,
+      "simpleReturnPercent": 5.79,
+      "date": "2020-01-24",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5096.0,
+      "returnValue": 279.0,
+      "simpleReturnPercent": 5.79,
+      "date": "2020-01-25",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5096.0,
+      "returnValue": 279.0,
+      "simpleReturnPercent": 5.79,
+      "date": "2020-01-26",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 4982.0,
+      "returnValue": 165.0,
+      "simpleReturnPercent": 3.43,
+      "date": "2020-01-27",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5039.0,
+      "returnValue": 222.0,
+      "simpleReturnPercent": 4.61,
+      "date": "2020-01-28",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5047.0,
+      "returnValue": 230.0,
+      "simpleReturnPercent": 4.77,
+      "date": "2020-01-29",
+      "totalContribution": 4817.0
+    },
+    {
+      "overallValue": 5523.0,
+      "returnValue": 156.0,
+      "simpleReturnPercent": 2.91,
+      "date": "2020-01-30",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5465.0,
+      "returnValue": 98.0,
+      "simpleReturnPercent": 1.83,
+      "date": "2020-01-31",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5465.0,
+      "returnValue": 98.0,
+      "simpleReturnPercent": 1.83,
+      "date": "2020-02-01",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5465.0,
+      "returnValue": 98.0,
+      "simpleReturnPercent": 1.83,
+      "date": "2020-02-02",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5526.0,
+      "returnValue": 159.0,
+      "simpleReturnPercent": 2.96,
+      "date": "2020-02-03",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5605.0,
+      "returnValue": 238.0,
+      "simpleReturnPercent": 4.43,
+      "date": "2020-02-04",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5654.0,
+      "returnValue": 287.0,
+      "simpleReturnPercent": 5.35,
+      "date": "2020-02-05",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5690.0,
+      "returnValue": 323.0,
+      "simpleReturnPercent": 6.02,
+      "date": "2020-02-06",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5670.0,
+      "returnValue": 303.0,
+      "simpleReturnPercent": 5.65,
+      "date": "2020-02-07",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5670.0,
+      "returnValue": 303.0,
+      "simpleReturnPercent": 5.65,
+      "date": "2020-02-08",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5670.0,
+      "returnValue": 303.0,
+      "simpleReturnPercent": 5.65,
+      "date": "2020-02-09",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5662.0,
+      "returnValue": 295.0,
+      "simpleReturnPercent": 5.5,
+      "date": "2020-02-10",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5710.0,
+      "returnValue": 343.0,
+      "simpleReturnPercent": 6.39,
+      "date": "2020-02-11",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5725.0,
+      "returnValue": 358.0,
+      "simpleReturnPercent": 6.67,
+      "date": "2020-02-12",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5697.0,
+      "returnValue": 330.0,
+      "simpleReturnPercent": 6.15,
+      "date": "2020-02-13",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5700.0,
+      "returnValue": 333.0,
+      "simpleReturnPercent": 6.2,
+      "date": "2020-02-14",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5700.0,
+      "returnValue": 333.0,
+      "simpleReturnPercent": 6.2,
+      "date": "2020-02-15",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5700.0,
+      "returnValue": 333.0,
+      "simpleReturnPercent": 6.2,
+      "date": "2020-02-16",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5717.0,
+      "returnValue": 350.0,
+      "simpleReturnPercent": 6.52,
+      "date": "2020-02-17",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5663.0,
+      "returnValue": 296.0,
+      "simpleReturnPercent": 5.52,
+      "date": "2020-02-18",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5730.0,
+      "returnValue": 363.0,
+      "simpleReturnPercent": 6.76,
+      "date": "2020-02-19",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5702.0,
+      "returnValue": 335.0,
+      "simpleReturnPercent": 6.24,
+      "date": "2020-02-20",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5662.0,
+      "returnValue": 295.0,
+      "simpleReturnPercent": 5.5,
+      "date": "2020-02-21",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5662.0,
+      "returnValue": 295.0,
+      "simpleReturnPercent": 5.5,
+      "date": "2020-02-22",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5662.0,
+      "returnValue": 295.0,
+      "simpleReturnPercent": 5.5,
+      "date": "2020-02-23",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5488.0,
+      "returnValue": 121.0,
+      "simpleReturnPercent": 2.25,
+      "date": "2020-02-24",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5390.0,
+      "returnValue": 23.0,
+      "simpleReturnPercent": 0.43,
+      "date": "2020-02-25",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5400.0,
+      "returnValue": 33.0,
+      "simpleReturnPercent": 0.61,
+      "date": "2020-02-26",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5218.0,
+      "returnValue": -149.0,
+      "simpleReturnPercent": -2.78,
+      "date": "2020-02-27",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5026.0,
+      "returnValue": -341.0,
+      "simpleReturnPercent": -6.35,
+      "date": "2020-02-28",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5026.0,
+      "returnValue": -341.0,
+      "simpleReturnPercent": -6.35,
+      "date": "2020-02-29",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5026.0,
+      "returnValue": -341.0,
+      "simpleReturnPercent": -6.35,
+      "date": "2020-03-01",
+      "totalContribution": 5367.0
+    },
+    {
+      "overallValue": 5714.0,
+      "returnValue": -202.0,
+      "simpleReturnPercent": -3.41,
+      "date": "2020-03-02",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5750.0,
+      "returnValue": -166.0,
+      "simpleReturnPercent": -2.81,
+      "date": "2020-03-03",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5793.0,
+      "returnValue": -123.0,
+      "simpleReturnPercent": -2.08,
+      "date": "2020-03-04",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5767.0,
+      "returnValue": -149.0,
+      "simpleReturnPercent": -2.52,
+      "date": "2020-03-05",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5540.0,
+      "returnValue": -376.0,
+      "simpleReturnPercent": -6.36,
+      "date": "2020-03-06",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5540.0,
+      "returnValue": -376.0,
+      "simpleReturnPercent": -6.36,
+      "date": "2020-03-07",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5540.0,
+      "returnValue": -376.0,
+      "simpleReturnPercent": -6.36,
+      "date": "2020-03-08",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5198.0,
+      "returnValue": -718.0,
+      "simpleReturnPercent": -12.14,
+      "date": "2020-03-09",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5187.0,
+      "returnValue": -729.0,
+      "simpleReturnPercent": -12.32,
+      "date": "2020-03-10",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5172.0,
+      "returnValue": -744.0,
+      "simpleReturnPercent": -12.58,
+      "date": "2020-03-11",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4751.0,
+      "returnValue": -1165.0,
+      "simpleReturnPercent": -19.69,
+      "date": "2020-03-12",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4776.0,
+      "returnValue": -1140.0,
+      "simpleReturnPercent": -19.27,
+      "date": "2020-03-13",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4776.0,
+      "returnValue": -1140.0,
+      "simpleReturnPercent": -19.27,
+      "date": "2020-03-14",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4776.0,
+      "returnValue": -1140.0,
+      "simpleReturnPercent": -19.27,
+      "date": "2020-03-15",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4672.0,
+      "returnValue": -1244.0,
+      "simpleReturnPercent": -21.03,
+      "date": "2020-03-16",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4736.0,
+      "returnValue": -1180.0,
+      "simpleReturnPercent": -19.95,
+      "date": "2020-03-17",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4561.0,
+      "returnValue": -1355.0,
+      "simpleReturnPercent": -22.9,
+      "date": "2020-03-18",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4625.0,
+      "returnValue": -1291.0,
+      "simpleReturnPercent": -21.82,
+      "date": "2020-03-19",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4609.0,
+      "returnValue": -1307.0,
+      "simpleReturnPercent": -22.09,
+      "date": "2020-03-20",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4609.0,
+      "returnValue": -1307.0,
+      "simpleReturnPercent": -22.09,
+      "date": "2020-03-21",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4609.0,
+      "returnValue": -1307.0,
+      "simpleReturnPercent": -22.09,
+      "date": "2020-03-22",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4453.0,
+      "returnValue": -1463.0,
+      "simpleReturnPercent": -24.73,
+      "date": "2020-03-23",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4764.0,
+      "returnValue": -1152.0,
+      "simpleReturnPercent": -19.47,
+      "date": "2020-03-24",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4891.0,
+      "returnValue": -1025.0,
+      "simpleReturnPercent": -17.33,
+      "date": "2020-03-25",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4962.0,
+      "returnValue": -954.0,
+      "simpleReturnPercent": -16.13,
+      "date": "2020-03-26",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4790.0,
+      "returnValue": -1126.0,
+      "simpleReturnPercent": -19.03,
+      "date": "2020-03-27",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4790.0,
+      "returnValue": -1126.0,
+      "simpleReturnPercent": -19.03,
+      "date": "2020-03-28",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 4790.0,
+      "returnValue": -1126.0,
+      "simpleReturnPercent": -19.03,
+      "date": "2020-03-29",
+      "totalContribution": 5916.0
+    },
+    {
+      "overallValue": 5437.0,
+      "returnValue": -1029.0,
+      "simpleReturnPercent": -15.91,
+      "date": "2020-03-30",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5499.0,
+      "returnValue": -967.0,
+      "simpleReturnPercent": -14.96,
+      "date": "2020-03-31",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5286.0,
+      "returnValue": -1180.0,
+      "simpleReturnPercent": -18.25,
+      "date": "2020-04-01",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5288.0,
+      "returnValue": -1178.0,
+      "simpleReturnPercent": -18.22,
+      "date": "2020-04-02",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5274.0,
+      "returnValue": -1192.0,
+      "simpleReturnPercent": -18.43,
+      "date": "2020-04-03",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5274.0,
+      "returnValue": -1192.0,
+      "simpleReturnPercent": -18.43,
+      "date": "2020-04-04",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5274.0,
+      "returnValue": -1192.0,
+      "simpleReturnPercent": -18.43,
+      "date": "2020-04-05",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5485.0,
+      "returnValue": -981.0,
+      "simpleReturnPercent": -15.17,
+      "date": "2020-04-06",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5653.0,
+      "returnValue": -813.0,
+      "simpleReturnPercent": -12.57,
+      "date": "2020-04-07",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5618.0,
+      "returnValue": -848.0,
+      "simpleReturnPercent": -13.11,
+      "date": "2020-04-08",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5738.0,
+      "returnValue": -728.0,
+      "simpleReturnPercent": -11.26,
+      "date": "2020-04-09",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5738.0,
+      "returnValue": -728.0,
+      "simpleReturnPercent": -11.26,
+      "date": "2020-04-10",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5738.0,
+      "returnValue": -728.0,
+      "simpleReturnPercent": -11.26,
+      "date": "2020-04-11",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5738.0,
+      "returnValue": -728.0,
+      "simpleReturnPercent": -11.26,
+      "date": "2020-04-12",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5738.0,
+      "returnValue": -728.0,
+      "simpleReturnPercent": -11.26,
+      "date": "2020-04-13",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5754.0,
+      "returnValue": -712.0,
+      "simpleReturnPercent": -11.01,
+      "date": "2020-04-14",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5652.0,
+      "returnValue": -814.0,
+      "simpleReturnPercent": -12.59,
+      "date": "2020-04-15",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5718.0,
+      "returnValue": -748.0,
+      "simpleReturnPercent": -11.57,
+      "date": "2020-04-16",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5785.0,
+      "returnValue": -681.0,
+      "simpleReturnPercent": -10.53,
+      "date": "2020-04-17",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5785.0,
+      "returnValue": -681.0,
+      "simpleReturnPercent": -10.53,
+      "date": "2020-04-18",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5785.0,
+      "returnValue": -681.0,
+      "simpleReturnPercent": -10.53,
+      "date": "2020-04-19",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5837.0,
+      "returnValue": -629.0,
+      "simpleReturnPercent": -9.73,
+      "date": "2020-04-20",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5653.0,
+      "returnValue": -813.0,
+      "simpleReturnPercent": -12.57,
+      "date": "2020-04-21",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5756.0,
+      "returnValue": -710.0,
+      "simpleReturnPercent": -10.98,
+      "date": "2020-04-22",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5823.0,
+      "returnValue": -643.0,
+      "simpleReturnPercent": -9.94,
+      "date": "2020-04-23",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5758.0,
+      "returnValue": -708.0,
+      "simpleReturnPercent": -10.95,
+      "date": "2020-04-24",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5758.0,
+      "returnValue": -708.0,
+      "simpleReturnPercent": -10.95,
+      "date": "2020-04-25",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5758.0,
+      "returnValue": -708.0,
+      "simpleReturnPercent": -10.95,
+      "date": "2020-04-26",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5869.0,
+      "returnValue": -597.0,
+      "simpleReturnPercent": -9.23,
+      "date": "2020-04-27",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 5907.0,
+      "returnValue": -559.0,
+      "simpleReturnPercent": -8.65,
+      "date": "2020-04-28",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 6028.0,
+      "returnValue": -438.0,
+      "simpleReturnPercent": -6.77,
+      "date": "2020-04-29",
+      "totalContribution": 6466.0
+    },
+    {
+      "overallValue": 6465.0,
+      "returnValue": -551.0,
+      "simpleReturnPercent": -7.85,
+      "date": "2020-04-30",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6320.0,
+      "returnValue": -696.0,
+      "simpleReturnPercent": -9.92,
+      "date": "2020-05-01",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6320.0,
+      "returnValue": -696.0,
+      "simpleReturnPercent": -9.92,
+      "date": "2020-05-02",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6320.0,
+      "returnValue": -696.0,
+      "simpleReturnPercent": -9.92,
+      "date": "2020-05-03",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6297.0,
+      "returnValue": -719.0,
+      "simpleReturnPercent": -10.25,
+      "date": "2020-05-04",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6428.0,
+      "returnValue": -588.0,
+      "simpleReturnPercent": -8.38,
+      "date": "2020-05-05",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6413.0,
+      "returnValue": -603.0,
+      "simpleReturnPercent": -8.59,
+      "date": "2020-05-06",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6488.0,
+      "returnValue": -528.0,
+      "simpleReturnPercent": -7.53,
+      "date": "2020-05-07",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6488.0,
+      "returnValue": -528.0,
+      "simpleReturnPercent": -7.53,
+      "date": "2020-05-08",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6488.0,
+      "returnValue": -528.0,
+      "simpleReturnPercent": -7.53,
+      "date": "2020-05-09",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6488.0,
+      "returnValue": -528.0,
+      "simpleReturnPercent": -7.53,
+      "date": "2020-05-10",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6546.0,
+      "returnValue": -470.0,
+      "simpleReturnPercent": -6.7,
+      "date": "2020-05-11",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6590.0,
+      "returnValue": -426.0,
+      "simpleReturnPercent": -6.07,
+      "date": "2020-05-12",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6459.0,
+      "returnValue": -557.0,
+      "simpleReturnPercent": -7.94,
+      "date": "2020-05-13",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6349.0,
+      "returnValue": -667.0,
+      "simpleReturnPercent": -9.51,
+      "date": "2020-05-14",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6418.0,
+      "returnValue": -598.0,
+      "simpleReturnPercent": -8.52,
+      "date": "2020-05-15",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6418.0,
+      "returnValue": -598.0,
+      "simpleReturnPercent": -8.52,
+      "date": "2020-05-16",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6418.0,
+      "returnValue": -598.0,
+      "simpleReturnPercent": -8.52,
+      "date": "2020-05-17",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6664.0,
+      "returnValue": -352.0,
+      "simpleReturnPercent": -5.02,
+      "date": "2020-05-18",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6659.0,
+      "returnValue": -357.0,
+      "simpleReturnPercent": -5.09,
+      "date": "2020-05-19",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6711.0,
+      "returnValue": -305.0,
+      "simpleReturnPercent": -4.35,
+      "date": "2020-05-20",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6636.0,
+      "returnValue": -380.0,
+      "simpleReturnPercent": -5.42,
+      "date": "2020-05-21",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6627.0,
+      "returnValue": -389.0,
+      "simpleReturnPercent": -5.54,
+      "date": "2020-05-22",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6627.0,
+      "returnValue": -389.0,
+      "simpleReturnPercent": -5.54,
+      "date": "2020-05-23",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6627.0,
+      "returnValue": -389.0,
+      "simpleReturnPercent": -5.54,
+      "date": "2020-05-24",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6627.0,
+      "returnValue": -389.0,
+      "simpleReturnPercent": -5.54,
+      "date": "2020-05-25",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6742.0,
+      "returnValue": -274.0,
+      "simpleReturnPercent": -3.91,
+      "date": "2020-05-26",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 6759.0,
+      "returnValue": -257.0,
+      "simpleReturnPercent": -3.66,
+      "date": "2020-05-27",
+      "totalContribution": 7016.0
+    },
+    {
+      "overallValue": 7414.0,
+      "returnValue": -152.0,
+      "simpleReturnPercent": -2.01,
+      "date": "2020-05-28",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7301.0,
+      "returnValue": -265.0,
+      "simpleReturnPercent": -3.5,
+      "date": "2020-05-29",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7301.0,
+      "returnValue": -265.0,
+      "simpleReturnPercent": -3.5,
+      "date": "2020-05-30",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7301.0,
+      "returnValue": -265.0,
+      "simpleReturnPercent": -3.5,
+      "date": "2020-05-31",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7377.0,
+      "returnValue": -189.0,
+      "simpleReturnPercent": -2.5,
+      "date": "2020-06-01",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7418.0,
+      "returnValue": -148.0,
+      "simpleReturnPercent": -1.96,
+      "date": "2020-06-02",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7553.0,
+      "returnValue": -13.0,
+      "simpleReturnPercent": -0.17,
+      "date": "2020-06-03",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7530.0,
+      "returnValue": -36.0,
+      "simpleReturnPercent": -0.48,
+      "date": "2020-06-04",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7683.0,
+      "returnValue": 117.0,
+      "simpleReturnPercent": 1.55,
+      "date": "2020-06-05",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7683.0,
+      "returnValue": 117.0,
+      "simpleReturnPercent": 1.55,
+      "date": "2020-06-06",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7683.0,
+      "returnValue": 117.0,
+      "simpleReturnPercent": 1.55,
+      "date": "2020-06-07",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7675.0,
+      "returnValue": 109.0,
+      "simpleReturnPercent": 1.44,
+      "date": "2020-06-08",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7632.0,
+      "returnValue": 66.0,
+      "simpleReturnPercent": 0.87,
+      "date": "2020-06-09",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7609.0,
+      "returnValue": 43.0,
+      "simpleReturnPercent": 0.57,
+      "date": "2020-06-10",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7393.0,
+      "returnValue": -173.0,
+      "simpleReturnPercent": -2.29,
+      "date": "2020-06-11",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7336.0,
+      "returnValue": -230.0,
+      "simpleReturnPercent": -3.04,
+      "date": "2020-06-12",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7336.0,
+      "returnValue": -230.0,
+      "simpleReturnPercent": -3.04,
+      "date": "2020-06-13",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7336.0,
+      "returnValue": -230.0,
+      "simpleReturnPercent": -3.04,
+      "date": "2020-06-14",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7303.0,
+      "returnValue": -263.0,
+      "simpleReturnPercent": -3.48,
+      "date": "2020-06-15",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7517.0,
+      "returnValue": -49.0,
+      "simpleReturnPercent": -0.65,
+      "date": "2020-06-16",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7550.0,
+      "returnValue": -16.0,
+      "simpleReturnPercent": -0.21,
+      "date": "2020-06-17",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7557.0,
+      "returnValue": -9.0,
+      "simpleReturnPercent": -0.12,
+      "date": "2020-06-18",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7623.0,
+      "returnValue": 57.0,
+      "simpleReturnPercent": 0.75,
+      "date": "2020-06-19",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7623.0,
+      "returnValue": 57.0,
+      "simpleReturnPercent": 0.75,
+      "date": "2020-06-20",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7623.0,
+      "returnValue": 57.0,
+      "simpleReturnPercent": 0.75,
+      "date": "2020-06-21",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7553.0,
+      "returnValue": -13.0,
+      "simpleReturnPercent": -0.17,
+      "date": "2020-06-22",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7644.0,
+      "returnValue": 78.0,
+      "simpleReturnPercent": 1.03,
+      "date": "2020-06-23",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7462.0,
+      "returnValue": -104.0,
+      "simpleReturnPercent": -1.37,
+      "date": "2020-06-24",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7472.0,
+      "returnValue": -94.0,
+      "simpleReturnPercent": -1.24,
+      "date": "2020-06-25",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7463.0,
+      "returnValue": -103.0,
+      "simpleReturnPercent": -1.36,
+      "date": "2020-06-26",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7463.0,
+      "returnValue": -103.0,
+      "simpleReturnPercent": -1.36,
+      "date": "2020-06-27",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7463.0,
+      "returnValue": -103.0,
+      "simpleReturnPercent": -1.36,
+      "date": "2020-06-28",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7517.0,
+      "returnValue": -49.0,
+      "simpleReturnPercent": -0.65,
+      "date": "2020-06-29",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7518.0,
+      "returnValue": -48.0,
+      "simpleReturnPercent": -0.63,
+      "date": "2020-06-30",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 7522.0,
+      "returnValue": -44.0,
+      "simpleReturnPercent": -0.58,
+      "date": "2020-07-01",
+      "totalContribution": 7566.0
+    },
+    {
+      "overallValue": 8182.0,
+      "returnValue": 67.0,
+      "simpleReturnPercent": 0.83,
+      "date": "2020-07-02",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8135.0,
+      "returnValue": 20.0,
+      "simpleReturnPercent": 0.25,
+      "date": "2020-07-03",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8135.0,
+      "returnValue": 20.0,
+      "simpleReturnPercent": 0.25,
+      "date": "2020-07-04",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8135.0,
+      "returnValue": 20.0,
+      "simpleReturnPercent": 0.25,
+      "date": "2020-07-05",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8297.0,
+      "returnValue": 182.0,
+      "simpleReturnPercent": 2.24,
+      "date": "2020-07-06",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8238.0,
+      "returnValue": 123.0,
+      "simpleReturnPercent": 1.52,
+      "date": "2020-07-07",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8170.0,
+      "returnValue": 55.0,
+      "simpleReturnPercent": 0.68,
+      "date": "2020-07-08",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8110.0,
+      "returnValue": -5.0,
+      "simpleReturnPercent": -0.06,
+      "date": "2020-07-09",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8174.0,
+      "returnValue": 59.0,
+      "simpleReturnPercent": 0.73,
+      "date": "2020-07-10",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8174.0,
+      "returnValue": 59.0,
+      "simpleReturnPercent": 0.73,
+      "date": "2020-07-11",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8174.0,
+      "returnValue": 59.0,
+      "simpleReturnPercent": 0.73,
+      "date": "2020-07-12",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8338.0,
+      "returnValue": 223.0,
+      "simpleReturnPercent": 2.75,
+      "date": "2020-07-13",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8228.0,
+      "returnValue": 113.0,
+      "simpleReturnPercent": 1.39,
+      "date": "2020-07-14",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8351.0,
+      "returnValue": 236.0,
+      "simpleReturnPercent": 2.91,
+      "date": "2020-07-15",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8291.0,
+      "returnValue": 176.0,
+      "simpleReturnPercent": 2.17,
+      "date": "2020-07-16",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8340.0,
+      "returnValue": 225.0,
+      "simpleReturnPercent": 2.77,
+      "date": "2020-07-17",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8340.0,
+      "returnValue": 225.0,
+      "simpleReturnPercent": 2.77,
+      "date": "2020-07-18",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8340.0,
+      "returnValue": 225.0,
+      "simpleReturnPercent": 2.77,
+      "date": "2020-07-19",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8347.0,
+      "returnValue": 232.0,
+      "simpleReturnPercent": 2.86,
+      "date": "2020-07-20",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8393.0,
+      "returnValue": 278.0,
+      "simpleReturnPercent": 3.43,
+      "date": "2020-07-21",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8357.0,
+      "returnValue": 242.0,
+      "simpleReturnPercent": 2.98,
+      "date": "2020-07-22",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8372.0,
+      "returnValue": 257.0,
+      "simpleReturnPercent": 3.17,
+      "date": "2020-07-23",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8236.0,
+      "returnValue": 121.0,
+      "simpleReturnPercent": 1.49,
+      "date": "2020-07-24",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8236.0,
+      "returnValue": 121.0,
+      "simpleReturnPercent": 1.49,
+      "date": "2020-07-25",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8236.0,
+      "returnValue": 121.0,
+      "simpleReturnPercent": 1.49,
+      "date": "2020-07-26",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8236.0,
+      "returnValue": 121.0,
+      "simpleReturnPercent": 1.49,
+      "date": "2020-07-27",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8241.0,
+      "returnValue": 126.0,
+      "simpleReturnPercent": 1.55,
+      "date": "2020-07-28",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8247.0,
+      "returnValue": 132.0,
+      "simpleReturnPercent": 1.63,
+      "date": "2020-07-29",
+      "totalContribution": 8115.0
+    },
+    {
+      "overallValue": 8672.0,
+      "returnValue": 7.0,
+      "simpleReturnPercent": 0.08,
+      "date": "2020-07-30",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8637.0,
+      "returnValue": -28.0,
+      "simpleReturnPercent": -0.32,
+      "date": "2020-07-31",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8637.0,
+      "returnValue": -28.0,
+      "simpleReturnPercent": -0.32,
+      "date": "2020-08-01",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8637.0,
+      "returnValue": -28.0,
+      "simpleReturnPercent": -0.32,
+      "date": "2020-08-02",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8796.0,
+      "returnValue": 131.0,
+      "simpleReturnPercent": 1.51,
+      "date": "2020-08-03",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8804.0,
+      "returnValue": 139.0,
+      "simpleReturnPercent": 1.6,
+      "date": "2020-08-04",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8871.0,
+      "returnValue": 206.0,
+      "simpleReturnPercent": 2.38,
+      "date": "2020-08-05",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8831.0,
+      "returnValue": 166.0,
+      "simpleReturnPercent": 1.92,
+      "date": "2020-08-06",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8875.0,
+      "returnValue": 210.0,
+      "simpleReturnPercent": 2.42,
+      "date": "2020-08-07",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8875.0,
+      "returnValue": 210.0,
+      "simpleReturnPercent": 2.42,
+      "date": "2020-08-08",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8875.0,
+      "returnValue": 210.0,
+      "simpleReturnPercent": 2.42,
+      "date": "2020-08-09",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8872.0,
+      "returnValue": 207.0,
+      "simpleReturnPercent": 2.39,
+      "date": "2020-08-10",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8973.0,
+      "returnValue": 308.0,
+      "simpleReturnPercent": 3.55,
+      "date": "2020-08-11",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9051.0,
+      "returnValue": 386.0,
+      "simpleReturnPercent": 4.45,
+      "date": "2020-08-12",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9029.0,
+      "returnValue": 364.0,
+      "simpleReturnPercent": 4.2,
+      "date": "2020-08-13",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8970.0,
+      "returnValue": 305.0,
+      "simpleReturnPercent": 3.52,
+      "date": "2020-08-14",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8970.0,
+      "returnValue": 305.0,
+      "simpleReturnPercent": 3.52,
+      "date": "2020-08-15",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8970.0,
+      "returnValue": 305.0,
+      "simpleReturnPercent": 3.52,
+      "date": "2020-08-16",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9014.0,
+      "returnValue": 349.0,
+      "simpleReturnPercent": 4.03,
+      "date": "2020-08-17",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8963.0,
+      "returnValue": 298.0,
+      "simpleReturnPercent": 3.44,
+      "date": "2020-08-18",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9007.0,
+      "returnValue": 342.0,
+      "simpleReturnPercent": 3.95,
+      "date": "2020-08-19",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8933.0,
+      "returnValue": 268.0,
+      "simpleReturnPercent": 3.09,
+      "date": "2020-08-20",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8972.0,
+      "returnValue": 307.0,
+      "simpleReturnPercent": 3.54,
+      "date": "2020-08-21",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8972.0,
+      "returnValue": 307.0,
+      "simpleReturnPercent": 3.54,
+      "date": "2020-08-22",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 8972.0,
+      "returnValue": 307.0,
+      "simpleReturnPercent": 3.54,
+      "date": "2020-08-23",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9071.0,
+      "returnValue": 406.0,
+      "simpleReturnPercent": 4.69,
+      "date": "2020-08-24",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9070.0,
+      "returnValue": 405.0,
+      "simpleReturnPercent": 4.67,
+      "date": "2020-08-25",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9112.0,
+      "returnValue": 447.0,
+      "simpleReturnPercent": 5.16,
+      "date": "2020-08-26",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9131.0,
+      "returnValue": 466.0,
+      "simpleReturnPercent": 5.38,
+      "date": "2020-08-27",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9084.0,
+      "returnValue": 419.0,
+      "simpleReturnPercent": 4.84,
+      "date": "2020-08-28",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9084.0,
+      "returnValue": 419.0,
+      "simpleReturnPercent": 4.84,
+      "date": "2020-08-29",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9084.0,
+      "returnValue": 419.0,
+      "simpleReturnPercent": 4.84,
+      "date": "2020-08-30",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9084.0,
+      "returnValue": 419.0,
+      "simpleReturnPercent": 4.84,
+      "date": "2020-08-31",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9058.0,
+      "returnValue": 393.0,
+      "simpleReturnPercent": 4.54,
+      "date": "2020-09-01",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9165.0,
+      "returnValue": 500.0,
+      "simpleReturnPercent": 5.77,
+      "date": "2020-09-02",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9008.0,
+      "returnValue": 343.0,
+      "simpleReturnPercent": 3.96,
+      "date": "2020-09-03",
+      "totalContribution": 8665.0
+    },
+    {
+      "overallValue": 9374.0,
+      "returnValue": 159.0,
+      "simpleReturnPercent": 1.73,
+      "date": "2020-09-04",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9374.0,
+      "returnValue": 159.0,
+      "simpleReturnPercent": 1.73,
+      "date": "2020-09-05",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9374.0,
+      "returnValue": 159.0,
+      "simpleReturnPercent": 1.73,
+      "date": "2020-09-06",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9550.0,
+      "returnValue": 335.0,
+      "simpleReturnPercent": 3.64,
+      "date": "2020-09-07",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9460.0,
+      "returnValue": 245.0,
+      "simpleReturnPercent": 2.66,
+      "date": "2020-09-08",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9574.0,
+      "returnValue": 359.0,
+      "simpleReturnPercent": 3.9,
+      "date": "2020-09-09",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9642.0,
+      "returnValue": 427.0,
+      "simpleReturnPercent": 4.63,
+      "date": "2020-09-10",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9595.0,
+      "returnValue": 380.0,
+      "simpleReturnPercent": 4.12,
+      "date": "2020-09-11",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9595.0,
+      "returnValue": 380.0,
+      "simpleReturnPercent": 4.12,
+      "date": "2020-09-12",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9595.0,
+      "returnValue": 380.0,
+      "simpleReturnPercent": 4.12,
+      "date": "2020-09-13",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9651.0,
+      "returnValue": 436.0,
+      "simpleReturnPercent": 4.73,
+      "date": "2020-09-14",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9729.0,
+      "returnValue": 514.0,
+      "simpleReturnPercent": 5.58,
+      "date": "2020-09-15",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9694.0,
+      "returnValue": 479.0,
+      "simpleReturnPercent": 5.2,
+      "date": "2020-09-16",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9590.0,
+      "returnValue": 375.0,
+      "simpleReturnPercent": 4.07,
+      "date": "2020-09-17",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9535.0,
+      "returnValue": 320.0,
+      "simpleReturnPercent": 3.47,
+      "date": "2020-09-18",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9535.0,
+      "returnValue": 320.0,
+      "simpleReturnPercent": 3.47,
+      "date": "2020-09-19",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9535.0,
+      "returnValue": 320.0,
+      "simpleReturnPercent": 3.47,
+      "date": "2020-09-20",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9286.0,
+      "returnValue": 71.0,
+      "simpleReturnPercent": 0.77,
+      "date": "2020-09-21",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9392.0,
+      "returnValue": 177.0,
+      "simpleReturnPercent": 1.92,
+      "date": "2020-09-22",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9438.0,
+      "returnValue": 223.0,
+      "simpleReturnPercent": 2.42,
+      "date": "2020-09-23",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9317.0,
+      "returnValue": 102.0,
+      "simpleReturnPercent": 1.11,
+      "date": "2020-09-24",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9357.0,
+      "returnValue": 142.0,
+      "simpleReturnPercent": 1.54,
+      "date": "2020-09-25",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9357.0,
+      "returnValue": 142.0,
+      "simpleReturnPercent": 1.54,
+      "date": "2020-09-26",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9357.0,
+      "returnValue": 142.0,
+      "simpleReturnPercent": 1.54,
+      "date": "2020-09-27",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9517.0,
+      "returnValue": 302.0,
+      "simpleReturnPercent": 3.28,
+      "date": "2020-09-28",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9492.0,
+      "returnValue": 277.0,
+      "simpleReturnPercent": 3.01,
+      "date": "2020-09-29",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 9526.0,
+      "returnValue": 311.0,
+      "simpleReturnPercent": 3.37,
+      "date": "2020-09-30",
+      "totalContribution": 9215.0
+    },
+    {
+      "overallValue": 10103.0,
+      "returnValue": 338.0,
+      "simpleReturnPercent": 3.46,
+      "date": "2020-10-01",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10037.0,
+      "returnValue": 272.0,
+      "simpleReturnPercent": 2.79,
+      "date": "2020-10-02",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10037.0,
+      "returnValue": 272.0,
+      "simpleReturnPercent": 2.79,
+      "date": "2020-10-03",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10037.0,
+      "returnValue": 272.0,
+      "simpleReturnPercent": 2.79,
+      "date": "2020-10-04",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10130.0,
+      "returnValue": 365.0,
+      "simpleReturnPercent": 3.74,
+      "date": "2020-10-05",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10161.0,
+      "returnValue": 396.0,
+      "simpleReturnPercent": 4.06,
+      "date": "2020-10-06",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10183.0,
+      "returnValue": 418.0,
+      "simpleReturnPercent": 4.28,
+      "date": "2020-10-07",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10252.0,
+      "returnValue": 487.0,
+      "simpleReturnPercent": 4.99,
+      "date": "2020-10-08",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10306.0,
+      "returnValue": 541.0,
+      "simpleReturnPercent": 5.54,
+      "date": "2020-10-09",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10306.0,
+      "returnValue": 541.0,
+      "simpleReturnPercent": 5.54,
+      "date": "2020-10-10",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10306.0,
+      "returnValue": 541.0,
+      "simpleReturnPercent": 5.54,
+      "date": "2020-10-11",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10396.0,
+      "returnValue": 631.0,
+      "simpleReturnPercent": 6.46,
+      "date": "2020-10-12",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10396.0,
+      "returnValue": 631.0,
+      "simpleReturnPercent": 6.46,
+      "date": "2020-10-13",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10358.0,
+      "returnValue": 593.0,
+      "simpleReturnPercent": 6.07,
+      "date": "2020-10-14",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10231.0,
+      "returnValue": 466.0,
+      "simpleReturnPercent": 4.77,
+      "date": "2020-10-15",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10330.0,
+      "returnValue": 565.0,
+      "simpleReturnPercent": 5.79,
+      "date": "2020-10-16",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10330.0,
+      "returnValue": 565.0,
+      "simpleReturnPercent": 5.79,
+      "date": "2020-10-17",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10330.0,
+      "returnValue": 565.0,
+      "simpleReturnPercent": 5.79,
+      "date": "2020-10-18",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10264.0,
+      "returnValue": 499.0,
+      "simpleReturnPercent": 5.11,
+      "date": "2020-10-19",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10229.0,
+      "returnValue": 464.0,
+      "simpleReturnPercent": 4.75,
+      "date": "2020-10-20",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10126.0,
+      "returnValue": 361.0,
+      "simpleReturnPercent": 3.7,
+      "date": "2020-10-21",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10129.0,
+      "returnValue": 364.0,
+      "simpleReturnPercent": 3.73,
+      "date": "2020-10-22",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10192.0,
+      "returnValue": 427.0,
+      "simpleReturnPercent": 4.37,
+      "date": "2020-10-23",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10192.0,
+      "returnValue": 427.0,
+      "simpleReturnPercent": 4.37,
+      "date": "2020-10-24",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10192.0,
+      "returnValue": 427.0,
+      "simpleReturnPercent": 4.37,
+      "date": "2020-10-25",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10053.0,
+      "returnValue": 288.0,
+      "simpleReturnPercent": 2.95,
+      "date": "2020-10-26",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10020.0,
+      "returnValue": 255.0,
+      "simpleReturnPercent": 2.61,
+      "date": "2020-10-27",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 9784.0,
+      "returnValue": 19.0,
+      "simpleReturnPercent": 0.19,
+      "date": "2020-10-28",
+      "totalContribution": 9765.0
+    },
+    {
+      "overallValue": 10353.0,
+      "returnValue": 38.0,
+      "simpleReturnPercent": 0.37,
+      "date": "2020-10-29",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10278.0,
+      "returnValue": -37.0,
+      "simpleReturnPercent": -0.36,
+      "date": "2020-10-30",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10278.0,
+      "returnValue": -37.0,
+      "simpleReturnPercent": -0.36,
+      "date": "2020-10-31",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10278.0,
+      "returnValue": -37.0,
+      "simpleReturnPercent": -0.36,
+      "date": "2020-11-01",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10403.0,
+      "returnValue": 88.0,
+      "simpleReturnPercent": 0.85,
+      "date": "2020-11-02",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10573.0,
+      "returnValue": 258.0,
+      "simpleReturnPercent": 2.5,
+      "date": "2020-11-03",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10816.0,
+      "returnValue": 501.0,
+      "simpleReturnPercent": 4.86,
+      "date": "2020-11-04",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10930.0,
+      "returnValue": 615.0,
+      "simpleReturnPercent": 5.96,
+      "date": "2020-11-05",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10895.0,
+      "returnValue": 580.0,
+      "simpleReturnPercent": 5.62,
+      "date": "2020-11-06",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10895.0,
+      "returnValue": 580.0,
+      "simpleReturnPercent": 5.62,
+      "date": "2020-11-07",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 10895.0,
+      "returnValue": 580.0,
+      "simpleReturnPercent": 5.62,
+      "date": "2020-11-08",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11230.0,
+      "returnValue": 915.0,
+      "simpleReturnPercent": 8.87,
+      "date": "2020-11-09",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11138.0,
+      "returnValue": 823.0,
+      "simpleReturnPercent": 7.98,
+      "date": "2020-11-10",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11227.0,
+      "returnValue": 912.0,
+      "simpleReturnPercent": 8.84,
+      "date": "2020-11-11",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11223.0,
+      "returnValue": 908.0,
+      "simpleReturnPercent": 8.8,
+      "date": "2020-11-12",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11203.0,
+      "returnValue": 888.0,
+      "simpleReturnPercent": 8.61,
+      "date": "2020-11-13",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11203.0,
+      "returnValue": 888.0,
+      "simpleReturnPercent": 8.61,
+      "date": "2020-11-14",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11203.0,
+      "returnValue": 888.0,
+      "simpleReturnPercent": 8.61,
+      "date": "2020-11-15",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11376.0,
+      "returnValue": 1061.0,
+      "simpleReturnPercent": 10.29,
+      "date": "2020-11-16",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11316.0,
+      "returnValue": 1001.0,
+      "simpleReturnPercent": 9.7,
+      "date": "2020-11-17",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11333.0,
+      "returnValue": 1018.0,
+      "simpleReturnPercent": 9.87,
+      "date": "2020-11-18",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11247.0,
+      "returnValue": 932.0,
+      "simpleReturnPercent": 9.04,
+      "date": "2020-11-19",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11276.0,
+      "returnValue": 961.0,
+      "simpleReturnPercent": 9.32,
+      "date": "2020-11-20",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11276.0,
+      "returnValue": 961.0,
+      "simpleReturnPercent": 9.32,
+      "date": "2020-11-21",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11276.0,
+      "returnValue": 961.0,
+      "simpleReturnPercent": 9.32,
+      "date": "2020-11-22",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11261.0,
+      "returnValue": 946.0,
+      "simpleReturnPercent": 9.17,
+      "date": "2020-11-23",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11416.0,
+      "returnValue": 1101.0,
+      "simpleReturnPercent": 10.67,
+      "date": "2020-11-24",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11380.0,
+      "returnValue": 1065.0,
+      "simpleReturnPercent": 10.32,
+      "date": "2020-11-25",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11410.0,
+      "returnValue": 1095.0,
+      "simpleReturnPercent": 10.62,
+      "date": "2020-11-26",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11463.0,
+      "returnValue": 1148.0,
+      "simpleReturnPercent": 11.13,
+      "date": "2020-11-27",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11463.0,
+      "returnValue": 1148.0,
+      "simpleReturnPercent": 11.13,
+      "date": "2020-11-28",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11463.0,
+      "returnValue": 1148.0,
+      "simpleReturnPercent": 11.13,
+      "date": "2020-11-29",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 11306.0,
+      "returnValue": 991.0,
+      "simpleReturnPercent": 9.61,
+      "date": "2020-11-30",
+      "totalContribution": 10315.0
+    },
+    {
+      "overallValue": 12007.0,
+      "returnValue": 1143.0,
+      "simpleReturnPercent": 10.52,
+      "date": "2020-12-01",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12046.0,
+      "returnValue": 1182.0,
+      "simpleReturnPercent": 10.88,
+      "date": "2020-12-02",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12049.0,
+      "returnValue": 1185.0,
+      "simpleReturnPercent": 10.91,
+      "date": "2020-12-03",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12109.0,
+      "returnValue": 1245.0,
+      "simpleReturnPercent": 11.46,
+      "date": "2020-12-04",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12109.0,
+      "returnValue": 1245.0,
+      "simpleReturnPercent": 11.46,
+      "date": "2020-12-05",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12109.0,
+      "returnValue": 1245.0,
+      "simpleReturnPercent": 11.46,
+      "date": "2020-12-06",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12153.0,
+      "returnValue": 1289.0,
+      "simpleReturnPercent": 11.86,
+      "date": "2020-12-07",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12157.0,
+      "returnValue": 1293.0,
+      "simpleReturnPercent": 11.9,
+      "date": "2020-12-08",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12158.0,
+      "returnValue": 1294.0,
+      "simpleReturnPercent": 11.91,
+      "date": "2020-12-09",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12172.0,
+      "returnValue": 1308.0,
+      "simpleReturnPercent": 12.04,
+      "date": "2020-12-10",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12116.0,
+      "returnValue": 1252.0,
+      "simpleReturnPercent": 11.52,
+      "date": "2020-12-11",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12116.0,
+      "returnValue": 1252.0,
+      "simpleReturnPercent": 11.52,
+      "date": "2020-12-12",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12116.0,
+      "returnValue": 1252.0,
+      "simpleReturnPercent": 11.52,
+      "date": "2020-12-13",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12151.0,
+      "returnValue": 1287.0,
+      "simpleReturnPercent": 11.85,
+      "date": "2020-12-14",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12106.0,
+      "returnValue": 1242.0,
+      "simpleReturnPercent": 11.43,
+      "date": "2020-12-15",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12188.0,
+      "returnValue": 1324.0,
+      "simpleReturnPercent": 12.19,
+      "date": "2020-12-16",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12208.0,
+      "returnValue": 1344.0,
+      "simpleReturnPercent": 12.37,
+      "date": "2020-12-17",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12215.0,
+      "returnValue": 1351.0,
+      "simpleReturnPercent": 12.44,
+      "date": "2020-12-18",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12215.0,
+      "returnValue": 1351.0,
+      "simpleReturnPercent": 12.44,
+      "date": "2020-12-19",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12215.0,
+      "returnValue": 1351.0,
+      "simpleReturnPercent": 12.44,
+      "date": "2020-12-20",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12095.0,
+      "returnValue": 1231.0,
+      "simpleReturnPercent": 11.33,
+      "date": "2020-12-21",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12180.0,
+      "returnValue": 1316.0,
+      "simpleReturnPercent": 12.11,
+      "date": "2020-12-22",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12200.0,
+      "returnValue": 1336.0,
+      "simpleReturnPercent": 12.3,
+      "date": "2020-12-23",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12181.0,
+      "returnValue": 1317.0,
+      "simpleReturnPercent": 12.12,
+      "date": "2020-12-24",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12181.0,
+      "returnValue": 1317.0,
+      "simpleReturnPercent": 12.12,
+      "date": "2020-12-25",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12181.0,
+      "returnValue": 1317.0,
+      "simpleReturnPercent": 12.12,
+      "date": "2020-12-26",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12181.0,
+      "returnValue": 1317.0,
+      "simpleReturnPercent": 12.12,
+      "date": "2020-12-27",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12181.0,
+      "returnValue": 1317.0,
+      "simpleReturnPercent": 12.12,
+      "date": "2020-12-28",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12362.0,
+      "returnValue": 1498.0,
+      "simpleReturnPercent": 13.79,
+      "date": "2020-12-29",
+      "totalContribution": 10864.0
+    },
+    {
+      "overallValue": 12885.0,
+      "returnValue": 1471.0,
+      "simpleReturnPercent": 12.89,
+      "date": "2020-12-30",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12815.0,
+      "returnValue": 1401.0,
+      "simpleReturnPercent": 12.27,
+      "date": "2020-12-31",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12815.0,
+      "returnValue": 1401.0,
+      "simpleReturnPercent": 12.27,
+      "date": "2021-01-01",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12815.0,
+      "returnValue": 1401.0,
+      "simpleReturnPercent": 12.27,
+      "date": "2021-01-02",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12815.0,
+      "returnValue": 1401.0,
+      "simpleReturnPercent": 12.27,
+      "date": "2021-01-03",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12837.0,
+      "returnValue": 1423.0,
+      "simpleReturnPercent": 12.47,
+      "date": "2021-01-04",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12870.0,
+      "returnValue": 1456.0,
+      "simpleReturnPercent": 12.76,
+      "date": "2021-01-05",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13130.0,
+      "returnValue": 1716.0,
+      "simpleReturnPercent": 15.03,
+      "date": "2021-01-06",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13222.0,
+      "returnValue": 1808.0,
+      "simpleReturnPercent": 15.84,
+      "date": "2021-01-07",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13286.0,
+      "returnValue": 1872.0,
+      "simpleReturnPercent": 16.4,
+      "date": "2021-01-08",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13286.0,
+      "returnValue": 1872.0,
+      "simpleReturnPercent": 16.4,
+      "date": "2021-01-09",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13286.0,
+      "returnValue": 1872.0,
+      "simpleReturnPercent": 16.4,
+      "date": "2021-01-10",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13251.0,
+      "returnValue": 1837.0,
+      "simpleReturnPercent": 16.09,
+      "date": "2021-01-11",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13181.0,
+      "returnValue": 1767.0,
+      "simpleReturnPercent": 15.48,
+      "date": "2021-01-12",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13173.0,
+      "returnValue": 1759.0,
+      "simpleReturnPercent": 15.41,
+      "date": "2021-01-13",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13210.0,
+      "returnValue": 1796.0,
+      "simpleReturnPercent": 15.74,
+      "date": "2021-01-14",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13072.0,
+      "returnValue": 1658.0,
+      "simpleReturnPercent": 14.53,
+      "date": "2021-01-15",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13072.0,
+      "returnValue": 1658.0,
+      "simpleReturnPercent": 14.53,
+      "date": "2021-01-16",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13072.0,
+      "returnValue": 1658.0,
+      "simpleReturnPercent": 14.53,
+      "date": "2021-01-17",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13109.0,
+      "returnValue": 1695.0,
+      "simpleReturnPercent": 14.85,
+      "date": "2021-01-18",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13129.0,
+      "returnValue": 1715.0,
+      "simpleReturnPercent": 15.03,
+      "date": "2021-01-19",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13215.0,
+      "returnValue": 1801.0,
+      "simpleReturnPercent": 15.78,
+      "date": "2021-01-20",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13239.0,
+      "returnValue": 1825.0,
+      "simpleReturnPercent": 15.99,
+      "date": "2021-01-21",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13213.0,
+      "returnValue": 1799.0,
+      "simpleReturnPercent": 15.76,
+      "date": "2021-01-22",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13213.0,
+      "returnValue": 1799.0,
+      "simpleReturnPercent": 15.76,
+      "date": "2021-01-23",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13213.0,
+      "returnValue": 1799.0,
+      "simpleReturnPercent": 15.76,
+      "date": "2021-01-24",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13172.0,
+      "returnValue": 1758.0,
+      "simpleReturnPercent": 15.4,
+      "date": "2021-01-25",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13190.0,
+      "returnValue": 1776.0,
+      "simpleReturnPercent": 15.56,
+      "date": "2021-01-26",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13010.0,
+      "returnValue": 1596.0,
+      "simpleReturnPercent": 13.98,
+      "date": "2021-01-27",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12996.0,
+      "returnValue": 1582.0,
+      "simpleReturnPercent": 13.86,
+      "date": "2021-01-28",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12782.0,
+      "returnValue": 1368.0,
+      "simpleReturnPercent": 11.99,
+      "date": "2021-01-29",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12782.0,
+      "returnValue": 1368.0,
+      "simpleReturnPercent": 11.99,
+      "date": "2021-01-30",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 12782.0,
+      "returnValue": 1368.0,
+      "simpleReturnPercent": 11.99,
+      "date": "2021-01-31",
+      "totalContribution": 11414.0
+    },
+    {
+      "overallValue": 13493.0,
+      "returnValue": 1495.0,
+      "simpleReturnPercent": 12.46,
+      "date": "2021-02-01",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13747.0,
+      "returnValue": 1749.0,
+      "simpleReturnPercent": 14.58,
+      "date": "2021-02-02",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13733.0,
+      "returnValue": 1735.0,
+      "simpleReturnPercent": 14.46,
+      "date": "2021-02-03",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13747.0,
+      "returnValue": 1749.0,
+      "simpleReturnPercent": 14.58,
+      "date": "2021-02-04",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13786.0,
+      "returnValue": 1788.0,
+      "simpleReturnPercent": 14.9,
+      "date": "2021-02-05",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13786.0,
+      "returnValue": 1788.0,
+      "simpleReturnPercent": 14.9,
+      "date": "2021-02-06",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13786.0,
+      "returnValue": 1788.0,
+      "simpleReturnPercent": 14.9,
+      "date": "2021-02-07",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13859.0,
+      "returnValue": 1861.0,
+      "simpleReturnPercent": 15.51,
+      "date": "2021-02-08",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13839.0,
+      "returnValue": 1841.0,
+      "simpleReturnPercent": 15.34,
+      "date": "2021-02-09",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13805.0,
+      "returnValue": 1807.0,
+      "simpleReturnPercent": 15.06,
+      "date": "2021-02-10",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13893.0,
+      "returnValue": 1895.0,
+      "simpleReturnPercent": 15.79,
+      "date": "2021-02-11",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13908.0,
+      "returnValue": 1910.0,
+      "simpleReturnPercent": 15.92,
+      "date": "2021-02-12",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13908.0,
+      "returnValue": 1910.0,
+      "simpleReturnPercent": 15.92,
+      "date": "2021-02-13",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13908.0,
+      "returnValue": 1910.0,
+      "simpleReturnPercent": 15.92,
+      "date": "2021-02-14",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 14031.0,
+      "returnValue": 2033.0,
+      "simpleReturnPercent": 16.94,
+      "date": "2021-02-15",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13947.0,
+      "returnValue": 1949.0,
+      "simpleReturnPercent": 16.24,
+      "date": "2021-02-16",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13873.0,
+      "returnValue": 1875.0,
+      "simpleReturnPercent": 15.63,
+      "date": "2021-02-17",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13744.0,
+      "returnValue": 1746.0,
+      "simpleReturnPercent": 14.55,
+      "date": "2021-02-18",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13833.0,
+      "returnValue": 1835.0,
+      "simpleReturnPercent": 15.29,
+      "date": "2021-02-19",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13833.0,
+      "returnValue": 1835.0,
+      "simpleReturnPercent": 15.29,
+      "date": "2021-02-20",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13833.0,
+      "returnValue": 1835.0,
+      "simpleReturnPercent": 15.29,
+      "date": "2021-02-21",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13648.0,
+      "returnValue": 1650.0,
+      "simpleReturnPercent": 13.75,
+      "date": "2021-02-22",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13508.0,
+      "returnValue": 1510.0,
+      "simpleReturnPercent": 12.59,
+      "date": "2021-02-23",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13562.0,
+      "returnValue": 1564.0,
+      "simpleReturnPercent": 13.04,
+      "date": "2021-02-24",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13507.0,
+      "returnValue": 1509.0,
+      "simpleReturnPercent": 12.58,
+      "date": "2021-02-25",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13295.0,
+      "returnValue": 1297.0,
+      "simpleReturnPercent": 10.81,
+      "date": "2021-02-26",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13295.0,
+      "returnValue": 1297.0,
+      "simpleReturnPercent": 10.81,
+      "date": "2021-02-27",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13295.0,
+      "returnValue": 1297.0,
+      "simpleReturnPercent": 10.81,
+      "date": "2021-02-28",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13531.0,
+      "returnValue": 1533.0,
+      "simpleReturnPercent": 12.78,
+      "date": "2021-03-01",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13481.0,
+      "returnValue": 1483.0,
+      "simpleReturnPercent": 12.36,
+      "date": "2021-03-02",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13447.0,
+      "returnValue": 1449.0,
+      "simpleReturnPercent": 12.08,
+      "date": "2021-03-03",
+      "totalContribution": 11998.0
+    },
+    {
+      "overallValue": 13860.0,
+      "returnValue": 1279.0,
+      "simpleReturnPercent": 10.17,
+      "date": "2021-03-04",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 13682.0,
+      "returnValue": 1101.0,
+      "simpleReturnPercent": 8.75,
+      "date": "2021-03-05",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 13682.0,
+      "returnValue": 1101.0,
+      "simpleReturnPercent": 8.75,
+      "date": "2021-03-06",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 13682.0,
+      "returnValue": 1101.0,
+      "simpleReturnPercent": 8.75,
+      "date": "2021-03-07",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14029.0,
+      "returnValue": 1448.0,
+      "simpleReturnPercent": 11.51,
+      "date": "2021-03-08",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14093.0,
+      "returnValue": 1512.0,
+      "simpleReturnPercent": 12.02,
+      "date": "2021-03-09",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14155.0,
+      "returnValue": 1574.0,
+      "simpleReturnPercent": 12.51,
+      "date": "2021-03-10",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14244.0,
+      "returnValue": 1663.0,
+      "simpleReturnPercent": 13.22,
+      "date": "2021-03-11",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14231.0,
+      "returnValue": 1650.0,
+      "simpleReturnPercent": 13.12,
+      "date": "2021-03-12",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14231.0,
+      "returnValue": 1650.0,
+      "simpleReturnPercent": 13.12,
+      "date": "2021-03-13",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14231.0,
+      "returnValue": 1650.0,
+      "simpleReturnPercent": 13.12,
+      "date": "2021-03-14",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14291.0,
+      "returnValue": 1710.0,
+      "simpleReturnPercent": 13.59,
+      "date": "2021-03-15",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14386.0,
+      "returnValue": 1805.0,
+      "simpleReturnPercent": 14.35,
+      "date": "2021-03-16",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14334.0,
+      "returnValue": 1753.0,
+      "simpleReturnPercent": 13.93,
+      "date": "2021-03-17",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14371.0,
+      "returnValue": 1790.0,
+      "simpleReturnPercent": 14.23,
+      "date": "2021-03-18",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14275.0,
+      "returnValue": 1694.0,
+      "simpleReturnPercent": 13.46,
+      "date": "2021-03-19",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14275.0,
+      "returnValue": 1694.0,
+      "simpleReturnPercent": 13.46,
+      "date": "2021-03-20",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14275.0,
+      "returnValue": 1694.0,
+      "simpleReturnPercent": 13.46,
+      "date": "2021-03-21",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14361.0,
+      "returnValue": 1780.0,
+      "simpleReturnPercent": 14.15,
+      "date": "2021-03-22",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14377.0,
+      "returnValue": 1796.0,
+      "simpleReturnPercent": 14.28,
+      "date": "2021-03-23",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14348.0,
+      "returnValue": 1767.0,
+      "simpleReturnPercent": 14.04,
+      "date": "2021-03-24",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14262.0,
+      "returnValue": 1681.0,
+      "simpleReturnPercent": 13.36,
+      "date": "2021-03-25",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14387.0,
+      "returnValue": 1806.0,
+      "simpleReturnPercent": 14.35,
+      "date": "2021-03-26",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14387.0,
+      "returnValue": 1806.0,
+      "simpleReturnPercent": 14.35,
+      "date": "2021-03-27",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14387.0,
+      "returnValue": 1806.0,
+      "simpleReturnPercent": 14.35,
+      "date": "2021-03-28",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14431.0,
+      "returnValue": 1850.0,
+      "simpleReturnPercent": 14.7,
+      "date": "2021-03-29",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14531.0,
+      "returnValue": 1950.0,
+      "simpleReturnPercent": 15.5,
+      "date": "2021-03-30",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 14503.0,
+      "returnValue": 1922.0,
+      "simpleReturnPercent": 15.28,
+      "date": "2021-03-31",
+      "totalContribution": 12581.0
+    },
+    {
+      "overallValue": 15180.0,
+      "returnValue": 2016.0,
+      "simpleReturnPercent": 15.31,
+      "date": "2021-04-01",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15180.0,
+      "returnValue": 2016.0,
+      "simpleReturnPercent": 15.31,
+      "date": "2021-04-02",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15180.0,
+      "returnValue": 2016.0,
+      "simpleReturnPercent": 15.31,
+      "date": "2021-04-03",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15180.0,
+      "returnValue": 2016.0,
+      "simpleReturnPercent": 15.31,
+      "date": "2021-04-04",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15180.0,
+      "returnValue": 2016.0,
+      "simpleReturnPercent": 15.31,
+      "date": "2021-04-05",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15331.0,
+      "returnValue": 2167.0,
+      "simpleReturnPercent": 16.46,
+      "date": "2021-04-06",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15371.0,
+      "returnValue": 2207.0,
+      "simpleReturnPercent": 16.77,
+      "date": "2021-04-07",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15423.0,
+      "returnValue": 2259.0,
+      "simpleReturnPercent": 17.16,
+      "date": "2021-04-08",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15450.0,
+      "returnValue": 2286.0,
+      "simpleReturnPercent": 17.37,
+      "date": "2021-04-09",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15450.0,
+      "returnValue": 2286.0,
+      "simpleReturnPercent": 17.37,
+      "date": "2021-04-10",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15450.0,
+      "returnValue": 2286.0,
+      "simpleReturnPercent": 17.37,
+      "date": "2021-04-11",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15466.0,
+      "returnValue": 2302.0,
+      "simpleReturnPercent": 17.49,
+      "date": "2021-04-12",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15539.0,
+      "returnValue": 2375.0,
+      "simpleReturnPercent": 18.04,
+      "date": "2021-04-13",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15563.0,
+      "returnValue": 2399.0,
+      "simpleReturnPercent": 18.22,
+      "date": "2021-04-14",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15649.0,
+      "returnValue": 2485.0,
+      "simpleReturnPercent": 18.88,
+      "date": "2021-04-15",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15695.0,
+      "returnValue": 2531.0,
+      "simpleReturnPercent": 19.23,
+      "date": "2021-04-16",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15695.0,
+      "returnValue": 2531.0,
+      "simpleReturnPercent": 19.23,
+      "date": "2021-04-17",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15695.0,
+      "returnValue": 2531.0,
+      "simpleReturnPercent": 19.23,
+      "date": "2021-04-18",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15529.0,
+      "returnValue": 2365.0,
+      "simpleReturnPercent": 17.97,
+      "date": "2021-04-19",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15397.0,
+      "returnValue": 2233.0,
+      "simpleReturnPercent": 16.96,
+      "date": "2021-04-20",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15489.0,
+      "returnValue": 2325.0,
+      "simpleReturnPercent": 17.66,
+      "date": "2021-04-21",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15637.0,
+      "returnValue": 2473.0,
+      "simpleReturnPercent": 18.79,
+      "date": "2021-04-22",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15656.0,
+      "returnValue": 2492.0,
+      "simpleReturnPercent": 18.93,
+      "date": "2021-04-23",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15656.0,
+      "returnValue": 2492.0,
+      "simpleReturnPercent": 18.93,
+      "date": "2021-04-24",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15656.0,
+      "returnValue": 2492.0,
+      "simpleReturnPercent": 18.93,
+      "date": "2021-04-25",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15673.0,
+      "returnValue": 2509.0,
+      "simpleReturnPercent": 19.06,
+      "date": "2021-04-26",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15583.0,
+      "returnValue": 2419.0,
+      "simpleReturnPercent": 18.38,
+      "date": "2021-04-27",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15586.0,
+      "returnValue": 2422.0,
+      "simpleReturnPercent": 18.4,
+      "date": "2021-04-28",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15531.0,
+      "returnValue": 2367.0,
+      "simpleReturnPercent": 17.98,
+      "date": "2021-04-29",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15560.0,
+      "returnValue": 2396.0,
+      "simpleReturnPercent": 18.2,
+      "date": "2021-04-30",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15560.0,
+      "returnValue": 2396.0,
+      "simpleReturnPercent": 18.2,
+      "date": "2021-05-01",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15560.0,
+      "returnValue": 2396.0,
+      "simpleReturnPercent": 18.2,
+      "date": "2021-05-02",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15560.0,
+      "returnValue": 2396.0,
+      "simpleReturnPercent": 18.2,
+      "date": "2021-05-03",
+      "totalContribution": 13164.0
+    },
+    {
+      "overallValue": 15980.0,
+      "returnValue": 2232.0,
+      "simpleReturnPercent": 16.24,
+      "date": "2021-05-04",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16105.0,
+      "returnValue": 2357.0,
+      "simpleReturnPercent": 17.14,
+      "date": "2021-05-05",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16167.0,
+      "returnValue": 2419.0,
+      "simpleReturnPercent": 17.6,
+      "date": "2021-05-06",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16298.0,
+      "returnValue": 2550.0,
+      "simpleReturnPercent": 18.55,
+      "date": "2021-05-07",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16298.0,
+      "returnValue": 2550.0,
+      "simpleReturnPercent": 18.55,
+      "date": "2021-05-08",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16298.0,
+      "returnValue": 2550.0,
+      "simpleReturnPercent": 18.55,
+      "date": "2021-05-09",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16235.0,
+      "returnValue": 2487.0,
+      "simpleReturnPercent": 18.09,
+      "date": "2021-05-10",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15855.0,
+      "returnValue": 2107.0,
+      "simpleReturnPercent": 15.33,
+      "date": "2021-05-11",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15750.0,
+      "returnValue": 2002.0,
+      "simpleReturnPercent": 14.56,
+      "date": "2021-05-12",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15771.0,
+      "returnValue": 2023.0,
+      "simpleReturnPercent": 14.71,
+      "date": "2021-05-13",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15951.0,
+      "returnValue": 2203.0,
+      "simpleReturnPercent": 16.02,
+      "date": "2021-05-14",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15951.0,
+      "returnValue": 2203.0,
+      "simpleReturnPercent": 16.02,
+      "date": "2021-05-15",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15951.0,
+      "returnValue": 2203.0,
+      "simpleReturnPercent": 16.02,
+      "date": "2021-05-16",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15876.0,
+      "returnValue": 2128.0,
+      "simpleReturnPercent": 15.48,
+      "date": "2021-05-17",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15881.0,
+      "returnValue": 2133.0,
+      "simpleReturnPercent": 15.51,
+      "date": "2021-05-18",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15674.0,
+      "returnValue": 1926.0,
+      "simpleReturnPercent": 14.01,
+      "date": "2021-05-19",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15919.0,
+      "returnValue": 2171.0,
+      "simpleReturnPercent": 15.79,
+      "date": "2021-05-20",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15974.0,
+      "returnValue": 2226.0,
+      "simpleReturnPercent": 16.19,
+      "date": "2021-05-21",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15974.0,
+      "returnValue": 2226.0,
+      "simpleReturnPercent": 16.19,
+      "date": "2021-05-22",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 15974.0,
+      "returnValue": 2226.0,
+      "simpleReturnPercent": 16.19,
+      "date": "2021-05-23",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16090.0,
+      "returnValue": 2342.0,
+      "simpleReturnPercent": 17.04,
+      "date": "2021-05-24",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16100.0,
+      "returnValue": 2352.0,
+      "simpleReturnPercent": 17.11,
+      "date": "2021-05-25",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16120.0,
+      "returnValue": 2372.0,
+      "simpleReturnPercent": 17.25,
+      "date": "2021-05-26",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16082.0,
+      "returnValue": 2334.0,
+      "simpleReturnPercent": 16.98,
+      "date": "2021-05-27",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16149.0,
+      "returnValue": 2401.0,
+      "simpleReturnPercent": 17.46,
+      "date": "2021-05-28",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16149.0,
+      "returnValue": 2401.0,
+      "simpleReturnPercent": 17.46,
+      "date": "2021-05-29",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16149.0,
+      "returnValue": 2401.0,
+      "simpleReturnPercent": 17.46,
+      "date": "2021-05-30",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16149.0,
+      "returnValue": 2401.0,
+      "simpleReturnPercent": 17.46,
+      "date": "2021-05-31",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16199.0,
+      "returnValue": 2451.0,
+      "simpleReturnPercent": 17.83,
+      "date": "2021-06-01",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16212.0,
+      "returnValue": 2464.0,
+      "simpleReturnPercent": 17.92,
+      "date": "2021-06-02",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16199.0,
+      "returnValue": 2451.0,
+      "simpleReturnPercent": 17.83,
+      "date": "2021-06-03",
+      "totalContribution": 13748.0
+    },
+    {
+      "overallValue": 16810.0,
+      "returnValue": 2479.0,
+      "simpleReturnPercent": 17.3,
+      "date": "2021-06-04",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16810.0,
+      "returnValue": 2479.0,
+      "simpleReturnPercent": 17.3,
+      "date": "2021-06-05",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16810.0,
+      "returnValue": 2479.0,
+      "simpleReturnPercent": 17.3,
+      "date": "2021-06-06",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16806.0,
+      "returnValue": 2475.0,
+      "simpleReturnPercent": 17.27,
+      "date": "2021-06-07",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16826.0,
+      "returnValue": 2495.0,
+      "simpleReturnPercent": 17.41,
+      "date": "2021-06-08",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16877.0,
+      "returnValue": 2546.0,
+      "simpleReturnPercent": 17.77,
+      "date": "2021-06-09",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16868.0,
+      "returnValue": 2537.0,
+      "simpleReturnPercent": 17.7,
+      "date": "2021-06-10",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16922.0,
+      "returnValue": 2591.0,
+      "simpleReturnPercent": 18.08,
+      "date": "2021-06-11",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16922.0,
+      "returnValue": 2591.0,
+      "simpleReturnPercent": 18.08,
+      "date": "2021-06-12",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16922.0,
+      "returnValue": 2591.0,
+      "simpleReturnPercent": 18.08,
+      "date": "2021-06-13",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16951.0,
+      "returnValue": 2620.0,
+      "simpleReturnPercent": 18.28,
+      "date": "2021-06-14",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16993.0,
+      "returnValue": 2662.0,
+      "simpleReturnPercent": 18.58,
+      "date": "2021-06-15",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17009.0,
+      "returnValue": 2678.0,
+      "simpleReturnPercent": 18.69,
+      "date": "2021-06-16",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17052.0,
+      "returnValue": 2721.0,
+      "simpleReturnPercent": 18.99,
+      "date": "2021-06-17",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16912.0,
+      "returnValue": 2581.0,
+      "simpleReturnPercent": 18.01,
+      "date": "2021-06-18",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16912.0,
+      "returnValue": 2581.0,
+      "simpleReturnPercent": 18.01,
+      "date": "2021-06-19",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16912.0,
+      "returnValue": 2581.0,
+      "simpleReturnPercent": 18.01,
+      "date": "2021-06-20",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16948.0,
+      "returnValue": 2617.0,
+      "simpleReturnPercent": 18.26,
+      "date": "2021-06-21",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17011.0,
+      "returnValue": 2680.0,
+      "simpleReturnPercent": 18.7,
+      "date": "2021-06-22",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 16980.0,
+      "returnValue": 2649.0,
+      "simpleReturnPercent": 18.48,
+      "date": "2021-06-23",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17132.0,
+      "returnValue": 2801.0,
+      "simpleReturnPercent": 19.55,
+      "date": "2021-06-24",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17184.0,
+      "returnValue": 2853.0,
+      "simpleReturnPercent": 19.91,
+      "date": "2021-06-25",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17184.0,
+      "returnValue": 2853.0,
+      "simpleReturnPercent": 19.91,
+      "date": "2021-06-26",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17184.0,
+      "returnValue": 2853.0,
+      "simpleReturnPercent": 19.91,
+      "date": "2021-06-27",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17164.0,
+      "returnValue": 2833.0,
+      "simpleReturnPercent": 19.77,
+      "date": "2021-06-28",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17258.0,
+      "returnValue": 2927.0,
+      "simpleReturnPercent": 20.42,
+      "date": "2021-06-29",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17205.0,
+      "returnValue": 2874.0,
+      "simpleReturnPercent": 20.05,
+      "date": "2021-06-30",
+      "totalContribution": 14331.0
+    },
+    {
+      "overallValue": 17886.0,
+      "returnValue": 2972.0,
+      "simpleReturnPercent": 19.93,
+      "date": "2021-07-01",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17919.0,
+      "returnValue": 3005.0,
+      "simpleReturnPercent": 20.15,
+      "date": "2021-07-02",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17919.0,
+      "returnValue": 3005.0,
+      "simpleReturnPercent": 20.15,
+      "date": "2021-07-03",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17919.0,
+      "returnValue": 3005.0,
+      "simpleReturnPercent": 20.15,
+      "date": "2021-07-04",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17930.0,
+      "returnValue": 3016.0,
+      "simpleReturnPercent": 20.22,
+      "date": "2021-07-05",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17855.0,
+      "returnValue": 2941.0,
+      "simpleReturnPercent": 19.72,
+      "date": "2021-07-06",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17972.0,
+      "returnValue": 3058.0,
+      "simpleReturnPercent": 20.5,
+      "date": "2021-07-07",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17762.0,
+      "returnValue": 2848.0,
+      "simpleReturnPercent": 19.1,
+      "date": "2021-07-08",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17912.0,
+      "returnValue": 2998.0,
+      "simpleReturnPercent": 20.1,
+      "date": "2021-07-09",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17912.0,
+      "returnValue": 2998.0,
+      "simpleReturnPercent": 20.1,
+      "date": "2021-07-10",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17912.0,
+      "returnValue": 2998.0,
+      "simpleReturnPercent": 20.1,
+      "date": "2021-07-11",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17927.0,
+      "returnValue": 3013.0,
+      "simpleReturnPercent": 20.2,
+      "date": "2021-07-12",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 18000.0,
+      "returnValue": 3086.0,
+      "simpleReturnPercent": 20.69,
+      "date": "2021-07-13",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17935.0,
+      "returnValue": 3021.0,
+      "simpleReturnPercent": 20.26,
+      "date": "2021-07-14",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17842.0,
+      "returnValue": 2928.0,
+      "simpleReturnPercent": 19.63,
+      "date": "2021-07-15",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17850.0,
+      "returnValue": 2936.0,
+      "simpleReturnPercent": 19.69,
+      "date": "2021-07-16",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17850.0,
+      "returnValue": 2936.0,
+      "simpleReturnPercent": 19.69,
+      "date": "2021-07-17",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17850.0,
+      "returnValue": 2936.0,
+      "simpleReturnPercent": 19.69,
+      "date": "2021-07-18",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17589.0,
+      "returnValue": 2675.0,
+      "simpleReturnPercent": 17.94,
+      "date": "2021-07-19",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17820.0,
+      "returnValue": 2906.0,
+      "simpleReturnPercent": 19.49,
+      "date": "2021-07-20",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17919.0,
+      "returnValue": 3005.0,
+      "simpleReturnPercent": 20.15,
+      "date": "2021-07-21",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17884.0,
+      "returnValue": 2970.0,
+      "simpleReturnPercent": 19.91,
+      "date": "2021-07-22",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 18012.0,
+      "returnValue": 3098.0,
+      "simpleReturnPercent": 20.77,
+      "date": "2021-07-23",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 18012.0,
+      "returnValue": 3098.0,
+      "simpleReturnPercent": 20.77,
+      "date": "2021-07-24",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 18012.0,
+      "returnValue": 3098.0,
+      "simpleReturnPercent": 20.77,
+      "date": "2021-07-25",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17934.0,
+      "returnValue": 3020.0,
+      "simpleReturnPercent": 20.25,
+      "date": "2021-07-26",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17739.0,
+      "returnValue": 2825.0,
+      "simpleReturnPercent": 18.94,
+      "date": "2021-07-27",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 17836.0,
+      "returnValue": 2922.0,
+      "simpleReturnPercent": 19.59,
+      "date": "2021-07-28",
+      "totalContribution": 14914.0
+    },
+    {
+      "overallValue": 18460.0,
+      "returnValue": 2962.0,
+      "simpleReturnPercent": 19.11,
+      "date": "2021-07-29",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18414.0,
+      "returnValue": 2916.0,
+      "simpleReturnPercent": 18.82,
+      "date": "2021-07-30",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18414.0,
+      "returnValue": 2916.0,
+      "simpleReturnPercent": 18.82,
+      "date": "2021-07-31",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18414.0,
+      "returnValue": 2916.0,
+      "simpleReturnPercent": 18.82,
+      "date": "2021-08-01",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18532.0,
+      "returnValue": 3034.0,
+      "simpleReturnPercent": 19.58,
+      "date": "2021-08-02",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18482.0,
+      "returnValue": 2984.0,
+      "simpleReturnPercent": 19.25,
+      "date": "2021-08-03",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18548.0,
+      "returnValue": 3050.0,
+      "simpleReturnPercent": 19.68,
+      "date": "2021-08-04",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18578.0,
+      "returnValue": 3080.0,
+      "simpleReturnPercent": 19.87,
+      "date": "2021-08-05",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18595.0,
+      "returnValue": 3097.0,
+      "simpleReturnPercent": 19.98,
+      "date": "2021-08-06",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18595.0,
+      "returnValue": 3097.0,
+      "simpleReturnPercent": 19.98,
+      "date": "2021-08-07",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18595.0,
+      "returnValue": 3097.0,
+      "simpleReturnPercent": 19.98,
+      "date": "2021-08-08",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18615.0,
+      "returnValue": 3117.0,
+      "simpleReturnPercent": 20.11,
+      "date": "2021-08-09",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18634.0,
+      "returnValue": 3136.0,
+      "simpleReturnPercent": 20.23,
+      "date": "2021-08-10",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18705.0,
+      "returnValue": 3207.0,
+      "simpleReturnPercent": 20.69,
+      "date": "2021-08-11",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18748.0,
+      "returnValue": 3250.0,
+      "simpleReturnPercent": 20.97,
+      "date": "2021-08-12",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18813.0,
+      "returnValue": 3315.0,
+      "simpleReturnPercent": 21.39,
+      "date": "2021-08-13",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18813.0,
+      "returnValue": 3315.0,
+      "simpleReturnPercent": 21.39,
+      "date": "2021-08-14",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18813.0,
+      "returnValue": 3315.0,
+      "simpleReturnPercent": 21.39,
+      "date": "2021-08-15",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18708.0,
+      "returnValue": 3210.0,
+      "simpleReturnPercent": 20.71,
+      "date": "2021-08-16",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18670.0,
+      "returnValue": 3172.0,
+      "simpleReturnPercent": 20.47,
+      "date": "2021-08-17",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18731.0,
+      "returnValue": 3233.0,
+      "simpleReturnPercent": 20.86,
+      "date": "2021-08-18",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18626.0,
+      "returnValue": 3128.0,
+      "simpleReturnPercent": 20.18,
+      "date": "2021-08-19",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18777.0,
+      "returnValue": 3279.0,
+      "simpleReturnPercent": 21.16,
+      "date": "2021-08-20",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18777.0,
+      "returnValue": 3279.0,
+      "simpleReturnPercent": 21.16,
+      "date": "2021-08-21",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18777.0,
+      "returnValue": 3279.0,
+      "simpleReturnPercent": 21.16,
+      "date": "2021-08-22",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18881.0,
+      "returnValue": 3383.0,
+      "simpleReturnPercent": 21.83,
+      "date": "2021-08-23",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18904.0,
+      "returnValue": 3406.0,
+      "simpleReturnPercent": 21.98,
+      "date": "2021-08-24",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18966.0,
+      "returnValue": 3468.0,
+      "simpleReturnPercent": 22.38,
+      "date": "2021-08-25",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18901.0,
+      "returnValue": 3403.0,
+      "simpleReturnPercent": 21.96,
+      "date": "2021-08-26",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18976.0,
+      "returnValue": 3478.0,
+      "simpleReturnPercent": 22.44,
+      "date": "2021-08-27",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18976.0,
+      "returnValue": 3478.0,
+      "simpleReturnPercent": 22.44,
+      "date": "2021-08-28",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18976.0,
+      "returnValue": 3478.0,
+      "simpleReturnPercent": 22.44,
+      "date": "2021-08-29",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 18976.0,
+      "returnValue": 3478.0,
+      "simpleReturnPercent": 22.44,
+      "date": "2021-08-30",
+      "totalContribution": 15498.0
+    },
+    {
+      "overallValue": 19630.0,
+      "returnValue": 3549.0,
+      "simpleReturnPercent": 22.07,
+      "date": "2021-08-31",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19663.0,
+      "returnValue": 3582.0,
+      "simpleReturnPercent": 22.27,
+      "date": "2021-09-01",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19684.0,
+      "returnValue": 3603.0,
+      "simpleReturnPercent": 22.41,
+      "date": "2021-09-02",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19665.0,
+      "returnValue": 3584.0,
+      "simpleReturnPercent": 22.29,
+      "date": "2021-09-03",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19665.0,
+      "returnValue": 3584.0,
+      "simpleReturnPercent": 22.29,
+      "date": "2021-09-04",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19665.0,
+      "returnValue": 3584.0,
+      "simpleReturnPercent": 22.29,
+      "date": "2021-09-05",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19838.0,
+      "returnValue": 3757.0,
+      "simpleReturnPercent": 23.36,
+      "date": "2021-09-06",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19716.0,
+      "returnValue": 3635.0,
+      "simpleReturnPercent": 22.6,
+      "date": "2021-09-07",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19636.0,
+      "returnValue": 3555.0,
+      "simpleReturnPercent": 22.11,
+      "date": "2021-09-08",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19575.0,
+      "returnValue": 3494.0,
+      "simpleReturnPercent": 21.73,
+      "date": "2021-09-09",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19499.0,
+      "returnValue": 3418.0,
+      "simpleReturnPercent": 21.25,
+      "date": "2021-09-10",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19499.0,
+      "returnValue": 3418.0,
+      "simpleReturnPercent": 21.25,
+      "date": "2021-09-11",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19499.0,
+      "returnValue": 3418.0,
+      "simpleReturnPercent": 21.25,
+      "date": "2021-09-12",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19495.0,
+      "returnValue": 3414.0,
+      "simpleReturnPercent": 21.23,
+      "date": "2021-09-13",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19488.0,
+      "returnValue": 3407.0,
+      "simpleReturnPercent": 21.19,
+      "date": "2021-09-14",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19447.0,
+      "returnValue": 3366.0,
+      "simpleReturnPercent": 20.93,
+      "date": "2021-09-15",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19471.0,
+      "returnValue": 3390.0,
+      "simpleReturnPercent": 21.08,
+      "date": "2021-09-16",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19422.0,
+      "returnValue": 3341.0,
+      "simpleReturnPercent": 20.78,
+      "date": "2021-09-17",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19422.0,
+      "returnValue": 3341.0,
+      "simpleReturnPercent": 20.78,
+      "date": "2021-09-18",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19422.0,
+      "returnValue": 3341.0,
+      "simpleReturnPercent": 20.78,
+      "date": "2021-09-19",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19167.0,
+      "returnValue": 3086.0,
+      "simpleReturnPercent": 19.19,
+      "date": "2021-09-20",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19264.0,
+      "returnValue": 3183.0,
+      "simpleReturnPercent": 19.79,
+      "date": "2021-09-21",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19429.0,
+      "returnValue": 3348.0,
+      "simpleReturnPercent": 20.82,
+      "date": "2021-09-22",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19490.0,
+      "returnValue": 3409.0,
+      "simpleReturnPercent": 21.2,
+      "date": "2021-09-23",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19431.0,
+      "returnValue": 3350.0,
+      "simpleReturnPercent": 20.83,
+      "date": "2021-09-24",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19431.0,
+      "returnValue": 3350.0,
+      "simpleReturnPercent": 20.83,
+      "date": "2021-09-25",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19431.0,
+      "returnValue": 3350.0,
+      "simpleReturnPercent": 20.83,
+      "date": "2021-09-26",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19391.0,
+      "returnValue": 3310.0,
+      "simpleReturnPercent": 20.58,
+      "date": "2021-09-27",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19165.0,
+      "returnValue": 3084.0,
+      "simpleReturnPercent": 19.18,
+      "date": "2021-09-28",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19301.0,
+      "returnValue": 3220.0,
+      "simpleReturnPercent": 20.02,
+      "date": "2021-09-29",
+      "totalContribution": 16081.0
+    },
+    {
+      "overallValue": 19813.0,
+      "returnValue": 3149.0,
+      "simpleReturnPercent": 18.9,
+      "date": "2021-09-30",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19547.0,
+      "returnValue": 2883.0,
+      "simpleReturnPercent": 17.3,
+      "date": "2021-10-01",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19547.0,
+      "returnValue": 2883.0,
+      "simpleReturnPercent": 17.3,
+      "date": "2021-10-02",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19547.0,
+      "returnValue": 2883.0,
+      "simpleReturnPercent": 17.3,
+      "date": "2021-10-03",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19347.0,
+      "returnValue": 2683.0,
+      "simpleReturnPercent": 16.1,
+      "date": "2021-10-04",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19569.0,
+      "returnValue": 2905.0,
+      "simpleReturnPercent": 17.43,
+      "date": "2021-10-05",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19359.0,
+      "returnValue": 2695.0,
+      "simpleReturnPercent": 16.17,
+      "date": "2021-10-06",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19738.0,
+      "returnValue": 3074.0,
+      "simpleReturnPercent": 18.45,
+      "date": "2021-10-07",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19667.0,
+      "returnValue": 3003.0,
+      "simpleReturnPercent": 18.02,
+      "date": "2021-10-08",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19667.0,
+      "returnValue": 3003.0,
+      "simpleReturnPercent": 18.02,
+      "date": "2021-10-09",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19667.0,
+      "returnValue": 3003.0,
+      "simpleReturnPercent": 18.02,
+      "date": "2021-10-10",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19716.0,
+      "returnValue": 3052.0,
+      "simpleReturnPercent": 18.31,
+      "date": "2021-10-11",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19639.0,
+      "returnValue": 2975.0,
+      "simpleReturnPercent": 17.85,
+      "date": "2021-10-12",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19648.0,
+      "returnValue": 2984.0,
+      "simpleReturnPercent": 17.91,
+      "date": "2021-10-13",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19904.0,
+      "returnValue": 3240.0,
+      "simpleReturnPercent": 19.44,
+      "date": "2021-10-14",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19997.0,
+      "returnValue": 3333.0,
+      "simpleReturnPercent": 20.0,
+      "date": "2021-10-15",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19997.0,
+      "returnValue": 3333.0,
+      "simpleReturnPercent": 20.0,
+      "date": "2021-10-16",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 19997.0,
+      "returnValue": 3333.0,
+      "simpleReturnPercent": 20.0,
+      "date": "2021-10-17",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20036.0,
+      "returnValue": 3372.0,
+      "simpleReturnPercent": 20.24,
+      "date": "2021-10-18",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20091.0,
+      "returnValue": 3427.0,
+      "simpleReturnPercent": 20.57,
+      "date": "2021-10-19",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20125.0,
+      "returnValue": 3461.0,
+      "simpleReturnPercent": 20.77,
+      "date": "2021-10-20",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20135.0,
+      "returnValue": 3471.0,
+      "simpleReturnPercent": 20.83,
+      "date": "2021-10-21",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20280.0,
+      "returnValue": 3616.0,
+      "simpleReturnPercent": 21.7,
+      "date": "2021-10-22",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20280.0,
+      "returnValue": 3616.0,
+      "simpleReturnPercent": 21.7,
+      "date": "2021-10-23",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20280.0,
+      "returnValue": 3616.0,
+      "simpleReturnPercent": 21.7,
+      "date": "2021-10-24",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20384.0,
+      "returnValue": 3720.0,
+      "simpleReturnPercent": 22.32,
+      "date": "2021-10-25",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20589.0,
+      "returnValue": 3925.0,
+      "simpleReturnPercent": 23.55,
+      "date": "2021-10-26",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20575.0,
+      "returnValue": 3911.0,
+      "simpleReturnPercent": 23.47,
+      "date": "2021-10-27",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20563.0,
+      "returnValue": 3899.0,
+      "simpleReturnPercent": 23.4,
+      "date": "2021-10-28",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20701.0,
+      "returnValue": 4037.0,
+      "simpleReturnPercent": 24.23,
+      "date": "2021-10-29",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20701.0,
+      "returnValue": 4037.0,
+      "simpleReturnPercent": 24.23,
+      "date": "2021-10-30",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20701.0,
+      "returnValue": 4037.0,
+      "simpleReturnPercent": 24.23,
+      "date": "2021-10-31",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20826.0,
+      "returnValue": 4162.0,
+      "simpleReturnPercent": 24.98,
+      "date": "2021-11-01",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20957.0,
+      "returnValue": 4293.0,
+      "simpleReturnPercent": 25.76,
+      "date": "2021-11-02",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20888.0,
+      "returnValue": 4224.0,
+      "simpleReturnPercent": 25.35,
+      "date": "2021-11-03",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21255.0,
+      "returnValue": 4591.0,
+      "simpleReturnPercent": 27.55,
+      "date": "2021-11-04",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21356.0,
+      "returnValue": 4692.0,
+      "simpleReturnPercent": 28.16,
+      "date": "2021-11-05",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21356.0,
+      "returnValue": 4692.0,
+      "simpleReturnPercent": 28.16,
+      "date": "2021-11-06",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21356.0,
+      "returnValue": 4692.0,
+      "simpleReturnPercent": 28.16,
+      "date": "2021-11-07",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21263.0,
+      "returnValue": 4599.0,
+      "simpleReturnPercent": 27.6,
+      "date": "2021-11-08",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21174.0,
+      "returnValue": 4510.0,
+      "simpleReturnPercent": 27.06,
+      "date": "2021-11-09",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21220.0,
+      "returnValue": 4556.0,
+      "simpleReturnPercent": 27.34,
+      "date": "2021-11-10",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21266.0,
+      "returnValue": 4602.0,
+      "simpleReturnPercent": 27.62,
+      "date": "2021-11-11",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21298.0,
+      "returnValue": 4634.0,
+      "simpleReturnPercent": 27.81,
+      "date": "2021-11-12",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21298.0,
+      "returnValue": 4634.0,
+      "simpleReturnPercent": 27.81,
+      "date": "2021-11-13",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21298.0,
+      "returnValue": 4634.0,
+      "simpleReturnPercent": 27.81,
+      "date": "2021-11-14",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21249.0,
+      "returnValue": 4585.0,
+      "simpleReturnPercent": 27.51,
+      "date": "2021-11-15",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21363.0,
+      "returnValue": 4699.0,
+      "simpleReturnPercent": 28.2,
+      "date": "2021-11-16",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21242.0,
+      "returnValue": 4578.0,
+      "simpleReturnPercent": 27.47,
+      "date": "2021-11-17",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21255.0,
+      "returnValue": 4591.0,
+      "simpleReturnPercent": 27.55,
+      "date": "2021-11-18",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21293.0,
+      "returnValue": 4629.0,
+      "simpleReturnPercent": 27.78,
+      "date": "2021-11-19",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21293.0,
+      "returnValue": 4629.0,
+      "simpleReturnPercent": 27.78,
+      "date": "2021-11-20",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21293.0,
+      "returnValue": 4629.0,
+      "simpleReturnPercent": 27.78,
+      "date": "2021-11-21",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21482.0,
+      "returnValue": 4818.0,
+      "simpleReturnPercent": 28.91,
+      "date": "2021-11-22",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21206.0,
+      "returnValue": 4542.0,
+      "simpleReturnPercent": 27.26,
+      "date": "2021-11-23",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21241.0,
+      "returnValue": 4577.0,
+      "simpleReturnPercent": 27.47,
+      "date": "2021-11-24",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21316.0,
+      "returnValue": 4652.0,
+      "simpleReturnPercent": 27.92,
+      "date": "2021-11-25",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20729.0,
+      "returnValue": 4065.0,
+      "simpleReturnPercent": 24.39,
+      "date": "2021-11-26",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20729.0,
+      "returnValue": 4065.0,
+      "simpleReturnPercent": 24.39,
+      "date": "2021-11-27",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20729.0,
+      "returnValue": 4065.0,
+      "simpleReturnPercent": 24.39,
+      "date": "2021-11-28",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20932.0,
+      "returnValue": 4268.0,
+      "simpleReturnPercent": 25.61,
+      "date": "2021-11-29",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20777.0,
+      "returnValue": 4113.0,
+      "simpleReturnPercent": 24.68,
+      "date": "2021-11-30",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21047.0,
+      "returnValue": 4383.0,
+      "simpleReturnPercent": 26.3,
+      "date": "2021-12-01",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20763.0,
+      "returnValue": 4099.0,
+      "simpleReturnPercent": 24.6,
+      "date": "2021-12-02",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20691.0,
+      "returnValue": 4027.0,
+      "simpleReturnPercent": 24.17,
+      "date": "2021-12-03",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20691.0,
+      "returnValue": 4027.0,
+      "simpleReturnPercent": 24.17,
+      "date": "2021-12-04",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20691.0,
+      "returnValue": 4027.0,
+      "simpleReturnPercent": 24.17,
+      "date": "2021-12-05",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20815.0,
+      "returnValue": 4151.0,
+      "simpleReturnPercent": 24.91,
+      "date": "2021-12-06",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21282.0,
+      "returnValue": 4618.0,
+      "simpleReturnPercent": 27.71,
+      "date": "2021-12-07",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21281.0,
+      "returnValue": 4617.0,
+      "simpleReturnPercent": 27.71,
+      "date": "2021-12-08",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21287.0,
+      "returnValue": 4623.0,
+      "simpleReturnPercent": 27.74,
+      "date": "2021-12-09",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21184.0,
+      "returnValue": 4520.0,
+      "simpleReturnPercent": 27.12,
+      "date": "2021-12-10",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21184.0,
+      "returnValue": 4520.0,
+      "simpleReturnPercent": 27.12,
+      "date": "2021-12-11",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21184.0,
+      "returnValue": 4520.0,
+      "simpleReturnPercent": 27.12,
+      "date": "2021-12-12",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21057.0,
+      "returnValue": 4393.0,
+      "simpleReturnPercent": 26.36,
+      "date": "2021-12-13",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20845.0,
+      "returnValue": 4181.0,
+      "simpleReturnPercent": 25.09,
+      "date": "2021-12-14",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20863.0,
+      "returnValue": 4199.0,
+      "simpleReturnPercent": 25.2,
+      "date": "2021-12-15",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 21091.0,
+      "returnValue": 4427.0,
+      "simpleReturnPercent": 26.57,
+      "date": "2021-12-16",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20960.0,
+      "returnValue": 4296.0,
+      "simpleReturnPercent": 25.78,
+      "date": "2021-12-17",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20960.0,
+      "returnValue": 4296.0,
+      "simpleReturnPercent": 25.78,
+      "date": "2021-12-18",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20960.0,
+      "returnValue": 4296.0,
+      "simpleReturnPercent": 25.78,
+      "date": "2021-12-19",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20561.0,
+      "returnValue": 3897.0,
+      "simpleReturnPercent": 23.39,
+      "date": "2021-12-20",
+      "totalContribution": 16664.0
+    },
+    {
+      "overallValue": 20785.0,
+      "returnValue": 4121.0,
+      "simpleReturnPercent": 24.73,
+      "date": "2021-12-21",
+      "totalContribution": 16664.0
+    }
+  ]
+}
