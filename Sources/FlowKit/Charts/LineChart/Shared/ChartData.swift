@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ChartData: Identifiable {
-    let id: String
-    var xPoints: [Double]
-    var yPoints: [Double]
-    var lineColors: [Color] = []
-    var isCurved = false
-    var fillColors: [Color]?
+public struct ChartData: Identifiable {
+    public let id: String
+    public var xPoints: [Double]
+    public var yPoints: [Double]
+    public var lineColors: [Color] = []
+    public var isCurved = false
+    public var fillColors: [Color]?
 
     var minX: Double {
         xPoints.min() ?? 0

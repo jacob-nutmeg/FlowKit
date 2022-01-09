@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct HighlightedData {
+public struct HighlightedData {
     let rawValue: CGPoint
     let date: String
     let contributions: String
@@ -16,7 +16,17 @@ struct HighlightedData {
     let position: CGPoint
 }
 
-class ScrollableLineChartModel: ObservableObject {
+public class ScrollableLineChartModel: ObservableObject {
+
+    public init(data: [ChartData], isDynamicAxis: Bool, dataPaddingProportion: CGFloat,
+                screenPortionPublisher: CurrentValueSubject<Double, Never> = CurrentValueSubject<Double, Never>(0),
+                touchLocation: CurrentValueSubject<CGPoint, Never> = CurrentValueSubject<CGPoint, Never>(.zero)) {
+        self.data = data
+        self.isDynamicAxis = isDynamicAxis
+        self.dataPaddingProportion = dataPaddingProportion
+        self.screenPortionPublisher = screenPortionPublisher
+        self.touchLocation = touchLocation
+    }
 
     private struct MinMaxData: Equatable {
         let minY: Double
@@ -27,23 +37,22 @@ class ScrollableLineChartModel: ObservableObject {
 
     typealias ScrollData = (position: CGPoint, frame: CGRect)
 
-    let data: [ChartData]
-    let isDynamicAxis: Bool
-    let dataPaddingProportion: CGFloat
+    public let data: [ChartData]
+    public let isDynamicAxis: Bool
+    public let dataPaddingProportion: CGFloat
 
-    var screenPortionPublisher = CurrentValueSubject<Double, Never>(0)
+    public var screenPortionPublisher = CurrentValueSubject<Double, Never>(0)
 
-    var touchLocation = CurrentValueSubject<CGPoint, Never>(.zero)
+    public var touchLocation = CurrentValueSubject<CGPoint, Never>(.zero)
 
-    @Published var scrollWidth: CGFloat = 0
+    @Published public var scrollWidth: CGFloat = 0
 
-    @Published var minX: Double = 0
-    @Published var maxX: Double = 0
+    @Published public var minX: Double = 0
+    @Published public var maxX: Double = 0
+    @Published public var minY: Double = 0
+    @Published public var maxY: Double = 0
 
-    @Published var minY: Double = 0
-    @Published var maxY: Double = 0
-
-    @Published var highlighted: HighlightedData? = nil
+    @Published public var highlighted: HighlightedData? = nil
 
     private var currentFrame: CGRect = .zero
     private var currentWidth: CGFloat = 0
@@ -53,7 +62,7 @@ class ScrollableLineChartModel: ObservableObject {
 
     private var scrollDataPublisher = PassthroughSubject<ScrollData, Never>()
 
-    init(data: [ChartData], screenPortion: Double,
+    public init(data: [ChartData], screenPortion: Double,
          dynamicAxis: Bool = true, dataPaddingProportion: CGFloat = 0.01) {
         self.data = data
         self.screenPortionPublisher.value = screenPortion

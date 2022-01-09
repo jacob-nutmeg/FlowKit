@@ -18,8 +18,8 @@ let package = Package(
         .target(
             name: "FlowKit",
             resources: [
-                .process("Preview/potValue.json"),
-                .process("Preview/getProjectedPerformance.json")
+                .copy("Preview/potValue.json"),
+                .copy("Preview/getProjectedPerformance.json")
             ]),
         .testTarget(
             name: "FlowKitTests",

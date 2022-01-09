@@ -8,61 +8,61 @@
 import SwiftUI
 import UIKit
 
-enum AxisType {
+public enum AxisType {
     case horizontal(isLeading: Bool)
     case vertical(isLeading: Bool)
 }
 
-enum AxisFormatType {
+public enum AxisFormatType {
     case value
     case date(formatter: DateFormatter)
     case number(formatter: NumberFormatter)
     case text(specifier: String)
 }
 
-struct AxisLineStyle {
-    enum LineLength {
+public struct AxisLineStyle {
+    public enum LineLength {
         case full
         case constant(CGFloat)
         case proportion(CGFloat)
     }
 
-    enum LineStyle {
+    public enum LineStyle {
         case dashed([CGFloat])
         case solid
     }
 
-    var style: LineStyle
-    var length: LineLength
-    var color: Color = .gray.opacity(0.2)
-    var width: CGFloat = 1
+    public var style: LineStyle
+    public var length: LineLength
+    public var color: Color = .gray.opacity(0.2)
+    public var width: CGFloat = 1
 }
 
-struct AxisOverlay: View {
+public struct AxisOverlay: View {
 
-    let axisType: AxisType
-    let distribution: Int
-    let frame: CGRect
-    var insets: EdgeInsets
+    public let axisType: AxisType
+    public let distribution: Int
+    public let frame: CGRect
+    public var insets: EdgeInsets
 
-    @Binding var minValue: Double
-    @Binding var maxValue: Double
+    @Binding public var minValue: Double
+    @Binding public var maxValue: Double
 
-    var axisPadding: CGFloat = 0.15
-    var axisSize: CGFloat
-    var axisAlignment: Alignment = .center
-    var axisFormatType: AxisFormatType = .value
-    var axisTextColor: Color = .gray
-    var axisTextFont: Font = .footnote
+    public var axisPadding: CGFloat = 0.15
+    public var axisSize: CGFloat
+    public var axisAlignment: Alignment = .center
+    public var axisFormatType: AxisFormatType = .value
+    public var axisTextColor: Color = .gray
+    public var axisTextFont: Font = .footnote
 
-    var showValues = true
-    var showValueLines = true
-    var showAxisLines = true
+    public var showValues = true
+    public var showValueLines = true
+    public var showAxisLines = true
 
-    var valueLineStyle: AxisLineStyle = AxisLineStyle(style: .solid, length: .constant(12), color: .gray.opacity(0.2))
-    var axisLineStyle: AxisLineStyle = AxisLineStyle(style: .dashed([4]), length: .full, color: .gray.opacity(0.8))
+    public var valueLineStyle: AxisLineStyle = AxisLineStyle(style: .solid, length: .constant(12), color: .gray.opacity(0.2))
+    public var axisLineStyle: AxisLineStyle = AxisLineStyle(style: .dashed([4]), length: .full, color: .gray.opacity(0.8))
 
-    var axisBackground: AnyView = AnyView(Rectangle().fill(.white))
+    public var axisBackground: AnyView = AnyView(Rectangle().fill(.white))
 
     private var isHorizontal: Bool {
         switch axisType {
@@ -112,7 +112,7 @@ struct AxisOverlay: View {
         return points
     }
 
-    var body: some View {
+    public var body: some View {
         ZStack(alignment: .topLeading) {
             axisBackgroundView()
             axisLine()

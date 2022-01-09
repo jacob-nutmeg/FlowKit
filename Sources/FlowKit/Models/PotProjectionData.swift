@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PotProjectionData: Decodable {
+public struct PotProjectionData: Decodable {
 
     struct CubicData {
         var dates: [Date]
@@ -36,7 +36,7 @@ struct PotProjectionData: Decodable {
         case dates, contributions, performance
     }
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         dates = try container.decode([Date].self, forKey: .dates)
         contributions = try container.decode([Double].self, forKey: .contributions)

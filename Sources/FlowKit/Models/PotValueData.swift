@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PotValueData: Decodable {
+public struct PotValueData: Decodable {
 
     static var dateFormatter: DateFormatter {
         let formatter = DateFormatter()

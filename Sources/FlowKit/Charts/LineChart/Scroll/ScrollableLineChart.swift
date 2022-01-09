@@ -7,29 +7,49 @@
 
 import SwiftUI
 
-struct ScrollableLineChart: View {
-    @ObservedObject var viewModel: ScrollableLineChartModel
+public struct ScrollableLineChart: View {
 
-    var legendLeading = false
+    public init(viewModel: ScrollableLineChartModel,
+                legendLeading: Bool = false, showVAxis: Bool = true, showVValues: Bool = true,
+                showHAxis: Bool = true, showHValues: Bool = true,
+                chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 60),
+                verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 60),
+                horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 0),
+                dynamicAxisAnimation: Animation = .interactiveSpring(response: 0.8, dampingFraction: 0.95, blendDuration: 1)) {
+        self.viewModel = viewModel
+        self.legendLeading = legendLeading
+        self.showVAxis = showVAxis
+        self.showVValues = showVValues
+        self.showHAxis = showHAxis
+        self.showHValues = showHValues
+        self.chartInset = chartInset
+        self.verticalInsets = verticalInsets
+        self.horizontalInsets = horizontalInsets
+        self.dynamicAxisAnimation = dynamicAxisAnimation
+    }
 
-    var showVAxis = true
-    var showVValues = true
+    @ObservedObject public var viewModel: ScrollableLineChartModel
 
-    var showHAxis = true
-    var showHValues = true
+    public var legendLeading = false
 
-    var chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                            bottom: 60, trailing: 60)
+    public var showVAxis = true
+    public var showVValues = true
 
-    var verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                bottom: 0, trailing: 60)
+    public var showHAxis = true
+    public var showHValues = true
 
-    var horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                  bottom: 60, trailing: 0)
+    public var chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+                                                   bottom: 60, trailing: 60)
 
-    var dynamicAxisAnimation: Animation = .interactiveSpring(response: 0.8, dampingFraction: 0.95, blendDuration: 1)
+    public var verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+                                                       bottom: 0, trailing: 60)
 
-    var body: some View {
+    public var horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+                                                         bottom: 60, trailing: 0)
+
+    public var dynamicAxisAnimation: Animation = .interactiveSpring(response: 0.8, dampingFraction: 0.95, blendDuration: 1)
+
+    public var body: some View {
         GeometryReader { info in
             ZStack {
                 ScrollViewReader { reader in
@@ -94,15 +114,6 @@ struct ScrollableLineChart: View {
         }
     }
 
-    private func offset(for highlight: Double) -> CGSize {
-        return .zero
-//        CGSize(width: highlight.chartXPosition(minX: minX, maxX: maxX, frame: frame) - frame.width/2,
-//               height: yPoint(of: highlight).chartYPosition(yRange: yRange, frame: frame, offset: minY) - frame.size.height/2)
-    }
-
-    private func yPoint(of highlight: Double) -> Double {
-        return 0 //highlights.first(where: { $0.x == highlight })?.y ?? 0
-    }
 }
 
 extension HighlightedData {

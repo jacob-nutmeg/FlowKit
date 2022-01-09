@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct FanChartData: Identifiable {
-    let id: String
-    let xValues: [Double]
-    let firstYValues: [Double]
-    let secondYValues: [Double]
-    let colors: [Color]
+public struct FanChartData: Identifiable {
+    public let id: String
+    public let xValues: [Double]
+    public let firstYValues: [Double]
+    public let secondYValues: [Double]
+    public let colors: [Color]
 
     var minX: Double {
         xValues.min() ?? 0

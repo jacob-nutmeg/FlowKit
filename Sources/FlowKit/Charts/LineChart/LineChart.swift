@@ -7,30 +7,30 @@
 
 import SwiftUI
 
-struct LineChart: View {
+public struct LineChart: View {
 
-    let data: [ChartData]
+    public let data: [ChartData]
 
-    var animation: Animation = .default
-    
-    var legendLeading = false
+    public var animation: Animation = .default
 
-    var showVAxis = true
-    var showVValues = true
+    public var legendLeading = false
 
-    var showHAxis = true
-    var showHValues = true
+    public var showVAxis = true
+    public var showVValues = true
 
-    var chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+    public var showHAxis = true
+    public var showHValues = true
+
+    public var chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
                                             bottom: 60, trailing: 60)
 
-    var verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+    public var verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
                                                 bottom: 0, trailing: 60)
 
-    var horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+    public var horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
                                                   bottom: 60, trailing: 0)
 
-    @State var touchLocation: CGPoint = .zero
+    @State public var touchLocation: CGPoint = .zero
 
     private var maxY: Double {
         data.maxYPoint()
@@ -48,7 +48,7 @@ struct LineChart: View {
         data.minXPoint()
     }
 
-    var body: some View {
+    public var body: some View {
         GeometryReader { info in
             ZStack {
                 Lines(data: data,
