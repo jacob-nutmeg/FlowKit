@@ -17,13 +17,13 @@ struct MagnifierModel {
     var textItems: [Item]
 }
 
-struct MagnifierView: View {
+public struct MagnifierView: View {
 
-    let model: MagnifierModel
-    var maxWidth: CGFloat = 100
+    public let model: MagnifierModel
+    public var maxWidth: CGFloat = 100
     @State private var inset: CGFloat = 0
 
-    var body: some View {
+    public var body: some View {
         ZStack(alignment: .top) {
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(Color.white)
@@ -47,7 +47,7 @@ struct MagnifierView: View {
             GeometryReader { geo in
                 Color.clear
                     .onAppear {
-                        inset = 0 // geo.frame(in: .global).width/2
+                        inset = 0
                     }
             })
     }
