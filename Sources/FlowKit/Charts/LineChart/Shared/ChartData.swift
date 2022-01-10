@@ -8,6 +8,18 @@
 import SwiftUI
 
 public struct ChartData: Identifiable {
+
+    public init(id: String, xPoints: [Double], yPoints: [Double],
+                lineColors: [Color] = [], isCurved: Bool = false,
+                fillColors: [Color]? = nil) {
+        self.id = id
+        self.xPoints = xPoints
+        self.yPoints = yPoints
+        self.lineColors = lineColors
+        self.isCurved = isCurved
+        self.fillColors = fillColors
+    }
+
     public let id: String
     public var xPoints: [Double]
     public var yPoints: [Double]

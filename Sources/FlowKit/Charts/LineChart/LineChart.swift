@@ -8,6 +8,23 @@
 import SwiftUI
 
 public struct LineChart: View {
+    public init(data: [ChartData], animation: Animation = .default, legendLeading: Bool = false,
+                showVAxis: Bool = true, showVValues: Bool = true, showHAxis: Bool = true, showHValues: Bool = true,
+                chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 60),
+                verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 60),
+                horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 0)) {
+        self.data = data
+        self.animation = animation
+        self.legendLeading = legendLeading
+        self.showVAxis = showVAxis
+        self.showVValues = showVValues
+        self.showHAxis = showHAxis
+        self.showHValues = showHValues
+        self.chartInset = chartInset
+        self.verticalInsets = verticalInsets
+        self.horizontalInsets = horizontalInsets
+    }
+
 
     public let data: [ChartData]
 

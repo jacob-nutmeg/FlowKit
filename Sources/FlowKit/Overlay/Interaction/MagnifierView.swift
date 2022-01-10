@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct MagnifierModel {
-    struct Item: Identifiable {
-        let id: String
-        let text: Text
-        var spacing: CGFloat = 0
+public struct MagnifierModel {
+    public struct Item: Identifiable {
+        public let id: String
+        public let text: Text
+        public var spacing: CGFloat = 0
     }
 
-    var textItems: [Item]
+    public var textItems: [Item]
 }
 
 public struct MagnifierView: View {
