@@ -53,6 +53,7 @@ struct Line: View {
                       minXPoint: minX, maxXPoint: maxX,
                       minYPoint: minYPoint, maxYPoint: maxYPoint)
                 .fill(fillGradient).hueRotation(.degrees(45))
+                .opacity(completion)
 
             LineShape(data: data, isClosed: false,
                       minXPoint: minX, maxXPoint: maxX,
