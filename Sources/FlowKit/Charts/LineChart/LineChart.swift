@@ -9,12 +9,15 @@ import SwiftUI
 
 public struct LineChart: View {
     public init(data: [ChartData], animation: Animation = .default, legendLeading: Bool = false,
+                vAxisSize: CGFloat = 60, hAxisSize: CGFloat = 30,
                 showVAxis: Bool = true, showVValues: Bool = true, showHAxis: Bool = true, showHValues: Bool = true,
                 chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 60),
                 verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 60),
                 horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 0)) {
         self.data = data
         self.animation = animation
+        self.vAxisSize = vAxisSize
+        self.hAxisSize = hAxisSize
         self.legendLeading = legendLeading
         self.showVAxis = showVAxis
         self.showVValues = showVValues
@@ -32,20 +35,22 @@ public struct LineChart: View {
 
     public var legendLeading = false
 
+    public var vAxisSize: CGFloat = 60
     public var showVAxis = true
     public var showVValues = true
 
+    public var hAxisSize: CGFloat = 30
     public var showHAxis = true
     public var showHValues = true
 
-    public var chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                            bottom: 60, trailing: 60)
+    public var chartInset: EdgeInsets = EdgeInsets(top: 0, leading: 0,
+                                            bottom: 30, trailing: 60)
 
-    public var verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+    public var verticalInsets: EdgeInsets = EdgeInsets(top: 0, leading: 0,
                                                 bottom: 0, trailing: 60)
 
-    public var horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                  bottom: 60, trailing: 0)
+    public var horizontalInsets: EdgeInsets = EdgeInsets(top: 0, leading: 0,
+                                                  bottom: 30, trailing: 0)
 
     @State public var touchLocation: CGPoint = .zero
 
@@ -82,7 +87,7 @@ public struct LineChart: View {
                                 insets: horizontalInsets,
                                 minValue: .constant(minY),
                                 maxValue: .constant(maxY),
-                                axisSize: 60,
+                                axisSize: hAxisSize,
                                 axisFormatType: .number(formatter: PreviewData.numberFormatter),
                                 showValues: showHValues)
                 }
@@ -94,7 +99,7 @@ public struct LineChart: View {
                                 insets: verticalInsets,
                                 minValue: .constant(minX),
                                 maxValue: .constant(maxX),
-                                axisSize: 60,
+                                axisSize: vAxisSize,
                                 axisFormatType: .date(formatter: PreviewData.dateFormatter),
                                 showValues: showVValues)
                 }
