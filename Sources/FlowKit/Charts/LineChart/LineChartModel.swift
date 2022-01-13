@@ -50,6 +50,7 @@ public class LineChartModel: ObservableObject {
             maxX = data.maxXPoint()
             minY = data.minYPoint()
             maxY = data.maxYPoint()
+            return
         case .from(let minXVal):
             var yValues = [Double]()
             var xValues = [Double]()
