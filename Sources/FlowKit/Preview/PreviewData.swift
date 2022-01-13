@@ -34,6 +34,18 @@ public class PreviewData {
         return formatter
     }
 
+    public static var threeMonthsAgo: Double {
+        let date = Date()
+        let monthAgo = Calendar.current.date(byAdding: .month, value: -3, to: date) ?? Date()
+        return monthAgo.timeIntervalSince1970
+    }
+
+    public static var sixMonthsAgo: Double {
+        let date = Date()
+        let monthAgo = Calendar.current.date(byAdding: .month, value: -6, to: date) ?? Date()
+        return monthAgo.timeIntervalSince1970
+    }
+
     public static var oneMonthInterval: Double {
         let date = Date()
         let monthAgo = Calendar.current.date(byAdding: .month, value: -1, to: date) ?? Date()

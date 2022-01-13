@@ -16,9 +16,9 @@ struct LineShape: Shape {
     var minYPoint: Double
     var maxYPoint: Double
 
-    var animatableData: AnimatablePair<Double, Double> {
-        get { AnimatablePair(minYPoint, maxYPoint) }
-        set { minYPoint = newValue.first; maxYPoint = newValue.second }
+    var animatableData: AnimatablePair<AnimatablePair<Double, Double>, AnimatablePair<Double, Double>> {
+        get { AnimatablePair(AnimatablePair(minXPoint, maxXPoint), AnimatablePair(minYPoint, maxYPoint)) }
+        set { minXPoint = newValue.first.first; maxXPoint = newValue.first.second; minYPoint = newValue.second.first; maxYPoint = newValue.second.second }
     }
 
     func path(in rect: CGRect) -> Path {

@@ -11,6 +11,9 @@ struct Lines: View {
     let data: [LineChartData]
 
     @Binding var tapLocation: CGPoint
+
+    @Binding var minXPoint: Double
+    @Binding var maxXPoint: Double
     @Binding var minYPoint: Double
     @Binding var maxYPoint: Double
 
@@ -24,8 +27,8 @@ struct Lines: View {
                 ForEach(data) {
                     Line(frame: info.frame(in: .local),
                          data: $0,
-                         minXPoint: data.minXPoint(),
-                         maxXPoint: data.maxXPoint(),
+                         minXPoint: $minXPoint,
+                         maxXPoint: $maxXPoint,
                          minYPoint: $minYPoint,
                          maxYPoint: $maxYPoint,
                          lineAnimation: lineAnimation,
@@ -45,6 +48,8 @@ struct Lines_Previews: PreviewProvider {
         Lines(data: [PreviewData.potValueData,
                      PreviewData.potContributionData],
               tapLocation: .constant(.zero),
+              minXPoint: .constant([PreviewData.potValueData].minXPoint()),
+              maxXPoint: .constant([PreviewData.potValueData].maxXPoint()),
               minYPoint: .constant([PreviewData.potValueData].minYPoint()),
               maxYPoint: .constant([PreviewData.potValueData].maxYPoint()))
     }

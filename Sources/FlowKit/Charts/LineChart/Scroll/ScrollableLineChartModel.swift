@@ -101,7 +101,7 @@ public class ScrollableLineChartModel: ObservableObject {
             .removeDuplicates()
             .receive(on: DispatchQueue.main)
             .sink { [unowned self] minMax in
-                withAnimation(.easeInOut(duration: 0.1)) {
+                withAnimation(.easeInOut(duration: 0.2)) {
                     highlighted = nil
                 }
                 minY = minMax.minY

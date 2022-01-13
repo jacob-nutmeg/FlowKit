@@ -13,22 +13,14 @@ struct Line: View {
     let data: LineChartData
     var lineWidth: CGFloat = 2
 
-    var minXPoint: Double?
-    var maxXPoint: Double?
+    @Binding var minXPoint: Double
+    @Binding var maxXPoint: Double
     @Binding var minYPoint: Double
     @Binding var maxYPoint: Double
 
     var lineAnimation: Animation = .default
     var highlightAnimation: Animation = .default
     var highlight: CGPoint? = nil
-
-    private var minX: Double {
-        minXPoint ?? data.xPoints.min() ?? 0
-    }
-
-    private var maxX: Double {
-        maxXPoint ?? data.xPoints.max() ?? 0
-    }
 
     private var lineGradient: LinearGradient {
         LinearGradient(colors: data.lineColors,
@@ -50,20 +42,20 @@ struct Line: View {
     var body: some View {
         ZStack {
             LineShape(data: data, isClosed: true,
-                      minXPoint: minX, maxXPoint: maxX,
+                      minXPoint: minXPoint, maxXPoint: maxXPoint,
                       minYPoint: minYPoint, maxYPoint: maxYPoint)
                 .fill(fillGradient).hueRotation(.degrees(45))
                 .opacity(completion)
 
             LineShape(data: data, isClosed: false,
-                      minXPoint: minX, maxXPoint: maxX,
+                      minXPoint: minXPoint, maxXPoint: maxXPoint,
                       minYPoint: minYPoint, maxYPoint: maxYPoint)
                 .trim(from: 0, to: completion)
                 .stroke(lineGradient, style: strokeStyle)
 
             if let highlight = highlight {
                 LinePointView()
-                    .position(x: Double(highlight.x).chartXPosition(minX: minX, maxX: maxX, frame: frame),
+                    .position(x: Double(highlight.x).chartXPosition(minX: minXPoint, maxX: maxXPoint, frame: frame),
                               y: Double(highlight.y).chartYPosition(yRange: (maxYPoint - minYPoint),
                                                                      frame: frame, offset: minYPoint))
             }
@@ -83,6 +75,8 @@ struct Line_Previews: PreviewProvider {
         GeometryReader { info in
             Line(frame: info.frame(in: .local),
                  data: PreviewData.lineData,
+                 minXPoint: .constant([PreviewData.potValueData].minXPoint()),
+                 maxXPoint: .constant([PreviewData.potValueData].maxXPoint()),
                  minYPoint: .constant([PreviewData.lineData].minYPoint()),
                  maxYPoint: .constant([PreviewData.lineData].maxYPoint()))
         }

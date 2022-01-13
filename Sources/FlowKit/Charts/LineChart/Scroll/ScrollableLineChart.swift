@@ -42,6 +42,8 @@ public struct ScrollableLineChart: View {
                     ScrollView(.horizontal, showsIndicators: false) {
                         Lines(data: viewModel.data,
                               tapLocation: $viewModel.touchLocation.value,
+                              minXPoint: .constant(viewModel.data.minXPoint()),
+                              maxXPoint: .constant(viewModel.data.maxXPoint()),
                               minYPoint: $viewModel.minY,
                               maxYPoint: $viewModel.maxY,
                               lineAnimation: dynamicAxisAnimation,

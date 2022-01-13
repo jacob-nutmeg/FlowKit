@@ -30,7 +30,6 @@ public struct MagnifierView: View {
                 .blendMode(.multiply)
 
             ZStack(alignment: .top) {
-                VisualEffectView(effect: UIBlurEffect(style: .regular))
                 VStack {
                     ForEach(model.textItems) {
                         $0.text
