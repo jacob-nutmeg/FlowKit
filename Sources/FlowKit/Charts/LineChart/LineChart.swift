@@ -8,40 +8,37 @@
 import SwiftUI
 
 public struct LineChart: View {
-    public init(data: [ChartData], animation: Animation = .default, legendLeading: Bool = false,
-                vAxisSize: CGFloat = 60, hAxisSize: CGFloat = 30,
-                showVAxis: Bool = true, showVValues: Bool = true, showHAxis: Bool = true, showHValues: Bool = true,
-                chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 60),
-                verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 60),
-                horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 0)) {
+    public init(data: [LineChartData],
+                hAxisModel: AxisModel = AxisModel(),
+                vAxisModel: AxisModel = AxisModel(),
+                animation: Animation = .easeIn(duration: 2), legendLeading: Bool = false,
+                showVAxis: Bool = true, showHAxis: Bool = true,
+                chartInset: EdgeInsets = EdgeInsets(top: 0, leading: 0, bottom: 60, trailing: 60),
+                verticalInsets: EdgeInsets = EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 60),
+                horizontalInsets: EdgeInsets = EdgeInsets(top: 0, leading: 0, bottom: 60, trailing: 0)) {
         self.data = data
         self.animation = animation
-        self.vAxisSize = vAxisSize
-        self.hAxisSize = hAxisSize
+        self.hAxisModel = hAxisModel
+        self.vAxisModel = vAxisModel
         self.legendLeading = legendLeading
         self.showVAxis = showVAxis
-        self.showVValues = showVValues
         self.showHAxis = showHAxis
-        self.showHValues = showHValues
         self.chartInset = chartInset
         self.verticalInsets = verticalInsets
         self.horizontalInsets = horizontalInsets
     }
 
 
-    public let data: [ChartData]
+    public let data: [LineChartData]
+    public let hAxisModel: AxisModel
+    public let vAxisModel: AxisModel
 
-    public var animation: Animation = .default
+    public var animation: Animation
 
     public var legendLeading = false
 
-    public var vAxisSize: CGFloat = 60
     public var showVAxis = true
-    public var showVValues = true
-
-    public var hAxisSize: CGFloat = 30
     public var showHAxis = true
-    public var showHValues = true
 
     public var chartInset: EdgeInsets = EdgeInsets(top: 0, leading: 0,
                                             bottom: 30, trailing: 60)
@@ -50,9 +47,11 @@ public struct LineChart: View {
                                                 bottom: 0, trailing: 60)
 
     public var horizontalInsets: EdgeInsets = EdgeInsets(top: 0, leading: 0,
-                                                  bottom: 30, trailing: 0)
+                                                  bottom: 0, trailing: 0)
 
     @State public var touchLocation: CGPoint = .zero
+
+    // MARK: - Helpers
 
     private var maxY: Double {
         data.maxYPoint()
@@ -80,35 +79,21 @@ public struct LineChart: View {
                       lineAnimation: animation)
                     .padding(chartInset)
 
-                if showHAxis {
-                    AxisOverlay(axisType: .horizontal(isLeading: legendLeading),
-                                distribution: 2,
-                                frame: info.frame(in: .local),
-                                insets: horizontalInsets,
-                                minValue: .constant(minY),
-                                maxValue: .constant(maxY),
-                                axisSize: hAxisSize,
-                                axisFormatType: .number(formatter: PreviewData.numberFormatter),
-                                showValues: showHValues)
-                }
-
-                if showVAxis {
-                    AxisOverlay(axisType: .vertical(isLeading: legendLeading),
-                                distribution: 2,
-                                frame: info.frame(in: .local),
-                                insets: verticalInsets,
-                                minValue: .constant(minX),
-                                maxValue: .constant(maxX),
-                                axisSize: vAxisSize,
-                                axisFormatType: .date(formatter: PreviewData.dateFormatter),
-                                showValues: showVValues)
-                }
+                AxisView(minX: minX, maxX: maxX,
+                         minY: minY, maxY: maxY,
+                         isLegendLeading: legendLeading,
+                         hAxisModel: hAxisModel,
+                         showHAxis: showHAxis,
+                         vAxisModel: vAxisModel,
+                         showVAxis: showVAxis)
             }
         }
     }
 }
 
 struct LineChart_Previews: PreviewProvider {
+
+    static var data = [PreviewData.potValueData]
 
     static var previews: some View {
         LineChart(data: [PreviewData.potValueData])

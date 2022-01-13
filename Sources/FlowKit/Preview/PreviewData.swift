@@ -11,21 +11,21 @@ struct StubDataLoadError: Error { }
 
 public class PreviewData {
 
-    static var dateFormatter: DateFormatter {
+    public static var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
         formatter.locale = Locale(identifier: "en_GB")
         return formatter
     }
 
-    static var dateYearFormatter: DateFormatter {
+    public static var dateYearFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy"
         formatter.locale = Locale(identifier: "en_GB")
         return formatter
     }
 
-    static var numberFormatter: NumberFormatter {
+    public static var numberFormatter: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currencyAccounting
         formatter.locale = Locale(identifier: "en_GB")
@@ -63,21 +63,21 @@ public class PreviewData {
 
     public static let lineDataHighlights = [CGPoint(x: 50, y: 25), CGPoint(x: 120, y: 33)]
 
-    public static let lineData = ChartData(id: "data",
+    public static let lineData = LineChartData(id: "data",
                                     xPoints: pointsX,
                                     yPoints: pointsY,
                                     lineColors: [.blue],
                                     isCurved: true,
                                     fillColors: [.blue.opacity(0.01), .blue.opacity(0.4)])
 
-    public static let lineData2 = ChartData(id: "data2",
+    public static let lineData2 = LineChartData(id: "data2",
                                      xPoints: pointsX2,
                                      yPoints: pointsY2,
                                      lineColors: [.green],
                                      isCurved: true,
                                      fillColors: [.blue.opacity(0.2)])
 
-    public static let lineDataUneven = ChartData(id: "data2",
+    public static let lineDataUneven = LineChartData(id: "data2",
                                           xPoints: pointsXUneven,
                                           yPoints: pointsY,
                                           lineColors: [.green],
@@ -98,8 +98,8 @@ public class PreviewData {
         return try! decoder.decode(PotProjectionData.self, from: data)
     }
 
-    public static var potValueData: ChartData = ChartData.createFromPotValue(potValue)
-    public static var potContributionData: ChartData = ChartData.contributionsData(from: potValue)
+    public static var potValueData: LineChartData = LineChartData.createFromPotValue(potValue)
+    public static var potContributionData: LineChartData = LineChartData.contributionsData(from: potValue)
 
     public static var likelyFanData = PotProjectionData.projectionLikelyFanData(from: potProjection)
     public static var unlikelyFanDataLow = PotProjectionData.projectionUnlikelyLowFanData(from: potProjection)

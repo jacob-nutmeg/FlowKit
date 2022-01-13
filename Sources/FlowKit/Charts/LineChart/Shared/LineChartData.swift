@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct ChartData: Identifiable {
+public struct LineChartData: Identifiable {
 
     public init(id: String, xPoints: [Double], yPoints: [Double],
                 lineColors: [Color] = [], isCurved: Bool = false,
@@ -44,7 +44,7 @@ public struct ChartData: Identifiable {
     }
 }
 
-extension Collection where Element == ChartData {
+extension Collection where Element == LineChartData {
 
     func combinedYPoints() -> [Double] {
         flatMap { $0.yPoints }

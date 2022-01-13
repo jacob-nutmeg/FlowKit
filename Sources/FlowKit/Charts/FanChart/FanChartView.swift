@@ -8,18 +8,38 @@
 import SwiftUI
 
 struct FanChartView: View {
+    internal init(data: [FanChartData],
+                  hAxisModel: AxisModel = AxisModel(),
+                  vAxisModel: AxisModel = AxisModel(),
+                  isLegendLeading: Bool = true,
+                  showVAxis: Bool = true,
+                  showHAxis: Bool = true,
+                  chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+                                                      bottom: 60, trailing: 60),
+                  verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+                                                          bottom: 0, trailing: 60),
+                  horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
+                                                            bottom: 60, trailing: 0)) {
+        self.data = data
+        self.hAxisModel = hAxisModel
+        self.vAxisModel = vAxisModel
+        self.isLegendLeading = isLegendLeading
+        self.showVAxis = showVAxis
+        self.showHAxis = showHAxis
+        self.chartInset = chartInset
+        self.verticalInsets = verticalInsets
+        self.horizontalInsets = horizontalInsets
+    }
+
 
     let data: [FanChartData]
+    let hAxisModel: AxisModel
+    let vAxisModel: AxisModel
 
-    var startFromZero = true
-
-    var legendLeading = false
+    var isLegendLeading = true
 
     var showVAxis = true
-    var showVValues = true
-
     var showHAxis = true
-    var showHValues = true
 
     var chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
                                             bottom: 60, trailing: 60)
@@ -68,37 +88,17 @@ struct FanChartView: View {
                              yMultiplier: yMultiplier)
                         .fill(LinearGradient(colors: data[index].colors,
                                              startPoint: .top, endPoint: .bottom))
-                        .rotationEffect(.degrees(180), anchor: .center)
-                        .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
                         .animation(.spring(response: 0.4, dampingFraction: 0.9, blendDuration: 1).delay(delay * Double(index)))
                 }
                 .padding(chartInset)
 
-                if showHAxis {
-                    AxisOverlay(axisType: .horizontal(isLeading: legendLeading),
-                                distribution: 2,
-                                frame: info.frame(in: .local),
-                                insets: horizontalInsets,
-                                minValue: .constant(minY),
-                                maxValue: .constant(maxY),
-                                axisSize: 60,
-                                axisFormatType: .number(formatter: PreviewData.numberFormatter),
-                                showValues: showHValues)
-                        .drawingGroup()
-                }
-
-                if showVAxis {
-                    AxisOverlay(axisType: .vertical(isLeading: legendLeading),
-                                distribution: 3,
-                                frame: info.frame(in: .local),
-                                insets: verticalInsets,
-                                minValue: .constant(minX),
-                                maxValue: .constant(maxX),
-                                axisSize: 60,
-                                axisFormatType: .date(formatter: PreviewData.dateYearFormatter),
-                                showValues: showVValues)
-                        .drawingGroup()
-                }
+                AxisView(minX: minX, maxX: maxX,
+                         minY: minY, maxY: maxY,
+                         isLegendLeading: isLegendLeading,
+                         hAxisModel: hAxisModel,
+                         showHAxis: showHAxis,
+                         vAxisModel: vAxisModel,
+                         showVAxis: showVAxis)
             }
         }
         .onAppear {
@@ -112,6 +112,10 @@ struct FanChartView: View {
 }
 
 struct FanChartView_Previews: PreviewProvider {
+    static var data = [PreviewData.likelyFanData,
+                       PreviewData.unlikelyFanDataLow,
+                       PreviewData.unlikelyFanDataHigh]
+
     static var previews: some View {
         FanChartView(data: [PreviewData.likelyFanData,
                             PreviewData.unlikelyFanDataLow,

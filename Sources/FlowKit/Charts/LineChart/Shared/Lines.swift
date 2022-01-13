@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Lines: View {
-    let data: [ChartData]
+    let data: [LineChartData]
 
     @Binding var tapLocation: CGPoint
     @Binding var minYPoint: Double
@@ -29,8 +29,8 @@ struct Lines: View {
                          minYPoint: $minYPoint,
                          maxYPoint: $maxYPoint,
                          lineAnimation: lineAnimation,
-                         highlight: highlight)
-                }.drawingGroup()
+                         highlight: highlight).drawingGroup()
+                }
                 Rectangle().fill(.clear)
                     .onTouch { location in
                         tapLocation = location

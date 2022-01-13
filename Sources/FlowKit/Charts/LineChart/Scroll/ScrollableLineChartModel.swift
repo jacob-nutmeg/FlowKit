@@ -18,7 +18,7 @@ public struct HighlightedData {
 
 public class ScrollableLineChartModel: ObservableObject {
 
-    public init(data: [ChartData], isDynamicAxis: Bool, dataPaddingProportion: CGFloat,
+    public init(data: [LineChartData], isDynamicAxis: Bool, dataPaddingProportion: CGFloat,
                 screenPortionPublisher: CurrentValueSubject<Double, Never> = CurrentValueSubject<Double, Never>(0),
                 touchLocation: CurrentValueSubject<CGPoint, Never> = CurrentValueSubject<CGPoint, Never>(.zero)) {
         self.data = data
@@ -37,7 +37,7 @@ public class ScrollableLineChartModel: ObservableObject {
 
     typealias ScrollData = (position: CGPoint, frame: CGRect)
 
-    public let data: [ChartData]
+    public let data: [LineChartData]
     public let isDynamicAxis: Bool
     public let dataPaddingProportion: CGFloat
 
@@ -46,7 +46,6 @@ public class ScrollableLineChartModel: ObservableObject {
     public var touchLocation = CurrentValueSubject<CGPoint, Never>(.zero)
 
     @Published public var scrollWidth: CGFloat = 0
-
     @Published public var minX: Double = 0
     @Published public var maxX: Double = 0
     @Published public var minY: Double = 0
@@ -62,7 +61,7 @@ public class ScrollableLineChartModel: ObservableObject {
 
     private var scrollDataPublisher = PassthroughSubject<ScrollData, Never>()
 
-    public init(data: [ChartData], screenPortion: Double,
+    public init(data: [LineChartData], screenPortion: Double,
          dynamicAxis: Bool = true, dataPaddingProportion: CGFloat = 0.01) {
         self.data = data
         self.screenPortionPublisher.value = screenPortion
@@ -102,7 +101,7 @@ public class ScrollableLineChartModel: ObservableObject {
             .removeDuplicates()
             .receive(on: DispatchQueue.main)
             .sink { [unowned self] minMax in
-                withAnimation(.easeOut(duration: 0.1)) {
+                withAnimation(.easeInOut(duration: 0.1)) {
                     highlighted = nil
                 }
                 minY = minMax.minY

@@ -21,7 +21,6 @@ public struct MagnifierView: View {
 
     public let model: MagnifierModel
     public var maxWidth: CGFloat = 100
-    @State private var inset: CGFloat = 0
 
     public var body: some View {
         ZStack(alignment: .top) {
@@ -30,26 +29,21 @@ public struct MagnifierView: View {
                 .shadow(color: .black.opacity(0.05), radius: 4, x: 0, y: -6)
                 .blendMode(.multiply)
 
-            VStack {
-                ForEach(model.textItems) {
-                    $0.text
-                        .multilineTextAlignment(.center)
-                        .padding(.bottom, $0.spacing)
+            ZStack(alignment: .top) {
+                VisualEffectView(effect: UIBlurEffect(style: .regular))
+                VStack {
+                    ForEach(model.textItems) {
+                        $0.text
+                            .multilineTextAlignment(.center)
+                            .padding(.bottom, $0.spacing)
+                    }.padding()
                 }
             }
             .frame(maxWidth: maxWidth)
-            .padding()
+
         }
-        .offset(x: -inset, y: 0)
         .fixedSize(horizontal: true, vertical: false)
         .coordinateSpace(name: "magnifier")
-        .overlay(
-            GeometryReader { geo in
-                Color.clear
-                    .onAppear {
-                        inset = 0
-                    }
-            })
     }
 }
 

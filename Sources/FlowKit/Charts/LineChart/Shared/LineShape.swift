@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LineShape: Shape {
-    let data: ChartData
+    let data: LineChartData
     let isClosed: Bool
 
     var minXPoint: Double

@@ -27,9 +27,9 @@ public struct PotValueData: Decodable {
     let points: [DataPoint]
 }
 
-extension ChartData {
+extension LineChartData {
 
-    static func createFromPotValue(_ potValue: PotValueData) -> ChartData {
+    static func createFromPotValue(_ potValue: PotValueData) -> LineChartData {
         var yVals = [Double]()
         var uniqueXPoints = Array(Set(potValue.points.map { $0.date.timeIntervalSince1970 }))
         uniqueXPoints.sort()
@@ -39,7 +39,7 @@ extension ChartData {
             yVals.append(yPoint.overallValue)
         }
 
-        return ChartData(id: "potValue",
+        return LineChartData(id: "potValue",
                          xPoints: uniqueXPoints,
                          yPoints: yVals,
                          lineColors: [.green, .blue],
@@ -47,7 +47,7 @@ extension ChartData {
                          fillColors: [.blue.opacity(0.01), .blue.opacity(0.1)])
     }
 
-    static func contributionsData(from potValue: PotValueData) -> ChartData {
+    static func contributionsData(from potValue: PotValueData) -> LineChartData {
         var yVals = [Double]()
         var uniqueXPoints = Array(Set(potValue.points.map { $0.date.timeIntervalSince1970 }))
         uniqueXPoints.sort()
@@ -57,7 +57,7 @@ extension ChartData {
             yVals.append(yPoint.totalContribution)
         }
 
-        return ChartData(id: "potContributions",
+        return LineChartData(id: "potContributions",
                          xPoints: uniqueXPoints,
                          yPoints: yVals,
                          lineColors: [.blue.opacity(0.4), .blue.opacity(0.8)],

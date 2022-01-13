@@ -10,7 +10,7 @@ import SwiftUI
 struct Line: View {
 
     let frame: CGRect
-    let data: ChartData
+    let data: LineChartData
     var lineWidth: CGFloat = 2
 
     var minXPoint: Double?
@@ -63,10 +63,9 @@ struct Line: View {
 
             if let highlight = highlight {
                 LinePointView()
-                    .offset(x: Double(highlight.x).chartXPosition(minX: minX, maxX: maxX, frame: frame) - frame.width/2,
-                            y: Double(highlight.y).chartYPosition(yRange: (maxYPoint - minYPoint),
-                                                                  frame: frame, offset: minYPoint) - frame.height/2)
-                    .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
+                    .position(x: Double(highlight.x).chartXPosition(minX: minX, maxX: maxX, frame: frame),
+                              y: Double(highlight.y).chartYPosition(yRange: (maxYPoint - minYPoint),
+                                                                     frame: frame, offset: minYPoint))
             }
             
         }

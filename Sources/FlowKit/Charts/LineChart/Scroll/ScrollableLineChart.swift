@@ -10,42 +10,28 @@ import SwiftUI
 public struct ScrollableLineChart: View {
 
     public init(viewModel: ScrollableLineChartModel,
+                hAxisModel: AxisModel = AxisModel(),
+                vAxisModel: AxisModel = AxisModel(),
                 legendLeading: Bool = false, showVAxis: Bool = true, showVValues: Bool = true,
                 showHAxis: Bool = true, showHValues: Bool = true,
-                chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 60),
-                verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 60),
-                horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0, bottom: 60, trailing: 0),
-                dynamicAxisAnimation: Animation = .interactiveSpring(response: 0.8, dampingFraction: 0.95, blendDuration: 1)) {
+                dynamicAxisAnimation: Animation = .interactiveSpring(response: 0.6, dampingFraction: 0.98, blendDuration: 2)) {
         self.viewModel = viewModel
         self.legendLeading = legendLeading
+        self.hAxisModel = hAxisModel
+        self.vAxisModel = vAxisModel
         self.showVAxis = showVAxis
-        self.showVValues = showVValues
         self.showHAxis = showHAxis
-        self.showHValues = showHValues
-        self.chartInset = chartInset
-        self.verticalInsets = verticalInsets
-        self.horizontalInsets = horizontalInsets
         self.dynamicAxisAnimation = dynamicAxisAnimation
     }
 
     @ObservedObject public var viewModel: ScrollableLineChartModel
 
+    public let hAxisModel: AxisModel
+    public let vAxisModel: AxisModel
+
     public var legendLeading = false
-
     public var showVAxis = true
-    public var showVValues = true
-
     public var showHAxis = true
-    public var showHValues = true
-
-    public var chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                   bottom: 60, trailing: 60)
-
-    public var verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                       bottom: 0, trailing: 60)
-
-    public var horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                         bottom: 60, trailing: 0)
 
     public var dynamicAxisAnimation: Animation = .interactiveSpring(response: 0.8, dampingFraction: 0.95, blendDuration: 1)
 
@@ -61,7 +47,7 @@ public struct ScrollableLineChart: View {
                               lineAnimation: dynamicAxisAnimation,
                               highlight: viewModel.highlighted?.rawValue)
                             .animation(dynamicAxisAnimation)
-                            .padding(chartInset)
+                            .padding(chartEdgeInsets(in: info.frame(in: .local)))
                             .coordinateSpace(name: "lines")
                             .frame(width: viewModel.scrollWidth)
                             .readingScrollView(from: "scroll") { point in
@@ -72,39 +58,23 @@ public struct ScrollableLineChart: View {
                     .coordinateSpace(name: "scroll")
                     .onAppear {
                         viewModel.onLoaded(in: info.frame(in: .local),
-                                           inset: verticalInsets.leading + verticalInsets.trailing)
+                                           inset: chartInset(in: info.frame(in: .local)))
                     }
                 }
 
                 ZStack {
-                    if showHAxis {
-                        AxisOverlay(axisType: .horizontal(isLeading: legendLeading),
-                                    distribution: 2,
-                                    frame: info.frame(in: .local),
-                                    insets: horizontalInsets,
-                                    minValue: $viewModel.minY,
-                                    maxValue: $viewModel.maxY,
-                                    axisSize: 60,
-                                    axisFormatType: .number(formatter: PreviewData.numberFormatter),
-                                    showValues: showHValues)
-                    }
-
-                    if showVAxis {
-                        AxisOverlay(axisType: .vertical(isLeading: legendLeading),
-                                    distribution: 2,
-                                    frame: info.frame(in: .local),
-                                    insets: verticalInsets,
-                                    minValue: $viewModel.minX,
-                                    maxValue: $viewModel.maxX,
-                                    axisSize: 60,
-                                    axisFormatType: .date(formatter: PreviewData.dateFormatter),
-                                    showValues: showVValues)
-                    }
+                    AxisView(minX: viewModel.minX, maxX: viewModel.maxX,
+                             minY: viewModel.minY, maxY: viewModel.maxY,
+                             isLegendLeading: legendLeading,
+                             hAxisModel: hAxisModel,
+                             showHAxis: showHAxis,
+                             vAxisModel: vAxisModel,
+                             showVAxis: showVAxis)
 
                     if let data = viewModel.highlighted {
                         MagnifierView(model: data.magnifierModel())
                             .frame(width: 80)
-                            .padding(.bottom, chartInset.bottom + 16)
+                            .padding(.bottom, chartInset(in: info.frame(in: .local)) + 16)
                             .allowsHitTesting(false)
                             .transition(.opacity.combined(with: .scale(scale: 0.95)))
                             .offset(x: data.position.x - 40, y: 0)
@@ -112,6 +82,19 @@ public struct ScrollableLineChart: View {
                 }
             }
         }
+    }
+
+    private func chartInset(in frame: CGRect) -> CGFloat {
+        vAxisModel.axisSize(in: frame, isHorizontal: false)
+    }
+
+    private func chartEdgeInsets(in frame: CGRect) -> EdgeInsets {
+        let vSize = vAxisModel.axisSize(in: frame, isHorizontal: false)
+        let hSize = hAxisModel.axisSize(in: frame, isHorizontal: true)
+        return EdgeInsets(top: 0,
+                          leading: legendLeading ? hSize : 0,
+                          bottom: vSize,
+                          trailing: legendLeading ? 0 : hSize)
     }
 
 }

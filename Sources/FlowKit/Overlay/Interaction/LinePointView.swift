@@ -13,8 +13,8 @@ struct LinePointView: View {
     var innerColor: Color = .green
     var outerColor: Color = .green.opacity(0.4)
     var shouldAnimate = true
-    var animation: Animation = .linear(duration: 2)
-        .delay(1)
+    var animation: Animation = .easeOut(duration: 2)
+        .delay(2)
         .repeatForever(autoreverses: false)
 
     @State private var isAnimating = false
@@ -22,9 +22,9 @@ struct LinePointView: View {
     var body: some View {
         ZStack {
             Circle()
-                .frame(width: size * 3, height: size * 3, alignment: .center)
+                .frame(width: size * 2, height: size * 2)
                 .foregroundColor(outerColor)
-                .scaleEffect(isAnimating ? 2.5 : 0.001)
+                .scaleEffect(isAnimating ? 3 : 0.001)
                 .opacity(isAnimating ? 0.001 : 1)
                 .animation(animation)
 
@@ -33,7 +33,7 @@ struct LinePointView: View {
                 .foregroundColor(innerColor)
         }
         .onAppear {
-            isAnimating = true
+            isAnimating = false
         }
 
     }
