@@ -49,7 +49,6 @@ public struct ScrollableLineChart: View {
                           highlight: viewModel.highlighted?.rawValue)
                         .animation(dynamicAxisAnimation)
                         .padding(chartEdgeInsets(in: info.frame(in: .local)))
-                        .coordinateSpace(name: "lines")
                         .frame(width: viewModel.scrollWidth)
                         .coordinateSpace(name: "scroll")
                         .readingScrollView(from: "scroll") { point in
@@ -62,25 +61,15 @@ public struct ScrollableLineChart: View {
                                        inset: chartInset(in: info.frame(in: .local)))
                 }
 
-                ZStack {
-                    AxisView(minX: viewModel.minX, maxX: viewModel.maxX,
-                             minY: viewModel.minY, maxY: viewModel.maxY,
-                             isLegendLeading: legendLeading,
-                             hAxisModel: hAxisModel,
-                             showHAxis: showHAxis,
-                             vAxisModel: vAxisModel,
-                             showVAxis: showVAxis)
-                        .allowsHitTesting(false)
-
-                    if let data = viewModel.highlighted {
-                        MagnifierView(model: data.magnifierModel())
-                            .frame(width: 80)
-                            .padding(.bottom, chartInset(in: info.frame(in: .local)) + 16)
-                            .allowsHitTesting(false)
-                            .transition(.opacity.combined(with: .scale(scale: 0.95)))
-                            .offset(x: data.position.x - 40, y: 0)
-                    }
-                }
+                AxisView(minX: viewModel.minX, maxX: viewModel.maxX,
+                         minY: viewModel.minY, maxY: viewModel.maxY,
+                         isLegendLeading: legendLeading,
+                         hAxisModel: hAxisModel,
+                         showHAxis: showHAxis,
+                         vAxisModel: vAxisModel,
+                         showVAxis: showVAxis)
+                    .drawingGroup()
+                    .allowsHitTesting(false)
             }
         }
     }

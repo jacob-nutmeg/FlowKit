@@ -61,6 +61,7 @@ struct Line: View {
             }
             
         }
+        .drawingGroup()
         .onAppear {
             withAnimation(lineAnimation) {
                 self.completion = 1

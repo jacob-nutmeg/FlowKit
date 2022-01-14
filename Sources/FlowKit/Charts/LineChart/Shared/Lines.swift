@@ -32,12 +32,12 @@ struct Lines: View {
                          minYPoint: $minYPoint,
                          maxYPoint: $maxYPoint,
                          lineAnimation: lineAnimation,
-                         highlight: highlight).drawingGroup()
-                }
-                Rectangle().fill(.clear)
-                    .onTouch { location in
-                        tapLocation = location
-                    }
+                         highlight: highlight)
+                }.drawingGroup()
+//                Rectangle().fill(.clear)
+//                    .onTouch { location in
+//                        tapLocation = location
+//                    }
             }
         }
     }
