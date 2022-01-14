@@ -9,7 +9,7 @@ import SwiftUI
 
 public struct AxisTextFormat {
     public init(axisAlignment: Alignment = .center, axisFormatType: ValueFormatType = .value,
-                axisTextColor: Color = .gray, axisTextFont: Font = .caption2) {
+                axisTextColor: Color = .gray, axisTextFont: Font = .footnote) {
         self.axisAlignment = axisAlignment
         self.axisFormatType = axisFormatType
         self.axisTextColor = axisTextColor

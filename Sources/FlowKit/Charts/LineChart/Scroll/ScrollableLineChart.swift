@@ -38,24 +38,22 @@ public struct ScrollableLineChart: View {
     public var body: some View {
         GeometryReader { info in
             ZStack {
-                ScrollViewReader { reader in
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        Lines(data: viewModel.data,
-                              tapLocation: $viewModel.touchLocation.value,
-                              minXPoint: .constant(viewModel.data.minXPoint()),
-                              maxXPoint: .constant(viewModel.data.maxXPoint()),
-                              minYPoint: $viewModel.minY,
-                              maxYPoint: $viewModel.maxY,
-                              lineAnimation: dynamicAxisAnimation,
-                              highlight: viewModel.highlighted?.rawValue)
-                            .animation(dynamicAxisAnimation)
-                            .padding(chartEdgeInsets(in: info.frame(in: .local)))
-                            .coordinateSpace(name: "lines")
-                            .frame(width: viewModel.scrollWidth)
-                            .readingScrollView(from: "scroll") { point in
-                                viewModel.onScroll(to: point, inFrame: info.frame(in: .local))
-                            }
-                    }
+                ScrollView(.horizontal, showsIndicators: false) {
+                    Lines(data: viewModel.data,
+                          tapLocation: $viewModel.touchLocation.value,
+                          minXPoint: .constant(viewModel.data.minXPoint()),
+                          maxXPoint: .constant(viewModel.data.maxXPoint()),
+                          minYPoint: $viewModel.minY,
+                          maxYPoint: $viewModel.maxY,
+                          lineAnimation: dynamicAxisAnimation,
+                          highlight: viewModel.highlighted?.rawValue)
+                        .animation(dynamicAxisAnimation)
+                        .padding(chartEdgeInsets(in: info.frame(in: .local)))
+                        .coordinateSpace(name: "lines")
+                        .frame(width: viewModel.scrollWidth)
+                        .readingScrollView(from: "scroll") { point in
+                            viewModel.onScroll(to: point, inFrame: info.frame(in: .local))
+                        }
                     .clipped()
                     .coordinateSpace(name: "scroll")
                     .onAppear {
@@ -105,21 +103,21 @@ extension HighlightedData {
 
     func magnifierModel() -> MagnifierModel {
         let returnTitle = Text("Returns:")
-            .font(.caption2)
+            .font(.footnote)
             .foregroundColor(.gray)
         let returnsText = Text(returns)
             .font(.body)
             .bold()
             .foregroundColor(returns < contributions ? .red : .green)
         let contTitle = Text("Contributions:")
-            .font(.caption2)
+            .font(.footnote)
             .foregroundColor(.gray)
         let contText = Text(contributions)
             .font(.callout)
             .bold()
             .foregroundColor(.blue)
         let dateText = Text("On \(date)")
-            .font(.caption2)
+            .font(.footnote)
             .foregroundColor(.gray)
 
         return MagnifierModel(textItems: [.init(id: "rTitle", text: returnTitle),
