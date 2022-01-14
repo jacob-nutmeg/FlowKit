@@ -51,15 +51,15 @@ public struct ScrollableLineChart: View {
                         .padding(chartEdgeInsets(in: info.frame(in: .local)))
                         .coordinateSpace(name: "lines")
                         .frame(width: viewModel.scrollWidth)
+                        .coordinateSpace(name: "scroll")
                         .readingScrollView(from: "scroll") { point in
                             viewModel.onScroll(to: point, inFrame: info.frame(in: .local))
                         }
-                    .clipped()
-                    .coordinateSpace(name: "scroll")
-                    .onAppear {
-                        viewModel.onLoaded(in: info.frame(in: .local),
-                                           inset: chartInset(in: info.frame(in: .local)))
-                    }
+                }
+                .clipped()
+                .onAppear {
+                    viewModel.onLoaded(in: info.frame(in: .local),
+                                       inset: chartInset(in: info.frame(in: .local)))
                 }
 
                 ZStack {
@@ -70,6 +70,7 @@ public struct ScrollableLineChart: View {
                              showHAxis: showHAxis,
                              vAxisModel: vAxisModel,
                              showVAxis: showVAxis)
+                        .allowsHitTesting(false)
 
                     if let data = viewModel.highlighted {
                         MagnifierView(model: data.magnifierModel())
