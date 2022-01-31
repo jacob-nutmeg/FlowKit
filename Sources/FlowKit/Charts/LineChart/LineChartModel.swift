@@ -81,19 +81,22 @@ public class LineChartModel: ObservableObject {
         self.linesMinMax = MinMax(minY: data.maxYPoint(), maxY: data.maxYPoint(),
                                   minX: data.minXPoint(), maxX: data.maxXPoint())
 
+        currentFrame = startingFrame
+        axisMinMax = minMaxValuesOnScreen(at: .zero, in: currentFrame)
+        linesMinMax = MinMax(minY: axisMinMax.minY, maxY: axisMinMax.maxY,
+                             minX: data.minXPoint(), maxX: data.maxXPoint())
+        updatePortion(to: screenPortion)
+
+        bindToData()
+    }
+
+    public func updatePortion(to screenPortion: DataPortion) {
         switch screenPortion {
         case .all:
             self.screenPortionPublisher.value = data.maxXPoint() - data.minXPoint()
         case .custom(let portion):
             self.screenPortionPublisher.value = portion
         }
-
-        currentFrame = startingFrame
-        axisMinMax = minMaxValuesOnScreen(at: .zero, in: currentFrame)
-        linesMinMax = MinMax(minY: axisMinMax.minY, maxY: axisMinMax.maxY,
-                             minX: data.minXPoint(), maxX: data.maxXPoint())
-
-        bindToData()
     }
 
     func onScroll(to position: CGPoint, inFrame frame: CGRect) {
