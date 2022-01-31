@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public struct PotValueData: Decodable {
 
@@ -39,9 +40,20 @@ extension LineChartData {
             yVals.append(yPoint.overallValue)
         }
 
+        var highlights = [Highlight]()
+        let first = Highlight(point: CGPoint(x: uniqueXPoints[20], y: yVals[20]), size: 20, innerColor: .blue, outerColor: .blue.opacity(0.4))
+        let second = Highlight(point: CGPoint(x: uniqueXPoints[60], y: yVals[60]), size: 20, innerColor: .blue, outerColor: .blue.opacity(0.4))
+        let third = Highlight(point: CGPoint(x: uniqueXPoints[100], y: yVals[100]), size: 20, innerColor: .blue, outerColor: .blue.opacity(0.4))
+        let fourth = Highlight(point: CGPoint(x: uniqueXPoints[200], y: yVals[200]), size: 20, innerColor: .blue, outerColor: .blue.opacity(0.4))
+        highlights.append(first)
+        highlights.append(second)
+        highlights.append(third)
+        highlights.append(fourth)
+
         return LineChartData(id: "potValue",
                          xPoints: uniqueXPoints,
                          yPoints: yVals,
+                         highlights: highlights,
                          lineColors: [.green, .blue],
                          isCurved: true,
                          fillColors: [.blue.opacity(0.01), .blue.opacity(0.1)])

@@ -202,7 +202,7 @@ extension AxisOverlay {
 
     private func text(at interval: Int) -> some View {
         label(at: interval)
-            .alignmentGuide(.trailing) { d in d[.trailing] }
+            .rotationEffect(Angle(degrees: model.axisTextFormat.rotation))
             .foregroundColor(model.axisTextFormat.axisTextColor)
             .font(model.axisTextFormat.axisTextFont)
             .offset(x: labelXPos(at: interval),
@@ -213,17 +213,7 @@ extension AxisOverlay {
     }
 
     private func label(at interval: Int) -> Text {
-        switch model.axisTextFormat.axisFormatType {
-        case .value:
-            return Text("\(legendValue(at: interval))")
-        case .date(let formatter):
-            return Text(formatter.string(from: Date(timeIntervalSince1970: legendValue(at: interval))))
-        case .number(let formatter):
-            return Text(formatter.string(from: NSNumber(value: legendValue(at: interval))) ?? "")
-        case .text(let specifier):
-            let intervalValue = legendValue(at: interval)
-            return Text("\(intervalValue, specifier: "\(specifier)")")
-        }
+        Text(model.axisTextFormat.formattedValue(from: legendValue(at: interval)))
     }
 
     private func legendValue(at interval: Int) -> Double {
@@ -238,7 +228,10 @@ extension AxisOverlay {
     }
 
     private func labelYPos(at interval: Int) -> CGFloat {
-        guard isHorizontal else { return 0 }
+        guard isHorizontal else {
+            return model.axisTextFormat.rotation > 0 ? model.axisSize(in: frame, isHorizontal: isHorizontal)/2 : 0
+        }
+
         let yPos = CGFloat(legendPoints[interval] - minPoint)
         return (yPos * frameStep) - (frame.height/2)
     }
@@ -250,7 +243,7 @@ struct AxisOverlayHorizontal_Previews: PreviewProvider {
 
     static var previews: some View {
         GeometryReader { info in
-            AxisOverlay(axisType: .horizontal(isLeading: false),
+            AxisOverlay(axisType: .vertical(isLeading: false),
                         frame: info.frame(in: .local),
                         minValue: axisData.minYPoint(),
                         maxValue: axisData.maxYPoint())

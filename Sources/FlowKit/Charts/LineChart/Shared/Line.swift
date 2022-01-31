@@ -13,14 +13,12 @@ struct Line: View {
     let data: LineChartData
     var lineWidth: CGFloat = 2
 
-    @Binding var minXPoint: Double
-    @Binding var maxXPoint: Double
-    @Binding var minYPoint: Double
-    @Binding var maxYPoint: Double
+    let minMax: MinMax
 
     var lineAnimation: Animation = .default
-    var highlightAnimation: Animation = .default
-    var highlight: CGPoint? = nil
+
+    var highlightGesture: TapGesture
+    @Binding var tappedHighlight: LineChartData.Highlight?
 
     private var lineGradient: LinearGradient {
         LinearGradient(colors: data.lineColors,
@@ -42,32 +40,37 @@ struct Line: View {
     var body: some View {
         ZStack {
             LineShape(data: data, isClosed: true,
-                      minXPoint: minXPoint, maxXPoint: maxXPoint,
-                      minYPoint: minYPoint, maxYPoint: maxYPoint)
+                      minXPoint: minMax.minX, maxXPoint: minMax.maxX,
+                      minYPoint: minMax.minY, maxYPoint: minMax.maxY)
                 .fill(fillGradient).hueRotation(.degrees(45))
                 .opacity(completion)
+                .animation(lineAnimation, value: completion)
 
             LineShape(data: data, isClosed: false,
-                      minXPoint: minXPoint, maxXPoint: maxXPoint,
-                      minYPoint: minYPoint, maxYPoint: maxYPoint)
+                      minXPoint: minMax.minX, maxXPoint: minMax.maxX,
+                      minYPoint: minMax.minY, maxYPoint: minMax.maxY)
                 .trim(from: 0, to: completion)
                 .stroke(lineGradient, style: strokeStyle)
+                .animation(lineAnimation, value: completion)
 
-            if let highlight = highlight {
-                LinePointView()
-                    .position(x: Double(highlight.x).chartXPosition(minX: minXPoint, maxX: maxXPoint, frame: frame),
-                              y: Double(highlight.y).chartYPosition(yRange: (maxYPoint - minYPoint),
-                                                                     frame: frame, offset: minYPoint))
+            ForEach(data.highlights, id: \.point.x) { highlight in
+                Button(action: {
+                    guard self.tappedHighlight?.id != highlight.id else { self.tappedHighlight = nil; return }
+                    self.tappedHighlight = highlight
+                }) {
+                    LinePointView(size: highlight.size, innerColor: highlight.innerColor, outerColor: highlight.outerColor ?? .clear)
+                }
+                .position(x: Double(highlight.point.x).chartXPosition(minX: minMax.minX, maxX: minMax.maxX, frame: frame),
+                          y: Double(highlight.point.y).chartYPosition(yRange: (minMax.maxY - minMax.minY),
+                                                                      frame: frame, offset: minMax.minY))
             }
-            
+        }
+        .onAppear {
+            self.completion = 1
         }
         .drawingGroup()
-        .onAppear {
-            withAnimation(lineAnimation) {
-                self.completion = 1
-            }
-        }
     }
+
 }
 
 struct Line_Previews: PreviewProvider {
@@ -76,10 +79,9 @@ struct Line_Previews: PreviewProvider {
         GeometryReader { info in
             Line(frame: info.frame(in: .local),
                  data: PreviewData.lineData,
-                 minXPoint: .constant([PreviewData.potValueData].minXPoint()),
-                 maxXPoint: .constant([PreviewData.potValueData].maxXPoint()),
-                 minYPoint: .constant([PreviewData.lineData].minYPoint()),
-                 maxYPoint: .constant([PreviewData.lineData].maxYPoint()))
+                 minMax: PreviewData.lineData.minMax,
+                 highlightGesture: TapGesture(),
+                 tappedHighlight: .constant(nil))
         }
     }
 }

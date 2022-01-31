@@ -8,6 +8,14 @@
 import SwiftUI
 
 public struct FanChartData: Identifiable {
+    public init(id: String, xValues: [Double], firstYValues: [Double], secondYValues: [Double], colors: [Color]) {
+        self.id = id
+        self.xValues = xValues
+        self.firstYValues = firstYValues
+        self.secondYValues = secondYValues
+        self.colors = colors
+    }
+
     public let id: String
     public let xValues: [Double]
     public let firstYValues: [Double]

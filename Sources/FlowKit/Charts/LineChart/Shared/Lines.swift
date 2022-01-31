@@ -8,49 +8,47 @@
 import SwiftUI
 
 struct Lines: View {
+    public init(data: [LineChartData],
+                minMax: MinMax,
+                lineAnimation: Animation = .default,
+                highlightGesture: TapGesture = TapGesture(),
+                tappedHighlight: Binding<LineChartData.Highlight?>) {
+        self.data = data
+        self.lineAnimation = lineAnimation
+        self.tappedHighlight = tappedHighlight
+        self.highlightGesture = highlightGesture
+        self.minMax = minMax
+    }
+
     let data: [LineChartData]
+    let minMax: MinMax
 
-    @Binding var tapLocation: CGPoint
+    let lineAnimation: Animation
 
-    @Binding var minXPoint: Double
-    @Binding var maxXPoint: Double
-    @Binding var minYPoint: Double
-    @Binding var maxYPoint: Double
+    var tappedHighlight: Binding<LineChartData.Highlight?>
+    private var highlightGesture: TapGesture
 
-    var lineAnimation: Animation = .default
-
-    var highlight: CGPoint? = nil
-    
-    var body: some View {
+    public var body: some View {
         GeometryReader { info in
             ZStack {
                 ForEach(data) {
                     Line(frame: info.frame(in: .local),
                          data: $0,
-                         minXPoint: $minXPoint,
-                         maxXPoint: $maxXPoint,
-                         minYPoint: $minYPoint,
-                         maxYPoint: $maxYPoint,
+                         minMax: minMax,
                          lineAnimation: lineAnimation,
-                         highlight: highlight)
-                }.drawingGroup()
-//                Rectangle().fill(.clear)
-//                    .onTouch { location in
-//                        tapLocation = location
-//                    }
+                         highlightGesture: highlightGesture,
+                         tappedHighlight: tappedHighlight)
+                }
+                .drawingGroup()
             }
         }
     }
+
 }
 
 struct Lines_Previews: PreviewProvider {
     static var previews: some View {
-        Lines(data: [PreviewData.potValueData,
-                     PreviewData.potContributionData],
-              tapLocation: .constant(.zero),
-              minXPoint: .constant([PreviewData.potValueData].minXPoint()),
-              maxXPoint: .constant([PreviewData.potValueData].maxXPoint()),
-              minYPoint: .constant([PreviewData.potValueData].minYPoint()),
-              maxYPoint: .constant([PreviewData.potValueData].maxYPoint()))
+        Lines(data: [PreviewData.potValueData, PreviewData.potContributionData],
+              minMax: PreviewData.potValueData.minMax, tappedHighlight: .constant(nil))
     }
 }

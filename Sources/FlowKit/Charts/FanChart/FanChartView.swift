@@ -7,28 +7,19 @@
 
 import SwiftUI
 
-struct FanChartView: View {
-    internal init(data: [FanChartData],
+public struct FanChartView: View {
+    public init(data: [FanChartData],
                   hAxisModel: AxisModel = AxisModel(),
                   vAxisModel: AxisModel = AxisModel(),
                   isLegendLeading: Bool = true,
                   showVAxis: Bool = true,
-                  showHAxis: Bool = true,
-                  chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                      bottom: 60, trailing: 60),
-                  verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                          bottom: 0, trailing: 60),
-                  horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                            bottom: 60, trailing: 0)) {
+                  showHAxis: Bool = true) {
         self.data = data
         self.hAxisModel = hAxisModel
         self.vAxisModel = vAxisModel
         self.isLegendLeading = isLegendLeading
         self.showVAxis = showVAxis
         self.showHAxis = showHAxis
-        self.chartInset = chartInset
-        self.verticalInsets = verticalInsets
-        self.horizontalInsets = horizontalInsets
     }
 
 
@@ -41,19 +32,7 @@ struct FanChartView: View {
     var showVAxis = true
     var showHAxis = true
 
-    var chartInset: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                            bottom: 60, trailing: 60)
-
-    var verticalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                bottom: 0, trailing: 60)
-
-    var horizontalInsets: EdgeInsets = EdgeInsets(top: 16, leading: 0,
-                                                  bottom: 60, trailing: 0)
-
-    var fillGradient: LinearGradient {
-        LinearGradient(colors: [.blue.opacity(0.2)],
-                       startPoint: .top, endPoint: .bottom)
-    }
+    var lineAnimation: Animation = .easeInOut(duration: 1)
 
     private var maxX: Double {
         data.maxXPoint()
@@ -71,29 +50,32 @@ struct FanChartView: View {
         data.minYPoint()
     }
 
-    @State private var xMultiplier: CGFloat = 0.75
-    @State private var yMultiplier: CGFloat = 0
-    var delay: Double = 0.1
+    @State private var completion: CGFloat = 0
 
-    var body: some View {
+    public var body: some View {
         GeometryReader { info in
             ZStack {
                 ForEach(data.indices) { index in
-                    FanShape(data: data[index],
-                             minXPoint: minX,
-                             maxXPoint: maxX,
-                             minYPoint: minY,
-                             maxYPoint: maxY,
-                             xMultiplier: xMultiplier,
-                             yMultiplier: yMultiplier)
-                        .fill(LinearGradient(colors: data[index].colors,
-                                             startPoint: .top, endPoint: .bottom))
-                        .animation(.spring(response: 0.4, dampingFraction: 0.9, blendDuration: 1).delay(delay * Double(index)))
-                }
-                .padding(chartInset)
+                    ZStack {
+                        FanShape(data: data[index],
+                                 minXPoint: minX,
+                                 maxXPoint: maxX,
+                                 minYPoint: minY,
+                                 maxYPoint: maxY)
+                            .stroke(.blue)
 
-                AxisView(minX: minX, maxX: maxX,
-                         minY: minY, maxY: maxY,
+                        FanShape(data: data[index],
+                                 minXPoint: minX,
+                                 maxXPoint: maxX,
+                                 minYPoint: minY,
+                                 maxYPoint: maxY)
+                            .fill(LinearGradient(colors: data[index].colors, startPoint: .bottom, endPoint: .top))
+                    }
+                }
+                .padding(chartEdgeInsets(in: info.frame(in: .local)))
+
+                AxisView(minMax: MinMax(minY: minY, maxY: maxY,
+                                        minX: minX, maxX: maxX),
                          isLegendLeading: isLegendLeading,
                          hAxisModel: hAxisModel,
                          showHAxis: showHAxis,
@@ -102,11 +84,20 @@ struct FanChartView: View {
             }
         }
         .onAppear {
-            withAnimation {
-                xMultiplier = 1
-                yMultiplier = 1
+            withAnimation(lineAnimation) {
+                self.completion = 1
             }
         }
+    }
+
+
+    private func chartEdgeInsets(in frame: CGRect) -> EdgeInsets {
+        let vSize = vAxisModel.axisSize(in: frame, isHorizontal: false)
+        let hSize = hAxisModel.axisSize(in: frame, isHorizontal: true)
+        return EdgeInsets(top: 0,
+                          leading: isLegendLeading ? hSize : 0,
+                          bottom: vSize,
+                          trailing: isLegendLeading ? 0 : hSize)
     }
 
 }

@@ -9,15 +9,12 @@ import SwiftUI
 
 public struct AxisView: View {
 
-    public let minX: Double
-    public let maxX: Double
-    public let minY: Double
-    public let maxY: Double
-    public let isLegendLeading: Bool
-    public let hAxisModel: AxisModel
-    public let showHAxis: Bool
-    public let vAxisModel: AxisModel
-    public let showVAxis: Bool
+    let minMax: MinMax
+    let isLegendLeading: Bool
+    let hAxisModel: AxisModel
+    let showHAxis: Bool
+    let vAxisModel: AxisModel
+    let showVAxis: Bool
 
     public var body: some View {
         GeometryReader { info in
@@ -26,23 +23,25 @@ public struct AxisView: View {
                     GeometryReader { localProxy in
                         AxisOverlay(axisType: .horizontal(isLeading: isLegendLeading),
                                     frame: localProxy.frame(in: .local),
-                                    minValue: minY,
-                                    maxValue: maxY,
+                                    minValue: minMax.minY,
+                                    maxValue: minMax.maxY,
                                     model: hAxisModel)
                     }.padding(hAxisPadding(in: info.frame(in: .local)))
                 }
 
                 if showVAxis {
                     GeometryReader { localProxy in
-                    AxisOverlay(axisType: .vertical(isLeading: isLegendLeading),
-                                frame: localProxy.frame(in: .local),
-                                minValue: minX,
-                                maxValue: maxX,
-                                model: vAxisModel)
+                        AxisOverlay(axisType: .vertical(isLeading: isLegendLeading),
+                                    frame: localProxy.frame(in: .local),
+                                    minValue: minMax.minX,
+                                    maxValue: minMax.maxX,
+                                    model: vAxisModel)
                     }.padding(vAxisPadding(in: info.frame(in: .local)))
                 }
             }
         }
+        .drawingGroup()
+        .allowsHitTesting(false)
     }
 
     private func vAxisPadding(in frame: CGRect) -> EdgeInsets {
@@ -78,10 +77,8 @@ struct AxisView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            AxisView(minX: data.minXPoint(),
-                     maxX: data.maxXPoint(),
-                     minY: data.minYPoint(),
-                     maxY: data.maxYPoint(),
+            AxisView(minMax: MinMax(minY: data.minYPoint(), maxY: data.minYPoint(),
+                                    minX: data.minXPoint(), maxX: data.maxXPoint()),
                      isLegendLeading: false,
                      hAxisModel: hModel,
                      showHAxis: true,

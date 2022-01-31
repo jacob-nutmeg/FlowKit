@@ -9,12 +9,25 @@ import SwiftUI
 
 public struct LineChartData: Identifiable {
 
+    public struct Highlight: Identifiable, Equatable {
+        public var id: Double {
+            point.x
+        }
+
+        let point: CGPoint
+        let size: CGFloat
+        let innerColor: Color
+        let outerColor: Color?
+    }
+
     public init(id: String, xPoints: [Double], yPoints: [Double],
+                highlights: [Highlight] = [],
                 lineColors: [Color] = [], isCurved: Bool = false,
                 fillColors: [Color]? = nil) {
         self.id = id
         self.xPoints = xPoints
         self.yPoints = yPoints
+        self.highlights = highlights
         self.lineColors = lineColors
         self.isCurved = isCurved
         self.fillColors = fillColors
@@ -23,9 +36,14 @@ public struct LineChartData: Identifiable {
     public let id: String
     public var xPoints: [Double]
     public var yPoints: [Double]
+    public var highlights: [Highlight]
     public var lineColors: [Color] = []
     public var isCurved = false
     public var fillColors: [Color]?
+
+    var minMax: MinMax {
+        MinMax(minY: minY, maxY: maxY, minX: minY, maxX: maxX)
+    }
 
     var minX: Double {
         xPoints.min() ?? 0
@@ -42,6 +60,15 @@ public struct LineChartData: Identifiable {
     var maxY: Double {
         yPoints.max() ?? 0
     }
+
+    func points(fromXValue xValue: Double) -> ([Double], [Double]) {
+        let minIndex = max(0, (xPoints.firstIndex(where: { $0 >= xValue }) ?? 0) - 1)
+        let maxIndex = min(xPoints.count - 1, (xPoints.firstIndex(where: { $0 > maxX }) ?? xPoints.count - 1) + 1)
+        let xVals = xPoints[minIndex...maxIndex]
+        let yVals = yPoints[minIndex...maxIndex]
+        return (Array(xVals), Array(yVals))
+    }
+
 }
 
 extension Collection where Element == LineChartData {

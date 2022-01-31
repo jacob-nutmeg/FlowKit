@@ -7,33 +7,21 @@
 
 import SwiftUI
 
-struct LinePointView: View {
+public struct LinePointView: View {
 
-    var size: CGFloat = 10
-    var innerColor: Color = .green
-    var outerColor: Color = .green.opacity(0.4)
-    var shouldAnimate = true
-    var animation: Animation = .easeOut(duration: 2)
-        .delay(2)
-        .repeatForever(autoreverses: false)
+    public var size: CGFloat = 8
+    public var innerColor: Color = .green
+    public var outerColor: Color = .green.opacity(0.2)
 
-    @State private var isAnimating = false
-
-    var body: some View {
+    public var body: some View {
         ZStack {
             Circle()
-                .frame(width: size * 2, height: size * 2)
+                .frame(width: size, height: size)
                 .foregroundColor(outerColor)
-                .scaleEffect(isAnimating ? 3 : 0.001)
-                .opacity(isAnimating ? 0.001 : 1)
-                .animation(animation)
 
             Circle()
-                .frame(width: size, height: size, alignment: .center)
+                .frame(width: size/2, height: size/2)
                 .foregroundColor(innerColor)
-        }
-        .onAppear {
-            isAnimating = false
         }
 
     }

@@ -9,7 +9,8 @@ import SwiftUI
 
 public struct AxisModel {
 
-    public init(displayMode: AxisDisplayMode = .all,
+    public init(title: String = "",
+                displayMode: AxisDisplayMode = .all,
                 distribution: Int = 3,
                 axisSizeType: SizeType = .constant(60),
                 axisPaddingProportion: CGFloat = 0.1,
@@ -17,6 +18,7 @@ public struct AxisModel {
                 axisLineStyle: AxisLineStyle = .init(lineStyle: .solid, color: .black),
                 valueLineStyle: AxisLineStyle = .init(lineStyle: .dashed([8, 8]), color: .gray.opacity(0.5)),
                 valueLineLength: SizeType = .proportion(1)) {
+        self.title = title
         self.displayMode = displayMode
         self.distribution = distribution
         self.axisSizeType = axisSizeType
@@ -27,6 +29,7 @@ public struct AxisModel {
         self.valueLineLength = valueLineLength
     }
 
+    public let title: String
     public let displayMode: AxisDisplayMode
     public let distribution: Int
     public let axisSizeType: SizeType

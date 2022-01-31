@@ -75,6 +75,8 @@ public class PreviewData {
 
     public static let lineDataHighlights = [CGPoint(x: 50, y: 25), CGPoint(x: 120, y: 33)]
 
+    public static let barData = BarChartData(id: "data", xPoints: pointsX, yPoints: pointsY)
+
     public static let lineData = LineChartData(id: "data",
                                     xPoints: pointsX,
                                     yPoints: pointsY,

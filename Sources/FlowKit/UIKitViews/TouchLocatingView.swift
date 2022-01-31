@@ -50,12 +50,14 @@ struct TouchLocatingView: UIViewRepresentable {
         // Our main initializer, making sure interaction is enabled.
         override init(frame: CGRect) {
             super.init(frame: frame)
+            backgroundColor = .clear
             isUserInteractionEnabled = true
         }
 
         // Just in case you're using storyboards!
         required init?(coder: NSCoder) {
             super.init(coder: coder)
+            backgroundColor = .clear
             isUserInteractionEnabled = true
         }
 
