@@ -10,6 +10,13 @@ import SwiftUI
 public struct LineChartData: Identifiable {
 
     public struct Highlight: Identifiable, Equatable {
+        public init(point: CGPoint, size: CGFloat, innerColor: Color, outerColor: Color?) {
+            self.point = point
+            self.size = size
+            self.innerColor = innerColor
+            self.outerColor = outerColor
+        }
+
         public var id: Double {
             point.x
         }

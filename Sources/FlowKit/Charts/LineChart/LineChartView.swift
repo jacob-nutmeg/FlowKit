@@ -24,7 +24,7 @@ public struct LineChartView: View {
     }
 
     public var highlightBuilder: HighlightBuilder?
-    @ObservedObject public var viewModel: LineChartModel
+    @ObservedObject private var viewModel: LineChartModel
 
     public var showVAxis: Bool
     public var showHAxis: Bool

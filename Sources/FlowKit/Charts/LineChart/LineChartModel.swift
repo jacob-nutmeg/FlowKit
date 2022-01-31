@@ -80,12 +80,11 @@ public class LineChartModel: ObservableObject {
         self.axisMinMax = MinMax(minY: 0, maxY: 0, minX: 0, maxX: 0)
         self.linesMinMax = MinMax(minY: data.maxYPoint(), maxY: data.maxYPoint(),
                                   minX: data.minXPoint(), maxX: data.maxXPoint())
-
+        updatePortion(to: screenPortion)
         currentFrame = startingFrame
         axisMinMax = minMaxValuesOnScreen(at: .zero, in: currentFrame)
         linesMinMax = MinMax(minY: axisMinMax.minY, maxY: axisMinMax.maxY,
                              minX: data.minXPoint(), maxX: data.maxXPoint())
-        updatePortion(to: screenPortion)
 
         bindToData()
     }
