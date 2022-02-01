@@ -18,7 +18,7 @@ struct Line: View {
     var lineAnimation: Animation = .default
 
     var highlightGesture: TapGesture
-    @Binding var tappedHighlight: LineChartData.Highlight?
+    @Binding var tappedHighlight: LineHighlightData?
 
     private var lineGradient: LinearGradient {
         LinearGradient(colors: data.lineColors,
@@ -55,7 +55,7 @@ struct Line: View {
 
             ForEach(data.highlights, id: \.point.x) { highlight in
                 Button(action: {
-                    guard self.tappedHighlight?.id != highlight.id else { self.tappedHighlight = nil; return }
+                    guard self.tappedHighlight?.point.x != highlight.point.x else { self.tappedHighlight = nil; return }
                     self.tappedHighlight = highlight
                 }) {
                     LinePointView(size: highlight.size, innerColor: highlight.innerColor, outerColor: highlight.outerColor ?? .clear)

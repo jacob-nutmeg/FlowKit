@@ -12,7 +12,7 @@ struct Lines: View {
                 minMax: MinMax,
                 lineAnimation: Animation = .default,
                 highlightGesture: TapGesture = TapGesture(),
-                tappedHighlight: Binding<LineChartData.Highlight?>) {
+                tappedHighlight: Binding<LineHighlightData?>) {
         self.data = data
         self.lineAnimation = lineAnimation
         self.tappedHighlight = tappedHighlight
@@ -25,7 +25,7 @@ struct Lines: View {
 
     let lineAnimation: Animation
 
-    var tappedHighlight: Binding<LineChartData.Highlight?>
+    var tappedHighlight: Binding<LineHighlightData?>
     private var highlightGesture: TapGesture
 
     public var body: some View {

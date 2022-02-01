@@ -10,12 +10,7 @@ import Combine
 
 public class LineChartModel: ObservableObject {
 
-    public struct HighlightPoint {
-        public let lineId: String
-        public let position: CGPoint
-        public let xValue: Double
-        public let yValue: Double
-    }
+    public typealias HighlightBuilder = ((LineHighlightData) -> AnyView)
 
     typealias ScrollData = (position: CGPoint, frame: CGRect)
 
@@ -23,7 +18,7 @@ public class LineChartModel: ObservableObject {
 
     var touchLocation = CurrentValueSubject<CGPoint?, Never>(nil)
     var holdLocations = CurrentValueSubject<[CGPoint], Never>([])
-    var highlightTapped = CurrentValueSubject<LineChartData.Highlight?, Never>(nil)
+    var highlightTapped = CurrentValueSubject<LineHighlightData?, Never>(nil)
 
     @Published var scrollWidth: CGFloat = 0
     @Published var axisMinMax: MinMax
@@ -31,7 +26,9 @@ public class LineChartModel: ObservableObject {
     @Published var canScroll: Bool
 
     @Published var highlightedPoints = [String: [CGPoint]]()
-    @Published var highlightPopover: LineChartData.Highlight? = nil
+    @Published var highlightPopover: LineHighlightData? = nil
+
+    var highlightBuilder: HighlightBuilder?
 
     let hAxisModel: AxisModel
     let vAxisModel: AxisModel
@@ -42,6 +39,7 @@ public class LineChartModel: ObservableObject {
     private lazy var screenPortionPublisher = CurrentValueSubject<Double, Never>(0)
     private lazy var scrollDataPublisher = PassthroughSubject<ScrollData, Never>()
 
+    private var lineIdToHighlight: String?
     private let isDynamicAxis: Bool
     private let dataPaddingProportion: CGFloat
     private var updateThrottle: Double
@@ -53,7 +51,6 @@ public class LineChartModel: ObservableObject {
 
     private var currentFrame: CGRect = .zero
     private var currentWidth: CGFloat = 0
-    private var currentInset: CGFloat = 0
 
     public init(data: [LineChartData],
                 startingFrame: CGRect,
@@ -61,8 +58,12 @@ public class LineChartModel: ObservableObject {
                 hAxisModel: AxisModel = AxisModel(),
                 vAxisModel: AxisModel = AxisModel(),
                 isLegendLeading: Bool = true,
-                dynamicAxis: Bool = true, dataPaddingProportion: CGFloat = 0,
-                updateThrottle: Double = 0.1, canScroll: Bool = false,
+                lineIdToHighlight: String? = nil,
+                dynamicAxis: Bool = true,
+                dataPaddingProportion: CGFloat = 0,
+                updateThrottle: Double = 0.1,
+                canScroll: Bool = false,
+                highlightBuilder: HighlightBuilder? = nil,
                 accessibilityTitle: String? = nil,
                 accessibilitySummary: String? = nil,
                 audioAccessibilityId: String? = nil) {
@@ -71,9 +72,11 @@ public class LineChartModel: ObservableObject {
         self.hAxisModel = hAxisModel
         self.vAxisModel = vAxisModel
         self.isLegendLeading = isLegendLeading
+        self.lineIdToHighlight = lineIdToHighlight
         self.updateThrottle = updateThrottle
         self.dataPaddingProportion = dataPaddingProportion
         self.canScroll = canScroll
+        self.highlightBuilder = highlightBuilder
         self.accessibilityTitle = accessibilityTitle
         self.accessibilitySummary = accessibilitySummary
         self.audioAccessibilityId = audioAccessibilityId
@@ -105,7 +108,6 @@ public class LineChartModel: ObservableObject {
 
     func onLoaded(in frame: CGRect) {
         currentFrame = frame
-        currentInset = chartInset(in: frame)
         updateScrollWidth()
         axisMinMax = minMaxValuesOnScreen(at: .zero, in: frame)
         linesMinMax = MinMax(minY: axisMinMax.minY, maxY: axisMinMax.maxY,
@@ -135,10 +137,6 @@ public class LineChartModel: ObservableObject {
         return max(1, range/screenPortionPublisher.value)
     }
 
-    private func chartInset(in frame: CGRect) -> CGFloat {
-        vAxisModel.axisSize(in: frame, isHorizontal: false)
-    }
-
     private func bindToData() {
         scrollDataPublisher
             .combineLatest(screenPortionPublisher)
@@ -164,12 +162,6 @@ public class LineChartModel: ObservableObject {
                 self.updateScrollWidth()
             }.store(in: &cancellables)
 
-        touchLocation
-            .removeDuplicates()
-            .sink { location in
-                self.closestValue(to: location)
-        }.store(in: &cancellables)
-
         highlightTapped.sink { data in
             withAnimation(data == nil ? .easeOut(duration: 0.2) : .spring()) {
                 self.highlightPopover = data
@@ -178,48 +170,19 @@ public class LineChartModel: ObservableObject {
     }
 
     func closestValue(to location: CGPoint?) -> Double? {
-        guard var location = location, currentWidth > 0 else { return nil }
-        location.x -= currentInset
-        let proportion = location.x/(currentWidth - currentInset)
+        guard let xLocation = location?.x,
+              currentWidth > 0,
+              let idToHighlight = lineIdToHighlight,
+              let setToHighlight = data.first(where: { $0.id == idToHighlight }) else {
+                  return nil
+              }
+
+        let inset = chartEdgeInsets(in: currentFrame)
+        let proportion = xLocation/(currentWidth - (inset.trailing + inset.leading))
         let xVal = data.minXPoint() + ((data.maxXPoint() - data.minXPoint()) * proportion)
         let closestElement = data.combinedXPoints().enumerated().min(by: { abs($0.1 - xVal) < abs($1.1 - xVal) } )
         let closestIndex = closestElement?.offset ?? 0
-        let dateValue = closestElement?.element ?? 0
-
-//        var contributionYVal: Double = 0
-        var returnsYVal: Double = 0
-
-        for dataSet in data {
-            if dataSet.id == "potValue" {
-                returnsYVal = dataSet.yPoints[closestIndex]
-            }
-//            else if dataSet.id == "potContributions" {
-//                contributionYVal = dataSet.yPoints[closestIndex]
-//            }
-        }
-
-        return returnsYVal
-//
-//        let frameWidth = currentFrame.width
-//        let xValProportion = (xVal + linesMinMax.minX)/linesMinMax.maxX
-//        let yPos = returnsYVal.chartYPosition(yRange: (linesMinMax.maxY - linesMinMax.minY),
-//                                              frame: currentFrame, offset: linesMinMax.minY)
-//        var relativePos = location
-//        relativePos.y = yPos
-//        relativePos.x = max(-frameWidth/2, (xValProportion * frameWidth) - frameWidth/2)
-//
-//        var currentPoints = highlightedPoints["potValue"] ?? []
-//        currentPoints.append(CGPoint(x: dateValue, y: returnsYVal))
-//        highlightedPoints["potValue"] = currentPoints
-
-//        withAnimation {
-//            highlighted = HighlightedData(id: "potValue",
-//                                          rawValue: CGPoint(x: dateValue, y: returnsYVal),
-//                                          date: PreviewData.dateFormatter.string(from: Date(timeIntervalSince1970: dateValue)),
-//                                          contributions: PreviewData.numberFormatter.string(from: NSNumber(value: contributionYVal)) ?? "",
-//                                          returns: PreviewData.numberFormatter.string(from: NSNumber(value: returnsYVal)) ?? "",
-//                                          position: relativePos)
-//        }
+        return setToHighlight.yPoints[closestIndex]
     }
 
     private func minMaxValuesOnScreen(at position: CGPoint, in frame: CGRect) -> MinMax {
@@ -301,8 +264,8 @@ public class LineChartModel: ObservableObject {
 
         guard let dataId = audioAccessibilityId,
               let dataToHighlight = data.first(where: { $0.id == dataId }) else {
-            return "No summary"
-        }
+                  return "No summary"
+              }
 
         let minXFormatted = vAxisModel.axisTextFormat.formattedValue(from: linesMinMax.minX)
         let maxXFormatted = vAxisModel.axisTextFormat.formattedValue(from: linesMinMax.maxX)

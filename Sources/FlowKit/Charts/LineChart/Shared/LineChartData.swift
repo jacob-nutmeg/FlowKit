@@ -7,28 +7,17 @@
 
 import SwiftUI
 
+public protocol LineHighlightData {
+    var point: CGPoint { get }
+    var size: CGFloat { get }
+    var innerColor: Color { get }
+    var outerColor: Color? { get }
+}
+
 public struct LineChartData: Identifiable {
 
-    public struct Highlight: Identifiable, Equatable {
-        public init(point: CGPoint, size: CGFloat, innerColor: Color, outerColor: Color?) {
-            self.point = point
-            self.size = size
-            self.innerColor = innerColor
-            self.outerColor = outerColor
-        }
-
-        public var id: Double {
-            point.x
-        }
-
-        let point: CGPoint
-        let size: CGFloat
-        let innerColor: Color
-        let outerColor: Color?
-    }
-
     public init(id: String, xPoints: [Double], yPoints: [Double],
-                highlights: [Highlight] = [],
+                highlights: [LineHighlightData] = [],
                 lineColors: [Color] = [], isCurved: Bool = false,
                 fillColors: [Color]? = nil) {
         self.id = id
@@ -43,7 +32,7 @@ public struct LineChartData: Identifiable {
     public let id: String
     public var xPoints: [Double]
     public var yPoints: [Double]
-    public var highlights: [Highlight]
+    public var highlights: [LineHighlightData]
     public var lineColors: [Color] = []
     public var isCurved = false
     public var fillColors: [Color]?
