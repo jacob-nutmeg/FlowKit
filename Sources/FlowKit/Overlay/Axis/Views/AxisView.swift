@@ -54,7 +54,7 @@ public struct AxisView: View {
     private func hAxisPadding(in frame: CGRect) -> EdgeInsets {
         EdgeInsets(top: 0,
                    leading: 0,
-                   bottom: hAxisSize(in: frame),
+                   bottom: vAxisSize(in: frame),
                    trailing: 0)
     }
 
