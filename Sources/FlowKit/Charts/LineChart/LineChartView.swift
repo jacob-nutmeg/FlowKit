@@ -58,7 +58,7 @@ public struct LineChartView: View {
                             Text(String(viewModel.closestValue(to: firstDragLocation) ?? 0))
                                 .position(x: proxy.frame(in: .local).width/2, y: 0)
                             Path.line(from: CGPoint(x: proxy.frame(in: .local).width/2, y: 30),
-                                      to: CGPoint(x: proxy.frame(in: .local).width/2, y: stackProxy.frame(in: .local).height - 60))
+                                      to: CGPoint(x: proxy.frame(in: .local).width/2, y: proxy.frame(in: .local).height - 60))
                                 .stroke(.green)
                         }.position(x: firstDragLocation.x, y: proxy.frame(in: .local).height/2)
                     }
