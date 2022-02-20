@@ -9,34 +9,51 @@ import SwiftUI
 
 struct HighlightPopover<Label: View>: View {
 
-    let currentFrame: CGRect
+    let frameSize: CGSize
     let highlight: LineHighlightData
     let minMax: MinMax
     let insets: EdgeInsets
-    var idealWidth: CGFloat = 120
-    var margin: CGFloat = 12
+    var maxWidth: CGFloat = 100
+    var margin: CGFloat = 8
 
     @ViewBuilder var content: Label
 
     var body: some View {
-        GeometryReader { proxy in
-            content.padding()
-                .background(RoundedRectangle(cornerRadius: 4).fill(.white))
-                .shadow(radius: 8)
-        }
-        .position(x: xPos(),
-                  y: Double(highlight.point.y).chartYPosition(yRange: (minMax.maxY - minMax.minY),
-                                                              frame: currentFrame, offset: minMax.minY) + insets.bottom)
-        .transition(.scale(scale: 0.8, anchor: .center).combined(with: .opacity))
+        content
+            .frame(maxWidth: maxWidth)
+            .position(x: xPos(), y: yPos())
+            .transition(.scale(scale: 0.975).combined(with: .opacity))
+    }
+
+    private func yPos() -> CGFloat {
+        Double(highlight.point.y)
+            .chartYPosition(yRange: (minMax.maxY - minMax.minY),
+                            frameHeight: frameSize.height - insets.bottom,
+                            offset: minMax.minY)
+    }
+
+    private func isToRightOfHighlight() -> Bool {
+        let relativeMiddle = minMax.minX + (minMax.maxX - minMax.minX)/2
+        let middleXPosition = relativeMiddle.chartXPosition(minX: minMax.minX, maxX: minMax.maxX,
+                                                            frameWidth: frameSize.width)
+        return proposedXPos() > middleXPosition
     }
 
     private func xPos() -> CGFloat {
-        let minXPosition = minMax.minX.chartXPosition(minX: minMax.minX, maxX: minMax.maxX, frame: currentFrame)
-        let maxXPosition = minMax.maxX.chartXPosition(minX: minMax.minX, maxX: minMax.maxX, frame: currentFrame)
-        let relativeMiddle = minMax.minX + (minMax.maxX - minMax.minX)/2
-        let middleXPosition = relativeMiddle.chartXPosition(minX: minMax.minX, maxX: minMax.maxX, frame: currentFrame)
-        let proposedX = Double(highlight.point.x).chartXPosition(minX: minMax.minX, maxX: minMax.maxX, frame: currentFrame) + (insets.leading) - (insets.trailing)
-        let padding: CGFloat = proposedX > middleXPosition ? -(idealWidth/2 + margin) : (idealWidth/2 + margin)
-        return min(max(minXPosition, proposedX), maxXPosition) + padding
+        var proposedX = proposedXPos()
+        let padding: CGFloat
+        if isToRightOfHightlight() {
+            padding = -maxWidth/2 - margin - highlight.size
+        } else {
+            padding = maxWidth/2 + margin + highlight.size
+        }
+
+        proposedX += padding
+        return proposedX
+    }
+
+    private func proposedXPos() -> CGFloat {
+        Double(highlight.point.x).chartXPosition(minX: minMax.minX, maxX: minMax.maxX,
+                                                 frameWidth: frameSize.width)
     }
 }

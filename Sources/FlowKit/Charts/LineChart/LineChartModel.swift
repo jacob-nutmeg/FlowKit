@@ -35,9 +35,11 @@ public class LineChartModel: ObservableObject {
 
     var isFirstLoad = true
     let isLegendLeading: Bool
+    private(set) var currentFrame: CGRect = .zero
+    private(set) var currentWidth: CGFloat = 0
 
     private lazy var screenPortionPublisher = CurrentValueSubject<Double, Never>(0)
-    private lazy var scrollDataPublisher = PassthroughSubject<ScrollData, Never>()
+    private lazy var scrollDataPublisher = CurrentValueSubject<ScrollData, Never>((CGPoint.zero, CGRect.zero))
 
     private var lineIdToHighlight: String?
     private let isDynamicAxis: Bool
@@ -48,9 +50,6 @@ public class LineChartModel: ObservableObject {
     private var audioAccessibilityId: String?
 
     private var cancellables = [AnyCancellable]()
-
-    private var currentFrame: CGRect = .zero
-    private var currentWidth: CGFloat = 0
 
     public init(data: [LineChartData],
                 startingFrame: CGRect,
@@ -170,13 +169,14 @@ public class LineChartModel: ObservableObject {
     }
 
     func closestValue(to location: CGPoint?) -> Double? {
-        guard let xLocation = location?.x,
+        guard var xLocation = location?.x,
               currentWidth > 0,
               let idToHighlight = lineIdToHighlight,
               let setToHighlight = data.first(where: { $0.id == idToHighlight }) else {
                   return nil
               }
 
+        xLocation += scrollDataPublisher.value.position.x
         let inset = chartEdgeInsets(in: currentFrame)
         let proportion = xLocation/(currentWidth - (inset.trailing + inset.leading))
         let xVal = data.minXPoint() + ((data.maxXPoint() - data.minXPoint()) * proportion)

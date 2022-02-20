@@ -33,8 +33,8 @@ public struct LineChartView: View {
     @GestureState var firstDragLocation: CGPoint = .zero
 
     private let highlightGesture = TapGesture()
-    private let longPressGesture = LongPressGesture(minimumDuration: 0.25, maximumDistance: 0)
-    private var dragGesture = DragGesture(minimumDistance: 1, coordinateSpace: .local)
+    private let longPressGesture = LongPressGesture(minimumDuration: 0.15, maximumDistance: 0)
+    private var dragGesture = DragGesture(minimumDistance: 0, coordinateSpace: .local)
 
     public var body: some View {
         GeometryReader { proxy in
@@ -57,15 +57,18 @@ public struct LineChartView: View {
                         VStack {
                             Text(String(viewModel.closestValue(to: firstDragLocation) ?? 0))
                                 .position(x: proxy.frame(in: .local).width/2, y: 0)
-                            Path.line(from: CGPoint(x: proxy.frame(in: .local).width/2, y: 30),
-                                      to: CGPoint(x: proxy.frame(in: .local).width/2, y: proxy.frame(in: .local).height - 60))
+                            Path.line(from: CGPoint(x: proxy.frame(in: .local).width/2,
+                                                    y: -proxy.frame(in: .local).height/2 + 30),
+                                      to: CGPoint(x: proxy.frame(in: .local).width/2,
+                                                  y: proxy.frame(in: .local).height/2 - 60))
                                 .stroke(.green)
                         }.position(x: firstDragLocation.x, y: proxy.frame(in: .local).height/2)
                     }
                 }
 
                 if let highlight = viewModel.highlightPopover, let builder = viewModel.highlightBuilder {
-                    HighlightPopover(currentFrame: proxy.frame(in: .named("scroll")),
+                    HighlightPopover(frameSize: CGSize(width: viewModel.currentFrame.width,
+                                                       height: viewModel.currentFrame.height),
                                      highlight: highlight, minMax: viewModel.axisMinMax,
                                      insets: viewModel.chartEdgeInsets(in: proxy.frame(in: .local))) {
                         builder(highlight)

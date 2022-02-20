@@ -60,9 +60,11 @@ struct Line: View {
                 }) {
                     LinePointView(size: highlight.size, innerColor: highlight.innerColor, outerColor: highlight.outerColor ?? .clear)
                 }
-                .position(x: Double(highlight.point.x).chartXPosition(minX: minMax.minX, maxX: minMax.maxX, frame: frame),
+                .position(x: Double(highlight.point.x).chartXPosition(minX: minMax.minX, maxX: minMax.maxX,
+                                                                      frameWidth: frame.width),
                           y: Double(highlight.point.y).chartYPosition(yRange: (minMax.maxY - minMax.minY),
-                                                                      frame: frame, offset: minMax.minY))
+                                                                      frameHeight: frame.height,
+                                                                      offset: minMax.minY))
             }
         }
         .onAppear {

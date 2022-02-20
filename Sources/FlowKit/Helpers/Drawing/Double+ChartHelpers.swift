@@ -9,19 +9,20 @@ import SwiftUI
 
 extension Double {
 
-    func chartXPosition(minX: Double, maxX: Double, frame: CGRect) -> CGFloat {
+    func chartXPosition(minX: Double, maxX: Double,
+                        frameWidth: CGFloat) -> CGFloat {
         let relativePos = self - minX
         guard relativePos > 0 else {
             return 0
         }
 
         let positionPercentage = relativePos / (maxX - minX)
-        return frame.width * positionPercentage
+        return frameWidth * positionPercentage
     }
 
-    func chartYPosition(yRange: Double, frame: CGRect, offset: CGFloat) -> CGFloat {
+    func chartYPosition(yRange: Double, frameHeight: CGFloat, offset: CGFloat) -> CGFloat {
         guard yRange > 0 else { return 0 }
-        return frame.size.height - (self - offset) * (frame.size.height / CGFloat(yRange))
+        return frameHeight - (self - offset) * (frameHeight / CGFloat(yRange))
     }
 
 }

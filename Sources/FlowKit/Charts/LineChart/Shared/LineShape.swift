@@ -28,7 +28,9 @@ struct LineShape: Shape {
             let xPoints = data.xPoints
             let yPoints = data.yPoints
 
-            var p1 = CGPoint(x: 0, y: yPoints[0].chartYPosition(yRange: yRange, frame: rect, offset: minYPoint))
+            var p1 = CGPoint(x: 0, y: yPoints[0].chartYPosition(yRange: yRange,
+                                                                frameHeight: rect.height,
+                                                                offset: minYPoint))
 
             if isClosed {
                 path.move(to: .zero)
@@ -38,8 +40,11 @@ struct LineShape: Shape {
             }
 
             for pointIndex in 1..<xPoints.count {
-                let x = xPoints[pointIndex].chartXPosition(minX: minXPoint, maxX: maxXPoint, frame: rect)
-                let p2 = CGPoint(x: x, y: yPoints[pointIndex].chartYPosition(yRange: yRange, frame: rect, offset: minYPoint))
+                let x = xPoints[pointIndex].chartXPosition(minX: minXPoint, maxX: maxXPoint,
+                                                           frameWidth: rect.width)
+                let p2 = CGPoint(x: x, y: yPoints[pointIndex].chartYPosition(yRange: yRange,
+                                                                             frameHeight: rect.height,
+                                                                             offset: minYPoint))
 
                 if data.isCurved {
                     let midPoint = CGPoint.midPointForPoints(p1: p1, p2: p2)
