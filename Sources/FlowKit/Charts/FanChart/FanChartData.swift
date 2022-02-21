@@ -8,12 +8,16 @@
 import SwiftUI
 
 public struct FanChartData: Identifiable {
-    public init(id: String, xValues: [Double], firstYValues: [Double], secondYValues: [Double], colors: [Color]) {
+    public init(id: String, xValues: [Double],
+                firstYValues: [Double], secondYValues: [Double],
+                colors: [Color],
+                lineColor: Color? = nil) {
         self.id = id
         self.xValues = xValues
         self.firstYValues = firstYValues
         self.secondYValues = secondYValues
         self.colors = colors
+        self.lineColor = lineColor
     }
 
     public let id: String
@@ -21,6 +25,7 @@ public struct FanChartData: Identifiable {
     public let firstYValues: [Double]
     public let secondYValues: [Double]
     public let colors: [Color]
+    public let lineColor: Color?
 
     var minX: Double {
         xValues.min() ?? 0

@@ -42,7 +42,7 @@ struct HighlightPopover<Label: View>: View {
     private func xPos() -> CGFloat {
         var proposedX = proposedXPos()
         let padding: CGFloat
-        if isToRightOfHightlight() {
+        if isToRightOfHighlight() {
             padding = -maxWidth/2 - margin - highlight.size
         } else {
             padding = maxWidth/2 + margin + highlight.size

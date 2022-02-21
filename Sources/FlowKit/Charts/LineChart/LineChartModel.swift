@@ -20,7 +20,7 @@ public class LineChartModel: ObservableObject {
     var holdLocations = CurrentValueSubject<[CGPoint], Never>([])
     var highlightTapped = CurrentValueSubject<LineHighlightData?, Never>(nil)
 
-    @Published var scrollWidth: CGFloat = 0
+    @Published var scrollWidth: CGFloat = 1
     @Published var axisMinMax: MinMax
     @Published var linesMinMax: MinMax
     @Published var canScroll: Bool
@@ -30,15 +30,17 @@ public class LineChartModel: ObservableObject {
 
     var highlightBuilder: HighlightBuilder?
 
-    let hAxisModel: AxisModel
-    let vAxisModel: AxisModel
+    let yAxisModel: AxisModel
+    let xAxisModel: AxisModel
 
-    var isFirstLoad = true
     let isLegendLeading: Bool
-    private(set) var currentFrame: CGRect = .zero
-    private(set) var currentWidth: CGFloat = 0
 
-    private lazy var screenPortionPublisher = CurrentValueSubject<Double, Never>(0)
+    let showHighlights: Bool
+
+    private(set) var currentFrame: CGRect = .zero
+    private(set) var currentWidth: CGFloat = 1
+
+    private lazy var screenPortionPublisher = CurrentValueSubject<Double, Never>(1)
     private lazy var scrollDataPublisher = CurrentValueSubject<ScrollData, Never>((CGPoint.zero, CGRect.zero))
 
     private var lineIdToHighlight: String?
@@ -52,30 +54,31 @@ public class LineChartModel: ObservableObject {
     private var cancellables = [AnyCancellable]()
 
     public init(data: [LineChartData],
-                startingFrame: CGRect,
                 screenPortion: DataPortion = .all,
-                hAxisModel: AxisModel = AxisModel(),
-                vAxisModel: AxisModel = AxisModel(),
+                yAxisModel: AxisModel = AxisModel(),
+                xAxisModel: AxisModel = AxisModel(),
                 isLegendLeading: Bool = true,
                 lineIdToHighlight: String? = nil,
                 dynamicAxis: Bool = true,
                 dataPaddingProportion: CGFloat = 0,
                 updateThrottle: Double = 0.1,
                 canScroll: Bool = false,
+                showHighlights: Bool = true,
                 highlightBuilder: HighlightBuilder? = nil,
                 accessibilityTitle: String? = nil,
                 accessibilitySummary: String? = nil,
                 audioAccessibilityId: String? = nil) {
         self.data = data
         self.isDynamicAxis = dynamicAxis
-        self.hAxisModel = hAxisModel
-        self.vAxisModel = vAxisModel
+        self.yAxisModel = yAxisModel
+        self.xAxisModel = xAxisModel
         self.isLegendLeading = isLegendLeading
         self.lineIdToHighlight = lineIdToHighlight
         self.updateThrottle = updateThrottle
         self.dataPaddingProportion = dataPaddingProportion
         self.canScroll = canScroll
         self.highlightBuilder = highlightBuilder
+        self.showHighlights = showHighlights
         self.accessibilityTitle = accessibilityTitle
         self.accessibilitySummary = accessibilitySummary
         self.audioAccessibilityId = audioAccessibilityId
@@ -83,7 +86,6 @@ public class LineChartModel: ObservableObject {
         self.linesMinMax = MinMax(minY: data.maxYPoint(), maxY: data.maxYPoint(),
                                   minX: data.minXPoint(), maxX: data.maxXPoint())
         updatePortion(to: screenPortion)
-        currentFrame = startingFrame
         axisMinMax = minMaxValuesOnScreen(at: .zero, in: currentFrame)
         linesMinMax = MinMax(minY: axisMinMax.minY, maxY: axisMinMax.maxY,
                              minX: data.minXPoint(), maxX: data.maxXPoint())
@@ -107,15 +109,17 @@ public class LineChartModel: ObservableObject {
 
     func onLoaded(in frame: CGRect) {
         currentFrame = frame
-        updateScrollWidth()
-        axisMinMax = minMaxValuesOnScreen(at: .zero, in: frame)
-        linesMinMax = MinMax(minY: axisMinMax.minY, maxY: axisMinMax.maxY,
-                             minX: data.minXPoint(), maxX: data.maxXPoint())
+        withAnimation(nil) {
+            updateScrollWidth()
+            axisMinMax = minMaxValuesOnScreen(at: .zero, in: frame)
+            linesMinMax = MinMax(minY: axisMinMax.minY, maxY: axisMinMax.maxY,
+                                 minX: data.minXPoint(), maxX: data.maxXPoint())
+        }
     }
 
     func chartEdgeInsets(in frame: CGRect) -> EdgeInsets {
-        let vSize = vAxisModel.axisSize(in: frame, isHorizontal: false)
-        let hSize = hAxisModel.axisSize(in: frame, isHorizontal: true)
+        let vSize = xAxisModel.axisSize(in: frame, isHorizontal: false)
+        let hSize = yAxisModel.axisSize(in: frame, isHorizontal: true)
         return EdgeInsets(top: 0,
                           leading: isLegendLeading ? hSize : 0,
                           bottom: vSize,
@@ -187,7 +191,7 @@ public class LineChartModel: ObservableObject {
 
     private func minMaxValuesOnScreen(at position: CGPoint, in frame: CGRect) -> MinMax {
         let screenPortion = screenPortionPublisher.value
-        let frameWidth = frame.width
+        let frameWidth = max(frame.width, 1)
         let index = max(0, floor(max(0, position.x) / frameWidth))
         let additionPercent = (position.x - (frameWidth * index)) / frameWidth
         let addition = additionPercent * screenPortion
@@ -228,16 +232,16 @@ public class LineChartModel: ObservableObject {
         let yValues = values.1
 
         let xAxis = AXNumericDataAxisDescriptor(
-            title: vAxisModel.title,
+            title: xAxisModel.title,
             range: (xValues.min() ?? 0)...(xValues.max() ?? 0),
             gridlinePositions: [],
-            valueDescriptionProvider: { self.hAxisModel.axisTextFormat.formattedValue(from: $0) })
+            valueDescriptionProvider: { self.xAxisModel.axisTextFormat.formattedValue(from: $0) })
 
         let yAxis = AXNumericDataAxisDescriptor(
-            title: hAxisModel.title,
+            title: yAxisModel.title,
             range: (yValues.min() ?? 0)...(yValues.max() ?? 0),
             gridlinePositions: [],
-            valueDescriptionProvider: { self.vAxisModel.axisTextFormat.formattedValue(from: $0) })
+            valueDescriptionProvider: { self.yAxisModel.axisTextFormat.formattedValue(from: $0) })
 
         var dataPoints = [AXDataPoint]()
         for (index, xPoint) in dataToHighlight.xPoints.enumerated() {
@@ -267,10 +271,10 @@ public class LineChartModel: ObservableObject {
                   return "No summary"
               }
 
-        let minXFormatted = vAxisModel.axisTextFormat.formattedValue(from: linesMinMax.minX)
-        let maxXFormatted = vAxisModel.axisTextFormat.formattedValue(from: linesMinMax.maxX)
-        let minYFormatted = hAxisModel.axisTextFormat.formattedValue(from: linesMinMax.minY)
-        let maxYFormatted = hAxisModel.axisTextFormat.formattedValue(from: linesMinMax.maxY)
+        let minXFormatted = xAxisModel.axisTextFormat.formattedValue(from: linesMinMax.minX)
+        let maxXFormatted = xAxisModel.axisTextFormat.formattedValue(from: linesMinMax.maxX)
+        let minYFormatted = yAxisModel.axisTextFormat.formattedValue(from: linesMinMax.minY)
+        let maxYFormatted = yAxisModel.axisTextFormat.formattedValue(from: linesMinMax.maxY)
 
         return "From \(minXFormatted) to \(maxXFormatted), value changed from \(minYFormatted) to \(maxYFormatted)"
     }

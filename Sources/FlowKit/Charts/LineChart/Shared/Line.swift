@@ -16,6 +16,8 @@ struct Line: View {
     let minMax: MinMax
 
     var lineAnimation: Animation = .default
+    var highlightAppearDelay: Double = 3
+    var showHighlights: Bool = true
 
     var highlightGesture: TapGesture
     @Binding var tappedHighlight: LineHighlightData?
@@ -36,13 +38,14 @@ struct Line: View {
     }
 
     @State private var completion: CGFloat = 0
+    @State private var highlightAlpha: Double = 0
 
     var body: some View {
         ZStack {
             LineShape(data: data, isClosed: true,
                       minXPoint: minMax.minX, maxXPoint: minMax.maxX,
                       minYPoint: minMax.minY, maxYPoint: minMax.maxY)
-                .fill(fillGradient).hueRotation(.degrees(45))
+                .fill(fillGradient)
                 .opacity(completion)
                 .animation(lineAnimation, value: completion)
 
@@ -53,22 +56,27 @@ struct Line: View {
                 .stroke(lineGradient, style: strokeStyle)
                 .animation(lineAnimation, value: completion)
 
-            ForEach(data.highlights, id: \.point.x) { highlight in
-                Button(action: {
-                    guard self.tappedHighlight?.point.x != highlight.point.x else { self.tappedHighlight = nil; return }
-                    self.tappedHighlight = highlight
-                }) {
-                    LinePointView(size: highlight.size, innerColor: highlight.innerColor, outerColor: highlight.outerColor ?? .clear)
+            if showHighlights, highlightAlpha > 0 {
+                ForEach(data.highlights, id: \.point.x) { highlight in
+                    Button(action: {
+                        guard self.tappedHighlight?.point.x != highlight.point.x else { self.tappedHighlight = nil; return }
+                        self.tappedHighlight = highlight
+                    }) {
+                        LinePointView(size: highlight.size, innerColor: highlight.innerColor, outerColor: highlight.outerColor ?? .clear)
+                    }
+                    .position(x: Double(highlight.point.x).chartXPosition(minX: minMax.minX, maxX: minMax.maxX,
+                                                                          frameWidth: frame.width),
+                              y: Double(highlight.point.y).chartYPosition(yRange: (minMax.maxY - minMax.minY),
+                                                                          frameHeight: frame.height,
+                                                                          offset: minMax.minY))
                 }
-                .position(x: Double(highlight.point.x).chartXPosition(minX: minMax.minX, maxX: minMax.maxX,
-                                                                      frameWidth: frame.width),
-                          y: Double(highlight.point.y).chartYPosition(yRange: (minMax.maxY - minMax.minY),
-                                                                      frameHeight: frame.height,
-                                                                      offset: minMax.minY))
             }
         }
         .onAppear {
             self.completion = 1
+            DispatchQueue.main.asyncAfter(deadline: .now() + highlightAppearDelay) {
+                highlightAlpha = 1
+            }
         }
         .drawingGroup()
     }

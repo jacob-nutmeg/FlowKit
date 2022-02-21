@@ -38,8 +38,8 @@ public struct BarChart: View {
 
             AxisView(minMax: model.minMax,
                      isLegendLeading: isLegendLeading,
-                     hAxisModel: model.hAxisModel, showHAxis: showHAxis,
-                     vAxisModel: model.vAxisModel, showVAxis: showVAxis)
+                     yAxisModel: model.hAxisModel, showYAxis: showHAxis,
+                     xAxisModel: model.vAxisModel, showXAxis: showVAxis)
         }
     }
 

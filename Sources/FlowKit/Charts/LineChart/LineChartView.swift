@@ -29,6 +29,7 @@ public struct LineChartView: View {
     var lineAnimation: Animation
     var dynamicAxisAnimation: Animation
 
+    @State var chartOpacity: Double = 0
     @State var isDragging = false
     @GestureState var firstDragLocation: CGPoint = .zero
 
@@ -40,17 +41,20 @@ public struct LineChartView: View {
         GeometryReader { proxy in
             ZStack {
                 scrollView(proxy: proxy)
+                    .opacity(chartOpacity)
                     .onAppear {
                         viewModel.onLoaded(in: proxy.frame(in: .local))
-                        viewModel.isFirstLoad = false
+                        withAnimation(.easeIn.delay(0.25)) {
+                            chartOpacity = 1
+                        }
                     }
 
                 AxisView(minMax: viewModel.axisMinMax,
                          isLegendLeading: viewModel.isLegendLeading,
-                         hAxisModel: viewModel.hAxisModel,
-                         showHAxis: showHAxis,
-                         vAxisModel: viewModel.vAxisModel,
-                         showVAxis: showVAxis)
+                         yAxisModel: viewModel.yAxisModel,
+                         showYAxis: showHAxis,
+                         xAxisModel: viewModel.xAxisModel,
+                         showXAxis: showVAxis)
 
                 if isDragging {
                     ZStack {
@@ -66,7 +70,9 @@ public struct LineChartView: View {
                     }
                 }
 
-                if let highlight = viewModel.highlightPopover, let builder = viewModel.highlightBuilder {
+                if viewModel.showHighlights,
+                   let highlight = viewModel.highlightPopover,
+                   let builder = viewModel.highlightBuilder {
                     HighlightPopover(frameSize: CGSize(width: viewModel.currentFrame.width,
                                                        height: viewModel.currentFrame.height),
                                      highlight: highlight, minMax: viewModel.axisMinMax,
@@ -104,6 +110,7 @@ public struct LineChartView: View {
         Lines(data: viewModel.data,
               minMax: viewModel.linesMinMax,
               lineAnimation: lineAnimation,
+              showHighlights: viewModel.showHighlights,
               highlightGesture: highlightGesture,
               tappedHighlight: $viewModel.highlightTapped.value)
             .animation(dynamicAxisAnimation)
@@ -129,7 +136,6 @@ extension LineChartView: AXChartDescriptorRepresentable {
 struct LineChartView_Previews: PreviewProvider {
     static var viewModel = LineChartModel(data: [PreviewData.potValueData,
                                                  PreviewData.potContributionData],
-                                          startingFrame: .zero,
                                           screenPortion: .custom(PreviewData.oneMonthInterval), canScroll: true)
     static var previews: some View {
         LineChartView(viewModel: viewModel)

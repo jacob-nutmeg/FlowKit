@@ -11,32 +11,32 @@ public struct AxisView: View {
 
     let minMax: MinMax
     let isLegendLeading: Bool
-    let hAxisModel: AxisModel
-    let showHAxis: Bool
-    let vAxisModel: AxisModel
-    let showVAxis: Bool
+    let yAxisModel: AxisModel
+    let showYAxis: Bool
+    let xAxisModel: AxisModel
+    let showXAxis: Bool
 
     public var body: some View {
         GeometryReader { info in
             ZStack {
-                if showHAxis {
+                if showYAxis {
                     GeometryReader { localProxy in
                         AxisOverlay(axisType: .horizontal(isLeading: isLegendLeading),
                                     frame: localProxy.frame(in: .local),
                                     minValue: minMax.minY,
                                     maxValue: minMax.maxY,
-                                    model: hAxisModel)
-                    }.padding(hAxisPadding(in: info.frame(in: .local)))
+                                    model: yAxisModel)
+                    }.padding(yAxisPadding(in: info.frame(in: .local)))
                 }
 
-                if showVAxis {
+                if showXAxis {
                     GeometryReader { localProxy in
                         AxisOverlay(axisType: .vertical(isLeading: isLegendLeading),
                                     frame: localProxy.frame(in: .local),
                                     minValue: minMax.minX,
                                     maxValue: minMax.maxX,
-                                    model: vAxisModel)
-                    }.padding(vAxisPadding(in: info.frame(in: .local)))
+                                    model: xAxisModel)
+                    }.padding(xAxisPadding(in: info.frame(in: .local)))
                 }
             }
         }
@@ -44,26 +44,26 @@ public struct AxisView: View {
         .allowsHitTesting(false)
     }
 
-    private func vAxisPadding(in frame: CGRect) -> EdgeInsets {
+    private func xAxisPadding(in frame: CGRect) -> EdgeInsets {
         EdgeInsets(top: 0,
-                   leading: isLegendLeading ? hAxisSize(in: frame) : 0,
+                   leading: isLegendLeading ? yAxisSize(in: frame) : 0,
                    bottom: 0,
-                   trailing: isLegendLeading ? 0 : hAxisSize(in: frame))
+                   trailing: isLegendLeading ? 0 : yAxisSize(in: frame))
     }
 
-    private func hAxisPadding(in frame: CGRect) -> EdgeInsets {
+    private func yAxisPadding(in frame: CGRect) -> EdgeInsets {
         EdgeInsets(top: 0,
                    leading: 0,
-                   bottom: vAxisSize(in: frame),
+                   bottom: xAxisSize(in: frame),
                    trailing: 0)
     }
 
-    private func hAxisSize(in frame: CGRect) -> CGFloat {
-        showHAxis ? hAxisModel.axisSize(in: frame, isHorizontal: true) : 0
+    private func yAxisSize(in frame: CGRect) -> CGFloat {
+        showYAxis ? yAxisModel.axisSize(in: frame, isHorizontal: true) : 0
     }
 
-    private func vAxisSize(in frame: CGRect) -> CGFloat {
-        showVAxis ? vAxisModel.axisSize(in: frame, isHorizontal: false) : 0
+    private func xAxisSize(in frame: CGRect) -> CGFloat {
+        showXAxis ? xAxisModel.axisSize(in: frame, isHorizontal: false) : 0
     }
 
 }
@@ -80,10 +80,10 @@ struct AxisView_Previews: PreviewProvider {
             AxisView(minMax: MinMax(minY: data.minYPoint(), maxY: data.minYPoint(),
                                     minX: data.minXPoint(), maxX: data.maxXPoint()),
                      isLegendLeading: false,
-                     hAxisModel: hModel,
-                     showHAxis: true,
-                     vAxisModel: vModel,
-                     showVAxis: false)
+                     yAxisModel: hModel,
+                     showYAxis: true,
+                     xAxisModel: vModel,
+                     showXAxis: false)
         }
     }
 }
